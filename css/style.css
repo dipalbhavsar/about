@@ -8141,7 +8141,7 @@ body {
   color: #666666; }
   body.offcanvas {
     overflow-x: hidden; }
-    body.offcanvas #colorlib-aside {
+    body.offcanvas #dipal-aside {
       -moz-transform: translateX(0);
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
@@ -8151,7 +8151,7 @@ body {
       background: #fff;
       z-index: 999;
       position: fixed; }
-    body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
+    body.offcanvas #dipal-main, body.offcanvas .dipal-nav-toggle {
       top: 0;
       -moz-transform: translateX(270px);
       -webkit-transform: translateX(270px);
@@ -8176,12 +8176,12 @@ h1, h2, h3, h4, h5,
   font-weight: normal;
   font-family: "Lora", Arial, serif; }
 
-#colorlib-page {
+#dipal-page {
   width: 100%;
   overflow: hidden;
   position: relative; }
 
-#colorlib-aside {
+#dipal-aside {
   padding-top: 5em;
   padding-bottom: 40px;
   padding-left: 2em;
@@ -8202,10 +8202,10 @@ h1, h2, h3, h4, h5,
   transition: all 0.5s ease;
   border-right: 1px solid #e6e6e6; }
   @media (min-width: 992px) {
-    #colorlib-aside {
+    #dipal-aside {
       width: 25%; } }
   @media (max-width: 991.98px) {
-    #colorlib-aside {
+    #dipal-aside {
       width: 320px;
       -moz-transform: translateX(-320px);
       -webkit-transform: translateX(-320px);
@@ -8214,7 +8214,7 @@ h1, h2, h3, h4, h5,
       transform: translateX(-320px);
       padding-top: 2em;
       background: rgba(0, 0, 0, 0.04); } }
-  #colorlib-aside #colorlib-logo {
+  #dipal-aside #dipal-logo {
     display: block;
     width: 100%;
     font-weight: normal;
@@ -8222,14 +8222,14 @@ h1, h2, h3, h4, h5,
     line-height: .8;
     font-family: "Abril Fatface", cursive; }
     @media (max-width: 1199.98px) {
-      #colorlib-aside #colorlib-logo {
+      #dipal-aside #dipal-logo {
         font-size: 62px; } }
-    #colorlib-aside #colorlib-logo span {
+    #dipal-aside #dipal-logo span {
       display: block; }
     @media (max-width: 991.98px) {
-      #colorlib-aside #colorlib-logo {
+      #dipal-aside #dipal-logo {
         margin-bottom: 20px; } }
-    #colorlib-aside #colorlib-logo a {
+    #dipal-aside #dipal-logo a {
       display: inline-block;
       text-align: left;
       color: #000000;
@@ -8241,16 +8241,16 @@ h1, h2, h3, h4, h5,
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center; }
-  #colorlib-aside #colorlib-main-menu ul {
+  #dipal-aside #dipal-main-menu ul {
     margin: 0;
     padding: 0; }
-    #colorlib-aside #colorlib-main-menu ul li {
+    #dipal-aside #dipal-main-menu ul li {
       margin: 0 0 10px 0;
       padding: 0;
       list-style: none;
       font-size: 18px;
       font-weight: 500; }
-      #colorlib-aside #colorlib-main-menu ul li a {
+      #dipal-aside #dipal-main-menu ul li a {
         color: rgba(0, 0, 0, 0.7);
         text-decoration: none;
         position: relative;
@@ -8261,7 +8261,7 @@ h1, h2, h3, h4, h5,
         -webkit-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         transition: all 0.3s ease; }
-        #colorlib-aside #colorlib-main-menu ul li a:after {
+        #dipal-aside #dipal-main-menu ul li a:after {
           content: "";
           position: absolute;
           height: 2px;
@@ -8280,28 +8280,28 @@ h1, h2, h3, h4, h5,
           -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        #colorlib-aside #colorlib-main-menu ul li a:hover {
+        #dipal-aside #dipal-main-menu ul li a:hover {
           text-decoration: none;
           color: black; }
-          #colorlib-aside #colorlib-main-menu ul li a:hover:after {
+          #dipal-aside #dipal-main-menu ul li a:hover:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
             -moz-transform: scaleX(1);
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
-      #colorlib-aside #colorlib-main-menu ul li.colorlib-active {
+      #dipal-aside #dipal-main-menu ul li.dipal-active {
         font-weight: 600; }
-        #colorlib-aside #colorlib-main-menu ul li.colorlib-active a {
+        #dipal-aside #dipal-main-menu ul li.dipal-active a {
           color: #1eafed; }
-          #colorlib-aside #colorlib-main-menu ul li.colorlib-active a:after {
+          #dipal-aside #dipal-main-menu ul li.dipal-active a:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
             -moz-transform: scaleX(1);
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
-  #colorlib-aside .colorlib-footer {
+  #dipal-aside .dipal-footer {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -8310,23 +8310,23 @@ h1, h2, h3, h4, h5,
     font-size: 17px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6); }
-    #colorlib-aside .colorlib-footer h3 {
+    #dipal-aside .dipal-footer h3 {
       font-size: 18px;
       font-weight: 600; }
-    #colorlib-aside .colorlib-footer a {
+    #dipal-aside .dipal-footer a {
       color: #000000; }
-    #colorlib-aside .colorlib-footer .pfooter {
+    #dipal-aside .dipal-footer .pfooter {
       font-size: 14px; }
-    #colorlib-aside .colorlib-footer .colorlib-subscribe-form {
+    #dipal-aside .dipal-footer .dipal-subscribe-form {
       width: 100%; }
-      #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group {
+      #dipal-aside .dipal-footer .dipal-subscribe-form .form-group {
         position: relative;
         margin-bottom: 0;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         border-radius: 0; }
-        #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group input {
+        #dipal-aside .dipal-footer .dipal-subscribe-form .form-group input {
           padding-right: 40px;
           background: #fff !important;
           border: 1px solid #7cd1f5 !important;
@@ -8336,22 +8336,22 @@ h1, h2, h3, h4, h5,
           -moz-border-radius: 0;
           -ms-border-radius: 0;
           border-radius: 0; }
-          #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group input::-webkit-input-placeholder {
+          #dipal-aside .dipal-footer .dipal-subscribe-form .form-group input::-webkit-input-placeholder {
             /* Chrome/Opera/Safari */
             color: rgba(0, 0, 0, 0.4) !important; }
-          #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group input::-moz-placeholder {
+          #dipal-aside .dipal-footer .dipal-subscribe-form .form-group input::-moz-placeholder {
             /* Firefox 19+ */
             color: rgba(0, 0, 0, 0.4) !important; }
-          #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group input:-ms-input-placeholder {
+          #dipal-aside .dipal-footer .dipal-subscribe-form .form-group input:-ms-input-placeholder {
             /* IE 10+ */
             color: rgba(0, 0, 0, 0.4) !important; }
-          #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group input:-moz-placeholder {
+          #dipal-aside .dipal-footer .dipal-subscribe-form .form-group input:-moz-placeholder {
             /* Firefox 18- */
             color: rgba(0, 0, 0, 0.4) !important; }
-        #colorlib-aside .colorlib-footer .colorlib-subscribe-form .form-group .form-control {
+        #dipal-aside .dipal-footer .dipal-subscribe-form .form-group .form-control {
           bordeR: 1px solid rgba(255, 255, 255, 0.2);
           font-weight: 400; }
-      #colorlib-aside .colorlib-footer .colorlib-subscribe-form .icon {
+      #dipal-aside .dipal-footer .dipal-subscribe-form .icon {
         position: absolute;
         top: 50%;
         right: 15px;
@@ -8360,7 +8360,7 @@ h1, h2, h3, h4, h5,
         transform: translateY(-50%);
         color: rgba(0, 0, 0, 0.5); }
 
-#colorlib-main {
+#dipal-main {
   width: 100%;
   float: right;
   -moz-transition: all 0.5s ease;
@@ -8369,20 +8369,20 @@ h1, h2, h3, h4, h5,
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   @media (min-width: 992px) {
-    #colorlib-main {
+    #dipal-main {
       width: 75%; } }
 
-.colorlib-nav-toggle {
+.dipal-nav-toggle {
   cursor: pointer;
   text-decoration: none; }
-  .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
+  .dipal-nav-toggle.active i::before, .dipal-nav-toggle.active i::after {
     background: #000000; }
-  .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
+  .dipal-nav-toggle.dark.active i::before, .dipal-nav-toggle.dark.active i::after {
     background: #000000; }
-  .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
+  .dipal-nav-toggle:hover, .dipal-nav-toggle:focus, .dipal-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
-  .colorlib-nav-toggle i {
+  .dipal-nav-toggle i {
     position: relative;
     display: inline-block;
     width: 30px;
@@ -8395,7 +8395,7 @@ h1, h2, h3, h4, h5,
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
+    .dipal-nav-toggle i::before, .dipal-nav-toggle i::after {
       content: '';
       width: 30px;
       height: 2px;
@@ -8407,14 +8407,14 @@ h1, h2, h3, h4, h5,
       -webkit-transition: all 0.2s ease;
       -ms-transition: all 0.2s ease;
       transition: all 0.2s ease; }
-  .colorlib-nav-toggle.dark i {
+  .dipal-nav-toggle.dark i {
     position: relative;
     color: #000000;
     background: #000000;
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle.dark i::before, .colorlib-nav-toggle.dark i::after {
+    .dipal-nav-toggle.dark i::before, .dipal-nav-toggle.dark i::after {
       background: #000000;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
@@ -8422,22 +8422,22 @@ h1, h2, h3, h4, h5,
       -ms-transition: all 0.2s ease;
       transition: all 0.2s ease; }
 
-.colorlib-nav-toggle i::before {
+.dipal-nav-toggle i::before {
   top: -7px; }
 
-.colorlib-nav-toggle i::after {
+.dipal-nav-toggle i::after {
   bottom: -7px; }
 
-.colorlib-nav-toggle:hover i::before {
+.dipal-nav-toggle:hover i::before {
   top: -10px; }
 
-.colorlib-nav-toggle:hover i::after {
+.dipal-nav-toggle:hover i::after {
   bottom: -10px; }
 
-.colorlib-nav-toggle.active i {
+.dipal-nav-toggle.active i {
   background: transparent; }
 
-.colorlib-nav-toggle.active i::before {
+.dipal-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -8445,7 +8445,7 @@ h1, h2, h3, h4, h5,
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg); }
 
-.colorlib-nav-toggle.active i::after {
+.dipal-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -8453,7 +8453,7 @@ h1, h2, h3, h4, h5,
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
 
-.colorlib-nav-toggle {
+.dipal-nav-toggle {
   position: fixed;
   left: -12px;
   top: 0px;
@@ -8468,7 +8468,7 @@ h1, h2, h3, h4, h5,
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   @media (max-width: 991.98px) {
-    .colorlib-nav-toggle {
+    .dipal-nav-toggle {
       opacity: 1;
       visibility: visible; } }
 

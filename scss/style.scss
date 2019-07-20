@@ -48,14 +48,14 @@ body {
 	color: lighten($black,40%);
 	&.offcanvas {
 		overflow-x: hidden;
-		#colorlib-aside {
+		#dipal-aside {
 			@include translateX(0);
 			width: 320px;
 			background: $white;
 			z-index: 999;
 			position: fixed;
 		}
-		#colorlib-main, .colorlib-nav-toggle {
+		#dipal-main, .dipal-nav-toggle {
 			top: 0;
 			@include translateX(270px);
 		}
@@ -80,14 +80,14 @@ h1, h2, h3, h4, h5,
 
 
 
-#colorlib-page {
+#dipal-page {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
 
-#colorlib-aside {
+#dipal-aside {
 	padding-top: 5em;
 	padding-bottom: 40px;
 	padding-left: 2em;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5,
 		padding-top: 2em;
 		background: rgba(0,0,0,.04);
 	}
-	#colorlib-logo {
+	#dipal-logo {
 		display: block;
 		width: 100%;
 		font-weight: normal;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5,
 			background-position: center center;
 		}
 	}
-	#colorlib-main-menu {
+	#dipal-main-menu {
 		// border: 1px solid red;
 		ul {
 			margin: 0;
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5,
 						}
 					}
 				}
-				&.colorlib-active {
+				&.dipal-active {
 					font-weight: 600;
 					a {
 						color: $primary;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5,
 			}
 		}
 	}
-	.colorlib-footer {
+	.dipal-footer {
 		position: absolute;
 		bottom: 20px;
 		left: 0;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5,
 		.pfooter{
 			font-size: 14px;
 		}
-		.colorlib-subscribe-form{
+		.dipal-subscribe-form{
 			width: 100%;
 			.form-group {
 				position: relative;
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-#colorlib-main {
+#dipal-main {
 	width: 100%;
 	float: right;
 	@include transition(.5s);
@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5,
 
 
 // Burger Menu
-.colorlib-nav-toggle {
+.dipal-nav-toggle {
   cursor: pointer;
   text-decoration: none;
   &.active i {
@@ -342,22 +342,22 @@ h1, h2, h3, h4, h5,
   }
 }
 
-.colorlib-nav-toggle i::before {
+.dipal-nav-toggle i::before {
   top: -7px;
 }
-.colorlib-nav-toggle i::after {
+.dipal-nav-toggle i::after {
   bottom: -7px;
 }
-.colorlib-nav-toggle:hover i::before {
+.dipal-nav-toggle:hover i::before {
   top: -10px;
 }
-.colorlib-nav-toggle:hover i::after {
+.dipal-nav-toggle:hover i::after {
   bottom: -10px;
 }
-.colorlib-nav-toggle.active i {
+.dipal-nav-toggle.active i {
 	background: transparent;
 }
-.colorlib-nav-toggle.active i::before {
+.dipal-nav-toggle.active i::before {
   top:0;
   -webkit-transform: rotateZ(45deg);
      -moz-transform: rotateZ(45deg);
@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5,
        -o-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
 }
-.colorlib-nav-toggle.active i::after {
+.dipal-nav-toggle.active i::after {
   bottom:0;
   -webkit-transform: rotateZ(-45deg);
      -moz-transform: rotateZ(-45deg);
@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5,
        -o-transform: rotateZ(-45deg);
           transform: rotateZ(-45deg);
 }
-.colorlib-nav-toggle {
+.dipal-nav-toggle {
 	position: fixed;
 	left: -12px;
 	top: 0px;
