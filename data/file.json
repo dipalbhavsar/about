@@ -1,0 +1,12 @@
+{
+    "navigation" : 
+    {
+        "Home": "home",
+        "Azure": "azure",
+        "SharePoint": "sharepoint",
+        "Angular": "angular",
+        "React": "react",
+        "Travel": "travel",
+        "About" : "about"
+      }
+}

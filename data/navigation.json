@@ -1,6 +1,10 @@
+
 {
+  "navigation" :
+  {
     "Home": "home",
     "Fashion": "fashion",
     "Travel": "travel",
     "About" : "about"
   }
+}
