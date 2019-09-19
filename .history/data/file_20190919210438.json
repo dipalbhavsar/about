@@ -1,0 +1,7 @@
+{
+    "navigation" : 
+    {
+        "Name": "Home", "Action" : "home",
+        "Name": "Azure", "Action" : "azure",
+      }
+}
