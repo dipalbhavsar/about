@@ -234,7 +234,6 @@ AOS.init({
   }
 	//[08/31/2019 - DIPAL: Implementing loading navigation] 
   var loadNavigation = function() {
-	
 	var jqxhr = $.getJSON( BASEURL + "data/file.json", function(data) {
 		var items = [];
 		var pageUrl = $(location). attr("href");
@@ -255,9 +254,9 @@ AOS.init({
 	 	  html: items.join( "" )
 	 	}).appendTo( "#dipal-main-menu" );
 	  })
-		// .done(function() {
-		//   console.log( "second success" );
-		// })
+		 .done(function() {
+			loadCategory();
+		 })
 		.fail(function() {
 		  console.log( "error" );
 		})
@@ -278,12 +277,21 @@ AOS.init({
 	// 	$.each( data, function( key, val ) {
 	// 		items.push("<li><a href= '"+key+"'>"+val+"</a></li>");
 	// 	});
-	   
-	
   }
-
-  function RenderMenu(data){
-
+  var loadCategory = function() {
+	var jqxhr = $.getJSON( BASEURL + "data/category.json", function(data) {
+		var items = [];
+		for (var i=0;i<data.length;i++){
+			items.push("<li><a href="+ data[i].Action +">"+data[i].Name+"<span>("+data[i].Count+")</span></a></li>");
+		}
+	 	$( "<ul/>", {
+	 	  "class": "categories",
+	 	  html: items.join( "" )
+	 	}).appendTo( "#dipal-category" );
+	  })
+	.fail(function() {
+		console.log( "error" );
+	})
   }
 
   loadNavigation();
