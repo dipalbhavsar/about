@@ -241,7 +241,8 @@ AOS.init({
 		var pageUrlSplit = pageUrl.split('/');
 		var pageUrlName = pageUrlSplit[pageUrlSplit.length - 1].split('.')[0];
 		for (var i=0;i<data.length;i++){
-			if(pageUrlName.toLowerCase()==data[i].Action.toLowerCase()){
+			
+			if(pageUrlName=="" || pageUrlName.toLowerCase()==data[i].Action.toLowerCase()){
 				items.push("<li class='dipal-active'><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
 			} else {
 				items.push("<li><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
