@@ -1,6 +1,6 @@
 [
     {
-        "Name": "Home", "Action" : "home"
+        "Name": "Home", "Action" : "index"
     },
     {
         "Name": "Azure", "Action" : "azure"
