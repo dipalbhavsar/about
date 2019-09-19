@@ -239,12 +239,23 @@ AOS.init({
 		var items = [];
 		var pageUrl = $(location). attr("href");
 		var pageUrlSplit = pageUrl.split('/');
-		var pageUrlName = pageUrlSplit[pageUrlSplit.length - 1].split('.')[0];
-		for (var i=0;i<data.length;i++){
-			if(pageUrlName.toLowerCase()==data[i].Action.toLowerCase()){
-				items.push("<li class='dipal-active'><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
-			} else {
-				items.push("<li><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
+		if(pageUrlSplit.length > 4){
+			var pageUrlName = pageUrlSplit[pageUrlSplit.length - 1].split('.')[0];
+			for (var i=0;i<data.length;i++){
+				if(pageUrlName.toLowerCase()==data[i].Action.toLowerCase()){
+					items.push("<li class='dipal-active'><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
+				} else {
+					items.push("<li><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
+				}
+			}
+		}
+		else{
+			for (var i=0;i<data.length;i++){
+				if(i==0){
+					items.push("<li class='dipal-active'><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
+				} else {
+					items.push("<li><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
+				}
 			}
 		}
 	 	$( "<ul/>", {
