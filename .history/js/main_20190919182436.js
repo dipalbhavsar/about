@@ -234,7 +234,7 @@
 	//[08/31/2019 - DIPAL: Implementing loading navigation] 
   var loadNavigation = function() {
 	
-	var jqxhr = $.getJSON( "data/navigation.json", function() {
+	var jqxhr = $.getJSON( "https://www.dipalbhavsar.com/data/navigation.json", function() {
 		console.log( "success" );
 	  })
 		.done(function() {
