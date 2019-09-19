@@ -1,4 +1,5 @@
- AOS.init({
+var BASEURL = 'https://www.dipalbhavsar.com/';
+AOS.init({
  	duration: 800,
  	easing: 'slide'
  });
@@ -234,25 +235,39 @@
 	//[08/31/2019 - DIPAL: Implementing loading navigation] 
   var loadNavigation = function() {
 	
-	var jqxhr = $.getJSON( "data/navigation.json", function() {
-		console.log( "success" );
+	var jqxhr = $.getJSON( BASEURL + "data/file.json", function(data) {
+		var items = [];
+		var pageUrl = $(location). attr("href");
+		var pageUrlSplit = pageUrl.split('/');
+		var pageUrlName = pageUrlSplit[pageUrlSplit.length - 1].split('.')[0];
+		for (var i=0;i<data.length;i++){
+			if(pageUrlName.toLowerCase()==data[i].Action.toLowerCase()){
+				items.push("<li class='dipal-active'><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
+			} else {
+				items.push("<li><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
+			}
+		}
+	 	$( "<ul/>", {
+	 	  "class": "my-new-list",
+	 	  html: items.join( "" )
+	 	}).appendTo( "#dipal-main-menu" );
 	  })
-		.done(function() {
-		  console.log( "second success" );
-		})
+		// .done(function() {
+		//   console.log( "second success" );
+		// })
 		.fail(function() {
 		  console.log( "error" );
 		})
-		.always(function() {
-		  console.log( "complete" );
-		});
+		// .always(function() {
+		//   console.log( "complete" );
+		// });
 	   
 	  // Perform other work here ...
 	   
 	  // Set another completion function for the request above
-	  jqxhr.complete(function() {
-		console.log( "second complete" );
-	  });
+	//   jqxhr.complete(function() {
+	// 	console.log( "second complete" );
+	//   });
 
 	// $.getJSON( "data/navigation.json", function( data ) {
 		
@@ -261,11 +276,11 @@
 	// 		items.push("<li><a href= '"+key+"'>"+val+"</a></li>");
 	// 	});
 	   
-	// 	$( "<ul/>", {
-	// 	  "class": "my-new-list",
-	// 	  html: items.join( "" )
-	// 	}).appendTo( "#dipal-main-menu" );
-	//   });
+	
+  }
+
+  function RenderMenu(data){
+
   }
 
   loadNavigation();
