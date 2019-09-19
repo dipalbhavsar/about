@@ -257,9 +257,10 @@ AOS.init({
 		 .done(function() {
 			loadCategory();
 		 })
-		.fail(function() {
-		  console.log( "error" );
-		})
+		 .fail(function( jqxhr, textStatus, error ) {
+			var err = textStatus + ", " + error;
+			console.log( "Request Failed: " + err );
+		});
 		// .always(function() {
 		//   console.log( "complete" );
 		// });
@@ -289,9 +290,10 @@ AOS.init({
 	 	  html: items.join( "" )
 	 	}).appendTo( "#dipal-category" );
 	  })
-	.fail(function() {
-		console.log( "error" );
-	})
+	  .fail(function( jqxhr, textStatus, error ) {
+		var err = textStatus + ", " + error;
+		console.log( "Request Failed: " + err );
+	});
   }
 
   loadNavigation();
