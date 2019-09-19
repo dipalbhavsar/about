@@ -3,7 +3,13 @@
         "Name": "Home", "Action" : "index"
     },
     {
-        "Name": "Azure", "Action" : "azure"
+        "Name": "Technology", "Action" : "technology"
+    },
+    {
+        "Name": "Agile", "Action" : "agile"
+    },
+    {
+        "Name": "Contact", "Action" : "contact"
     }
 ]    
         
