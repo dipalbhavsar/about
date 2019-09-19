@@ -224,15 +224,7 @@ AOS.init({
     fixedContentPos: false
   });
 
-  var loadJSONData = function(jsonUrl){
-	$.ajax({
-		url: jsonUrl, //'file:///home/satendra/dndExamples/avisDnD/file.xml',
-		success: function(data) {
-			return data;
-		}
-	});
-  }
-	//[08/31/2019 - DIPAL: Implementing loading navigation] 
+ 	//[08/31/2019 - DIPAL: Implementing loading navigation] 
   var loadNavigation = function() {
 	var jqxhr = $.getJSON( BASEURL + "data/file.json", function(data) {
 		var items = [];
