@@ -290,4 +290,8 @@ AOS.init({
 
   loadNavigation();
 })(jQuery);
-
+// Google Adsense
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-6494674604229963",
+enable_page_level_ads: true
+});
