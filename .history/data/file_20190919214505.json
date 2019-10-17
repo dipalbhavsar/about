@@ -13,8 +13,5 @@
     },
     {
         "Name": "Contact", "Action" : "contact"
-    },
-    {
-        "Name": "Pramod", "Action" : "pramod"
     }
 ]          
