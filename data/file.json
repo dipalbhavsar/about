@@ -13,5 +13,8 @@
     },
     {
         "Name": "Contact", "Action" : "contact"
+    },
+    {
+        "Name": "My Blogs", "Action" : "blog"
     }
 ]          
