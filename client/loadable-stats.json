@@ -1,0 +1,567 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.41.6",
+  "hash": "8db8e8bebf5fff8f5c40",
+  "publicPath": "/public/",
+  "outputPath": "D:\\100PERSONAL\\WORKS\\00\\BLOGS\\ssr-sample\\dist\\client",
+  "assetsByChunkName": {
+    "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af": "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+    "vendor~components-pages-Apollo~components-pages-Saga~987e6011": "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+    "components-pages-Saga~6ba37d9c": "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js",
+    "components-pages-Apollo~6ba37d9c": "components-pages-Apollo~6ba37d9c.53151351cf564759f6ef.3.bundle.js",
+    "components-pages-Top~8d78bab2": "components-pages-Top~8d78bab2.c93898d5a6ff2f5efc08.4.bundle.js",
+    "main~21833f8f": "main~21833f8f.8c59a60f0999b50069fa.5.bundle.js",
+    "manifest": "manifest.cc8953204be9fb37eb10.bundle.js",
+    "vendor~components-pages-Apollo~253ae210": "vendor~components-pages-Apollo~253ae210.ffda8e208f71338a0c49.7.bundle.js",
+    "vendor~components-pages-Top~7274e1de": "vendor~components-pages-Top~7274e1de.821b061b8b98df407a39.8.bundle.js",
+    "vendor~main~0b4d62d3": "vendor~main~0b4d62d3.a39bb4e0e8fcaa9eedc7.9.bundle.js",
+    "vendor~main~1f20a385": "vendor~main~1f20a385.508b888e48934b956070.10.bundle.js",
+    "vendor~main~45876d5b": "vendor~main~45876d5b.f6c7080c230e3bd169a4.11.bundle.js",
+    "vendor~main~5f61dd74": "vendor~main~5f61dd74.aa32433aca71c74a3c10.12.bundle.js",
+    "vendor~main~678f84af": "vendor~main~678f84af.00dd5f98473420879ff0.13.bundle.js",
+    "vendor~main~6e8b5f81": "vendor~main~6e8b5f81.74585a5b511a52ad38de.14.bundle.js",
+    "vendor~main~7d359b94": "vendor~main~7d359b94.7f0c8ae3c19c7b625d44.15.bundle.js",
+    "vendor~main~987e6011": "vendor~main~987e6011.8673c2184255d3e0d6f4.16.bundle.js",
+    "vendor~main~bb0ee5db": "vendor~main~bb0ee5db.75ad0c6a3f83e473a27e.17.bundle.js",
+    "vendor~main~d939e436": "vendor~main~d939e436.0e3945e544922af8365d.18.bundle.js",
+    "vendor~main~f9ca8911": "vendor~main~f9ca8911.d5c62aa2e68ed8c02e3d.19.bundle.js"
+  },
+  "assets": [
+    {
+      "name": "components-pages-Apollo~6ba37d9c.53151351cf564759f6ef.3.bundle.js",
+      "size": 7318,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "components-pages-Apollo~6ba37d9c"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js",
+      "size": 6555,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "components-pages-Saga~6ba37d9c"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "components-pages-Top~8d78bab2.c93898d5a6ff2f5efc08.4.bundle.js",
+      "size": 10365,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "components-pages-Top~8d78bab2"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "main~21833f8f.8c59a60f0999b50069fa.5.bundle.js",
+      "size": 18721,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "main~21833f8f"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "manifest.cc8953204be9fb37eb10.bundle.js",
+      "size": 3094,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [
+        "manifest"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "robots.txt",
+      "size": 23,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "vendor~components-pages-Apollo~253ae210.ffda8e208f71338a0c49.7.bundle.js",
+      "size": 55998,
+      "chunks": [
+        7
+      ],
+      "chunkNames": [
+        "vendor~components-pages-Apollo~253ae210"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+      "size": 6415,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "vendor~components-pages-Apollo~components-pages-Saga~987e6011"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+      "size": 18267,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~components-pages-Top~7274e1de.821b061b8b98df407a39.8.bundle.js",
+      "size": 77527,
+      "chunks": [
+        8
+      ],
+      "chunkNames": [
+        "vendor~components-pages-Top~7274e1de"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~0b4d62d3.a39bb4e0e8fcaa9eedc7.9.bundle.js",
+      "size": 23110,
+      "chunks": [
+        9
+      ],
+      "chunkNames": [
+        "vendor~main~0b4d62d3"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~1f20a385.508b888e48934b956070.10.bundle.js",
+      "size": 10643,
+      "chunks": [
+        10
+      ],
+      "chunkNames": [
+        "vendor~main~1f20a385"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~45876d5b.f6c7080c230e3bd169a4.11.bundle.js",
+      "size": 58111,
+      "chunks": [
+        11
+      ],
+      "chunkNames": [
+        "vendor~main~45876d5b"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~5f61dd74.aa32433aca71c74a3c10.12.bundle.js",
+      "size": 2370,
+      "chunks": [
+        12
+      ],
+      "chunkNames": [
+        "vendor~main~5f61dd74"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~678f84af.00dd5f98473420879ff0.13.bundle.js",
+      "size": 56462,
+      "chunks": [
+        13
+      ],
+      "chunkNames": [
+        "vendor~main~678f84af"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~6e8b5f81.74585a5b511a52ad38de.14.bundle.js",
+      "size": 33890,
+      "chunks": [
+        14
+      ],
+      "chunkNames": [
+        "vendor~main~6e8b5f81"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~7d359b94.7f0c8ae3c19c7b625d44.15.bundle.js",
+      "size": 10048,
+      "chunks": [
+        15
+      ],
+      "chunkNames": [
+        "vendor~main~7d359b94"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~987e6011.8673c2184255d3e0d6f4.16.bundle.js",
+      "size": 81753,
+      "chunks": [
+        16
+      ],
+      "chunkNames": [
+        "vendor~main~987e6011"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~bb0ee5db.75ad0c6a3f83e473a27e.17.bundle.js",
+      "size": 7624,
+      "chunks": [
+        17
+      ],
+      "chunkNames": [
+        "vendor~main~bb0ee5db"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~d939e436.0e3945e544922af8365d.18.bundle.js",
+      "size": 21618,
+      "chunks": [
+        18
+      ],
+      "chunkNames": [
+        "vendor~main~d939e436"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "vendor~main~f9ca8911.d5c62aa2e68ed8c02e3d.19.bundle.js",
+      "size": 156233,
+      "chunks": [
+        19
+      ],
+      "chunkNames": [
+        "vendor~main~f9ca8911"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        6,
+        14,
+        12,
+        11,
+        9,
+        18,
+        16,
+        10,
+        15,
+        19,
+        13,
+        17,
+        5
+      ],
+      "assets": [
+        "manifest.cc8953204be9fb37eb10.bundle.js",
+        "vendor~main~6e8b5f81.74585a5b511a52ad38de.14.bundle.js",
+        "vendor~main~5f61dd74.aa32433aca71c74a3c10.12.bundle.js",
+        "vendor~main~45876d5b.f6c7080c230e3bd169a4.11.bundle.js",
+        "vendor~main~0b4d62d3.a39bb4e0e8fcaa9eedc7.9.bundle.js",
+        "vendor~main~d939e436.0e3945e544922af8365d.18.bundle.js",
+        "vendor~main~987e6011.8673c2184255d3e0d6f4.16.bundle.js",
+        "vendor~main~1f20a385.508b888e48934b956070.10.bundle.js",
+        "vendor~main~7d359b94.7f0c8ae3c19c7b625d44.15.bundle.js",
+        "vendor~main~f9ca8911.d5c62aa2e68ed8c02e3d.19.bundle.js",
+        "vendor~main~678f84af.00dd5f98473420879ff0.13.bundle.js",
+        "vendor~main~bb0ee5db.75ad0c6a3f83e473a27e.17.bundle.js",
+        "main~21833f8f.8c59a60f0999b50069fa.5.bundle.js"
+      ],
+      "children": {
+        "prefetch": [
+          {
+            "name": "components-pages-Apollo",
+            "chunks": [
+              0,
+              1,
+              7,
+              3
+            ],
+            "assets": [
+              "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+              "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+              "vendor~components-pages-Apollo~253ae210.ffda8e208f71338a0c49.7.bundle.js",
+              "components-pages-Apollo~6ba37d9c.53151351cf564759f6ef.3.bundle.js"
+            ]
+          },
+          {
+            "name": "components-pages-Saga",
+            "chunks": [
+              0,
+              1,
+              2
+            ],
+            "assets": [
+              "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+              "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+              "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js"
+            ]
+          },
+          {
+            "name": "components-pages-Top",
+            "chunks": [
+              0,
+              8,
+              4
+            ],
+            "assets": [
+              "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+              "vendor~components-pages-Top~7274e1de.821b061b8b98df407a39.8.bundle.js",
+              "components-pages-Top~8d78bab2.c93898d5a6ff2f5efc08.4.bundle.js"
+            ]
+          }
+        ]
+      },
+      "childAssets": {
+        "prefetch": [
+          "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+          "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+          "vendor~components-pages-Apollo~253ae210.ffda8e208f71338a0c49.7.bundle.js",
+          "components-pages-Apollo~6ba37d9c.53151351cf564759f6ef.3.bundle.js",
+          "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js",
+          "vendor~components-pages-Top~7274e1de.821b061b8b98df407a39.8.bundle.js",
+          "components-pages-Top~8d78bab2.c93898d5a6ff2f5efc08.4.bundle.js"
+        ]
+      }
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        6,
+        14,
+        12,
+        11,
+        9,
+        18,
+        16,
+        10,
+        15,
+        19,
+        13,
+        17,
+        5
+      ],
+      "assets": [
+        "manifest.cc8953204be9fb37eb10.bundle.js",
+        "vendor~main~6e8b5f81.74585a5b511a52ad38de.14.bundle.js",
+        "vendor~main~5f61dd74.aa32433aca71c74a3c10.12.bundle.js",
+        "vendor~main~45876d5b.f6c7080c230e3bd169a4.11.bundle.js",
+        "vendor~main~0b4d62d3.a39bb4e0e8fcaa9eedc7.9.bundle.js",
+        "vendor~main~d939e436.0e3945e544922af8365d.18.bundle.js",
+        "vendor~main~987e6011.8673c2184255d3e0d6f4.16.bundle.js",
+        "vendor~main~1f20a385.508b888e48934b956070.10.bundle.js",
+        "vendor~main~7d359b94.7f0c8ae3c19c7b625d44.15.bundle.js",
+        "vendor~main~f9ca8911.d5c62aa2e68ed8c02e3d.19.bundle.js",
+        "vendor~main~678f84af.00dd5f98473420879ff0.13.bundle.js",
+        "vendor~main~bb0ee5db.75ad0c6a3f83e473a27e.17.bundle.js",
+        "main~21833f8f.8c59a60f0999b50069fa.5.bundle.js"
+      ],
+      "children": {
+        "prefetch": [
+          {
+            "name": "components-pages-Apollo",
+            "chunks": [
+              0,
+              1,
+              7,
+              3
+            ],
+            "assets": [
+              "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+              "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+              "vendor~components-pages-Apollo~253ae210.ffda8e208f71338a0c49.7.bundle.js",
+              "components-pages-Apollo~6ba37d9c.53151351cf564759f6ef.3.bundle.js"
+            ]
+          },
+          {
+            "name": "components-pages-Saga",
+            "chunks": [
+              0,
+              1,
+              2
+            ],
+            "assets": [
+              "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+              "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+              "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js"
+            ]
+          },
+          {
+            "name": "components-pages-Top",
+            "chunks": [
+              0,
+              8,
+              4
+            ],
+            "assets": [
+              "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+              "vendor~components-pages-Top~7274e1de.821b061b8b98df407a39.8.bundle.js",
+              "components-pages-Top~8d78bab2.c93898d5a6ff2f5efc08.4.bundle.js"
+            ]
+          }
+        ]
+      },
+      "childAssets": {
+        "prefetch": [
+          "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+          "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+          "vendor~components-pages-Apollo~253ae210.ffda8e208f71338a0c49.7.bundle.js",
+          "components-pages-Apollo~6ba37d9c.53151351cf564759f6ef.3.bundle.js",
+          "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js",
+          "vendor~components-pages-Top~7274e1de.821b061b8b98df407a39.8.bundle.js",
+          "components-pages-Top~8d78bab2.c93898d5a6ff2f5efc08.4.bundle.js"
+        ]
+      }
+    },
+    "components-pages-Top": {
+      "chunks": [
+        0,
+        8,
+        4
+      ],
+      "assets": [
+        "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+        "vendor~components-pages-Top~7274e1de.821b061b8b98df407a39.8.bundle.js",
+        "components-pages-Top~8d78bab2.c93898d5a6ff2f5efc08.4.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-pages-Saga": {
+      "chunks": [
+        0,
+        1,
+        2
+      ],
+      "assets": [
+        "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+        "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+        "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-pages-Apollo": {
+      "chunks": [
+        0,
+        1,
+        7,
+        3
+      ],
+      "assets": [
+        "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+        "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+        "vendor~components-pages-Apollo~253ae210.ffda8e208f71338a0c49.7.bundle.js",
+        "components-pages-Apollo~6ba37d9c.53151351cf564759f6ef.3.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-pages-NotFound": {
+      "chunks": [
+        0,
+        1,
+        2
+      ],
+      "assets": [
+        "vendor~components-pages-Apollo~components-pages-Saga~components-pages-Top~678f84af.191a3fcacad6f2e31bc4.0.bundle.js",
+        "vendor~components-pages-Apollo~components-pages-Saga~987e6011.0d28ac43553b7e1b94f1.1.bundle.js",
+        "components-pages-Saga~6ba37d9c.e3a5a4f0942e9678b92e.2.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}

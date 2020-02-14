@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "/public/icon_512x512.c9e60410d750a0479f17868c82ea4bdb.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/icon_384x384.7d4dbcfaaa35ed7eae6afefc3f6448eb.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/icon_256x256.5d924ec50d2fd134dd6411b2d55a0625.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/icon_192x192.885a7fe29e05d266fe2484f72f87a94b.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/icon_128x128.a906a084ff8715592c4977e8dca96a32.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/icon_96x96.3b97929f41ca339cefd6e2bf7de3e5a4.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "ssr-sample",
+  "short_name": "ssr-sample",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "theme_color": "#3498db",
+  "description": "introducing SPA and SSR",
+  "background_color": "#f5f5f5"
+}
