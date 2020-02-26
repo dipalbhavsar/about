@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    title: `Dipal Bhavsar Blog`,
+    author: `Dipal Bhavsar`,
+    description: `My point of view...`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `dipal_bhavsar`,
     },
-  },
+  }, 
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
