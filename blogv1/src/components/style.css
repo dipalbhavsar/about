@@ -1,3 +1,68 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #666666;
+}
+
+body.offcanvas {
+  overflow-x: hidden;
+}
+
+body.offcanvas #dipal-aside {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  width: 320px;
+  background: #fff;
+  z-index: 999;
+  position: fixed;
+}
+
+body.offcanvas #dipal-main,
+body.offcanvas .dipal-nav-toggle {
+  top: 0;
+  -moz-transform: translateX(270px);
+  -webkit-transform: translateX(270px);
+  -ms-transform: translateX(270px);
+  -o-transform: translateX(270px);
+  transform: translateX(270px);
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #1eafed;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1eafed;
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+  font-family: "Lora", Arial, serif;
+}
+
 #dipal-page {
   width: 100%;
   overflow: hidden;
@@ -25,13 +90,11 @@
   transition: all 0.5s ease;
   border-right: 1px solid #e6e6e6;
 }
-
 @media (min-width: 992px) {
   #dipal-aside {
     width: 25%;
   }
 }
-
 @media (max-width: 991.98px) {
   #dipal-aside {
     width: 320px;
@@ -44,37 +107,31 @@
     background: rgba(0, 0, 0, 0.04);
   }
 }
-
 #dipal-aside #dipal-logo {
   display: block;
   width: 100%;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 74px;
   line-height: 0.8;
-  color:#1eafed;
-  font-family: "Arial", cursive;
+  font-family: "Abril Fatface", cursive;
 }
-
 @media (max-width: 1199.98px) {
   #dipal-aside #dipal-logo {
     font-size: 62px;
   }
 }
-
 #dipal-aside #dipal-logo span {
   display: block;
 }
-
 @media (max-width: 991.98px) {
   #dipal-aside #dipal-logo {
     margin-bottom: 20px;
   }
 }
-
 #dipal-aside #dipal-logo a {
   display: inline-block;
   text-align: left;
-  /* color: #000000; */  
+  color: #000000;
   overflow: hidden;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,12 +141,10 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 #dipal-aside #dipal-main-menu ul {
   margin: 0;
   padding: 0;
 }
-
 #dipal-aside #dipal-main-menu ul li {
   margin: 0 0 10px 0;
   padding: 0;
@@ -97,7 +152,6 @@
   font-size: 18px;
   font-weight: 500;
 }
-
 #dipal-aside #dipal-main-menu ul li a {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
@@ -108,9 +162,8 @@
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;  
+  transition: all 0.3s ease;
 }
-
 #dipal-aside #dipal-main-menu ul li a:after {
   content: "";
   position: absolute;
@@ -129,31 +182,26 @@
   -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 #dipal-aside #dipal-main-menu ul li a:hover {
   text-decoration: none;
   color: black;
 }
-
 #dipal-aside #dipal-main-menu ul li a:hover:after {
-   visibility: visible;
+  visibility: visible;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
-  transform: scaleX(1); 
+  transform: scaleX(1);
 }
-
 #dipal-aside #dipal-main-menu ul li.dipal-active {
-   font-weight: 600; 
+  font-weight: 600;
 }
-
 #dipal-aside #dipal-main-menu ul li.dipal-active a {
   color: #1eafed;
 }
-
 #dipal-aside #dipal-main-menu ul li.dipal-active a:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -162,7 +210,6 @@
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
-
 #dipal-aside .dipal-footer {
   position: absolute;
   bottom: 20px;
@@ -173,24 +220,19 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
 }
-
 #dipal-aside .dipal-footer h3 {
   font-size: 18px;
   font-weight: 600;
 }
-
 #dipal-aside .dipal-footer a {
   color: #000000;
 }
-
 #dipal-aside .dipal-footer .pfooter {
   font-size: 14px;
 }
-
 #dipal-aside .dipal-footer .dipal-subscribe-form {
   width: 100%;
 }
-
 #dipal-aside .dipal-footer .dipal-subscribe-form .form-group {
   position: relative;
   margin-bottom: 0;
@@ -199,7 +241,6 @@
   -ms-border-radius: 0;
   border-radius: 0;
 }
-
 #dipal-aside .dipal-footer .dipal-subscribe-form .form-group input {
   padding-right: 40px;
   background: #fff !important;
@@ -211,7 +252,6 @@
   -ms-border-radius: 0;
   border-radius: 0;
 }
-
 #dipal-aside
   .dipal-footer
   .dipal-subscribe-form
@@ -220,7 +260,6 @@
   /* Chrome/Opera/Safari */
   color: rgba(0, 0, 0, 0.4) !important;
 }
-
 #dipal-aside
   .dipal-footer
   .dipal-subscribe-form
@@ -229,7 +268,6 @@
   /* Firefox 19+ */
   color: rgba(0, 0, 0, 0.4) !important;
 }
-
 #dipal-aside
   .dipal-footer
   .dipal-subscribe-form
@@ -238,7 +276,6 @@
   /* IE 10+ */
   color: rgba(0, 0, 0, 0.4) !important;
 }
-
 #dipal-aside
   .dipal-footer
   .dipal-subscribe-form
@@ -247,12 +284,10 @@
   /* Firefox 18- */
   color: rgba(0, 0, 0, 0.4) !important;
 }
-
 #dipal-aside .dipal-footer .dipal-subscribe-form .form-group .form-control {
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: 400;
 }
-
 #dipal-aside .dipal-footer .dipal-subscribe-form .icon {
   position: absolute;
   top: 50%;
@@ -272,7 +307,6 @@
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 @media (min-width: 992px) {
   #dipal-main {
     width: 75%;
@@ -283,24 +317,20 @@
   cursor: pointer;
   text-decoration: none;
 }
-
 .dipal-nav-toggle.active i::before,
 .dipal-nav-toggle.active i::after {
   background: #000000;
 }
-
 .dipal-nav-toggle.dark.active i::before,
 .dipal-nav-toggle.dark.active i::after {
   background: #000000;
 }
-
 .dipal-nav-toggle:hover,
 .dipal-nav-toggle:focus,
 .dipal-nav-toggle:active {
   outline: none;
   border-bottom: none !important;
 }
-
 .dipal-nav-toggle i {
   position: relative;
   display: inline-block;
@@ -315,7 +345,6 @@
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 .dipal-nav-toggle i::before,
 .dipal-nav-toggle i::after {
   content: "";
@@ -330,7 +359,6 @@
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
 .dipal-nav-toggle.dark i {
   position: relative;
   color: #000000;
@@ -339,7 +367,6 @@
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 .dipal-nav-toggle.dark i::before,
 .dipal-nav-toggle.dark i::after {
   background: #000000;
@@ -1460,6 +1487,7 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
 
 a {
   box-shadow: 0 0 0 0 currentColor !important;  

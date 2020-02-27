@@ -6,6 +6,9 @@
 
 // import "./public/css/animate.css"
 import "./content/assets/css/bootstrap.min.css"
+// import "./content/assets/js/jquery-3.2.1.min.js"
+// import "./content/assets/js/main.js"
+
 // import "./public/css/flaticon.css"
 // import "./public/css/icomoon.css"
 // import "./public/css/ionicons.min.css"

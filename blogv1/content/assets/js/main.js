@@ -1,21 +1,23 @@
+import $ from 'jquery';
+
 var BASEURL = 'https://www.dipalbhavsar.com/';
-AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });
+// AOS.init({
+//  	duration: 800,
+//  	easing: 'slide'
+//  });
+
+
 
 (function($) {
 
-	"use strict";
-
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
+// 	$(window).stellar({
+//     responsive: true,
+//     parallaxBackgrounds: true,
+//     parallaxElements: true,
+//     horizontalScrolling: false,
+//     hideDistantElements: false,
+//     scrollProperty: 'scroll'
+//   });
 
 
 	var fullHeight = function() {
@@ -36,7 +38,7 @@ AOS.init({
 	};
 	loader();
 	// Scrollax
-   $.Scrollax();
+//    $.Scrollax();
 
 
    var burgerMenu = function() {
@@ -79,7 +81,7 @@ AOS.init({
 	};
 	mobileMenuOutsideClick();
 
-	var carousel = function() {
+	/*var carousel = function() {
 		$('.home-slider').owlCarousel({
 	    loop:true,
 	    autoplay: true,
@@ -223,75 +225,11 @@ AOS.init({
 
     fixedContentPos: false
   });
-
- 	//[08/31/2019 - DIPAL: Implementing loading navigation] 
-  var loadNavigation = function() {
-	var jqxhr = $.getJSON( BASEURL + "data/file.json", function(data) {
-		var items = [];
-		var pageUrl = $(location). attr("href");
-		var pageUrlSplit = pageUrl.split('/');
-		var pageUrlName = pageUrlSplit[pageUrlSplit.length - 1].split('.')[0];
-		for (var i=0;i<data.length;i++){
-			if(i==0 && pageUrlName==""){
-				items.push("<li class='dipal-active'><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
-			}
-			else if(pageUrlName.toLowerCase()==data[i].Action.toLowerCase()){
-				items.push("<li class='dipal-active'><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
-			} else {
-				items.push("<li><a href= '"+data[i].Action+"'>"+data[i].Name+"</a></li>");
-			}
-		}
-	 	$( "<ul/>", {
-	 	  "class": "my-new-list",
-	 	  html: items.join( "" )
-	 	}).appendTo( "#dipal-main-menu" );
-	  })
-		 .done(function() {
-			loadCategory();
-		 })
-		 .fail(function( jqxhr, textStatus, error ) {
-			var err = textStatus + ", " + error;
-			console.log( "Request Failed: " + err );
-		});
-		// .always(function() {
-		//   console.log( "complete" );
-		// });
-	   
-	  // Perform other work here ...
-	   
-	  // Set another completion function for the request above
-	//   jqxhr.complete(function() {
-	// 	console.log( "second complete" );
-	//   });
-
-	// $.getJSON( "data/navigation.json", function( data ) {
-		
-	// 	var items = [];
-	// 	$.each( data, function( key, val ) {
-	// 		items.push("<li><a href= '"+key+"'>"+val+"</a></li>");
-	// 	});
-  }
-  var loadCategory = function() {
-	var jqxhr = $.getJSON( BASEURL + "data/category.json", function(data) {
-		var items = [];
-		for (var i=0;i<data.length;i++){
-			items.push("<li><a href="+ data[i].Action +">"+data[i].Name+"<span>("+data[i].Count+")</span></a></li>");
-		}
-	 	$( "<ul/>", {
-	 	  "class": "categories",
-	 	  html: items.join( "" )
-	 	}).appendTo( "#dipal-category" );
-	  })
-	  .fail(function( jqxhr, textStatus, error ) {
-		var err = textStatus + ", " + error;
-		console.log( "Request Failed: " + err );
-	});
-  }
-
-  loadNavigation();
-})(jQuery);
+  */
+ 
+})($);
 // Google Adsense
-(adsbygoogle = window.adsbygoogle || []).push({
-google_ad_client: "ca-pub-6494674604229963",
-enable_page_level_ads: true
-});
+// (adsbygoogle = window.adsbygoogle || []).push({
+// google_ad_client: "ca-pub-6494674604229963",
+// enable_page_level_ads: true
+// });
