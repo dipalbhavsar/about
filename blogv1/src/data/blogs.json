@@ -1,0 +1,32 @@
+{
+    "blogs": [
+        {
+          "pageId" : "1",
+          "pageLink": "https://auth0.com/blog/conducting-effective-code-reviews",
+          "pageImage": "https://cdn.auth0.com/blog/illustrations/code-review.png",
+          "pageTitle": "Conducting Effective Code Reviews",
+          "pageDescription": "Learn about the things to pay attention to, and what to automate while reviewing code so that you can increase the speed and the quality of code reviews in your organization.",
+          "pageCategory": "Development",
+          "pageDate": "2019-01-01T23:28:56.782Z",
+          "pageCommentCount": "12",
+          "pageOrder": "1",
+          "pageTags" : ["Test","One", "Two", "Three" ],
+          "pageAuthor" : "Dipal Bhavsar",
+          "pageMenu" : "Technology"
+        },
+        {
+          "pageId" : "2",
+          "pageLink" : "https://www.html5rocks.com/en/tutorials/cors",
+          "pageImage": "https://www.html5rocks.com/static/images/profiles/monsurhossain.png",
+          "pageTitle" : "Journey through CORS",
+          "pageDescription": "Very important information about CORS and it's concept.",
+          "pageCategory" : "SharePoint",
+          "pageDate" : "2014-01-01T12:24:00.000Z",
+          "pageCommentCount" : "12",
+          "pageOrder" : "2",
+          "pageTags" : ["Test","One", "Two", "Three" ],
+          "pageAuthor" : ["Dipal Bhavsar1"],
+          "pageMenu" : "Agile"
+        }
+      ]
+    }

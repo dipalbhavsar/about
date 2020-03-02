@@ -59,39 +59,27 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     <div id="dipal-page">
-      <div
-        style={{
-         // marginLeft: `auto`,
-         // marginRight: `auto`,
-          //maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <LeftNavigation></LeftNavigation>
-        <div id="dipal-main">
-          <section className="ftco-section ftco-no-pt ftco-no-pb">
-            <div className="container">
-              <div className="row d-flex">
-                {children}
-                <div className="col-xl-4 sidebar ftco-animate bg-light pt-5">
-                  <SearchForm></SearchForm>
-                  <CategoryBox></CategoryBox>
-                  <PopularArticles></PopularArticles>
-                  <TagControl></TagControl>
-                  <NewsSubscription></NewsSubscription>
-                  <Archives></Archives>
-                  <Declaration></Declaration>
-                </div>
+      <LeftNavigation></LeftNavigation>
+      <div id="dipal-main">
+        <section className="ftco-section ftco-no-pt ftco-no-pb">
+          <div className="container">
+            <div className="row d-flex">
+              {children}
+              <div className="col-xl-4 sidebar ftco-animate bg-light pt-5">
+                <SearchForm></SearchForm>
+                <CategoryBox></CategoryBox>
+                <PopularArticles></PopularArticles>
+                <TagControl></TagControl>
+                <NewsSubscription></NewsSubscription>
+                <Archives></Archives>
+                <Declaration></Declaration>
               </div>
             </div>
-          </section>
-        </div>
-        {/* <header>{header}</header> */}       
+          </div>
+        </section>
       </div>
     </div>
   )
 }
-
-
-
+{/* <header>{header}</header> */ }
 export default Layout

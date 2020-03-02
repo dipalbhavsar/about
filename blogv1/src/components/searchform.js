@@ -3,7 +3,7 @@ import React from "react"
 const SearchForm = () => {
   return (
     <div className="sidebar-box pt-md-4">
-      {/* <form action="#" className="search-form"> */}
+      <h3 className="sidebar-heading">Search Here...</h3>
       <div action="#" className="search-form">
         <div className="form-group">
           <span className="icon icon-search"></span>
@@ -14,7 +14,6 @@ const SearchForm = () => {
           />
         </div>
       </div>
-      {/* </form> */}
     </div>
   )
 }
