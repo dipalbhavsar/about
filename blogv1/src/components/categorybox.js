@@ -8,7 +8,7 @@ const CategoryBox = () => {
             <ul className="categories">
                 {
                    data.map((c,i)=>{
-                    return <li><a href={c.link}>{c.label}<span>({c.count})</span></a></li>
+                    return <li key={i}><a href={c.link}>{c.label}<span>({c.count})</span></a></li>
                    })      
                 }
             </ul>
