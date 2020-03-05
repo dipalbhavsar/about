@@ -1,9 +1,9 @@
 // custom typefaces
-// import "typeface-montserrat"
-// import "typeface-merriweather"
+ import "typeface-montserrat";
+ import "typeface-merriweather";
 
-// import "prismjs/themes/prism.css"
-// import 'bootstrap/dist/css/bootstrap.css';
+ import "prismjs/themes/prism.css";
+
 // import 'bootstrap/dist/js/bootstrap.js';
 // import "./public/css/animate.css"
 // import "./content/assets/css/bootstrap.min.css"
@@ -18,5 +18,5 @@
 // import "./public/css/owl.carousel.min.css"
 // import "./public/css/owl.theme.default.min.css"
  import "./content/assets/css/style.css"
-
+ import './content/assets/css/bootstrap.min.css';
 

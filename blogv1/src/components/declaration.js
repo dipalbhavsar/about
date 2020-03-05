@@ -5,8 +5,7 @@ const Declaration = () => {
     <div className="sidebar-box ftco-animate">
       <h3 className="sidebar-heading">Paragraph</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-        itaque, autem necessitatibus voluptate quod mollitia delectus aut.
+      Views are personal. All link references are to be intention to self learn only.
       </p>
     </div>
   )

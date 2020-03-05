@@ -11,7 +11,7 @@ const IndexComponent = () => {
                 <div className="col-md-12">
                     { 
                         BlogData.blogs.map((d, i) => {
-                            return <BlogEntry blogData = {d}></BlogEntry>
+                            return <BlogEntry blogData = {d} key={'_'+i}></BlogEntry>
                         })
                     }            
                 </div>
