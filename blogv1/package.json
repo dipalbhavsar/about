@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "about-v1",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A personalized blog, developed by gatsby",
   "version": "0.1.0",
   "author": "Dipal Bhavsar <dipal.bhavsar@gmail.com>",
   "bugs": {
