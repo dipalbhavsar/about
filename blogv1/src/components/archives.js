@@ -5,7 +5,7 @@ const Archives = () => {
   <h3 className="sidebar-heading">Archives</h3>
   <ul className="categories">
     <li>
-      <a href="#">Decob14 2018 <span>(10)</span></a>
+      <a href="#">December 2018 <span>(10)</span></a>
     </li>
     <li>
       <a href="#">September 2018 <span>(6)</span></a>

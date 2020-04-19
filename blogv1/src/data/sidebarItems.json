@@ -1,1 +1,26 @@
-[{"label":"Home","link":"./"},{"label":"Technology","link":"technology"},{"label":"Agile","link":"agile"},{"label":"About","link":"about"},{"label":"Contact","link":"contact"},{"label":"My Blogs","link":"blog"}]
+[
+    {
+        "label":"Home",
+        "link":"./"
+    },
+    {
+        "label":"Technology",
+        "link":"technology"
+    },
+    {
+        "label":"Agile",
+        "link":"agile"
+    },
+    {
+        "label":"About",
+        "link":"about"
+    },
+    {
+        "label":"Contact",
+        "link":"contact"
+    },
+    {
+        "label":"My Blogs",
+        "link":"blog"
+    }
+]

@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-import { rhythm, scale } from "../utils/typography"
+// import { Link } from "gatsby"
+// import { rhythm, scale } from "../utils/typography"
 import LeftNavigation from "./leftnavigation"
 import SearchForm from "./searchform"
 import CategoryBox from "./categorybox"
@@ -9,8 +9,11 @@ import PopularArticles from "./populararticle"
 import TagControl from "./tagcontrol"
 import NewsSubscription from "./newsSubscription"
 import Declaration from "./declaration"
+// import { graphql } from 'gatsby'
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, data, children }) => {
+  // const siteCategory = data.site.siteMetadata.categories
+
   // const rootPath = `${__PATH_PREFIX__}/`
   // let header
 
@@ -66,6 +69,7 @@ const Layout = ({ location, title, children }) => {
               {children}
               <div className="col-xl-4 sidebar ftco-animate bg-light pt-5">
                 <SearchForm></SearchForm>
+                {/* <CategoryBox data = {siteData.site.siteMetadata.categories}></CategoryBox> */}
                 <CategoryBox></CategoryBox>
                 <PopularArticles></PopularArticles>
                 <TagControl></TagControl>
@@ -80,5 +84,7 @@ const Layout = ({ location, title, children }) => {
     </div>
   )
 }
+
+
 {/* <header>{header}</header> */ }
 export default Layout

@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../data/categories.json';
 
+
 const CategoryBox = () => {
     return (
         <div className="sidebar-box ftco-animate">
@@ -8,8 +9,8 @@ const CategoryBox = () => {
             <ul className="categories">
                 {
                    data.map((c,i)=>{
-                    return <li key={i}><a href={c.link}>{c.label}<span>({c.count})</span></a></li>
-                   })      
+                        return <li key={i}><a href={c.link}>{c.label}<span>({c.count})</span></a></li>
+                   })
                 }
             </ul>
         </div>

@@ -1,20 +1,16 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import $ from 'jquery';
-import Bio from "../components/bio"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import IndexComponent from "../components/indexcomponenet";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  // const posts = data.allMarkdownRemark.edges
-
+  const siteTitle = data.site.siteMetadata.title;
+ 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />       
-      <IndexComponent></IndexComponent>   
+      <IndexComponent></IndexComponent>
     </Layout>
   )
 }

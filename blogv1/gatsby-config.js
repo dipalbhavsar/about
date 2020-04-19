@@ -4,6 +4,46 @@ module.exports = {
     author: `Dipal Bhavsar`,
     description: `My point of view...`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    testOne: `OK - nice`,
+    siteData: {
+      siteCategoryData: [
+        { 
+          "label":"SharePoint",
+          "count":"0",
+          "link":"sharepoint",
+          "order":"1"
+        },
+        {
+          "label":"Azure",
+          "count":"0",
+          "link":"azure",
+          "order":"2"
+        },
+        {
+          "label":"Agile",
+          "count":"0",
+          "link":"agile",
+          "order":"3"
+        },
+        {
+          "label":"Office 365",
+          "count":"0",
+          "link":"office",
+          "order":"4"
+        },
+        {
+          "label":"Angular",
+          "count":"0",
+          "link":"angular",
+          "order":"5"
+        },
+        {
+          "label":"React",
+          "count":"0",
+          "link":"react",
+          "order":"6"
+        }]
+    },
     social: {
       twitter: `dipal_bhavsar`,
     },

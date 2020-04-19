@@ -2,7 +2,7 @@ import React from 'react'
 import IndexPagination from './indexpagination'
 import BlogEntry from './blogentry';
 import BlogData from '../data/blogs.json';
-import { graphql } from 'gatsby';
+// import { graphql } from 'gatsby';
 
 const IndexComponent = () => {
     return (
@@ -22,19 +22,19 @@ const IndexComponent = () => {
 }
 export default IndexComponent
 
-export const pageQuery = graphql`
-  query {
-    allDataJson {
-        edges {
-            node {
-                blogs {
-                    pageId
-                    pageTitle
-                    pageDescription    
-                }
-            }
-        }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     allDataJson {
+//         edges {
+//             node {
+//                 blogs {
+//                     pageId
+//                     pageTitle
+//                     pageDescription    
+//                 }
+//             }
+//         }
+//     }
+//   }
+// `
 

@@ -1,6 +1,6 @@
 import React from "react"
 import NavigationItem from "./navigationItem"
-import Footer from "./footer"
+// import Footer from "./footer"
 import $ from "jquery"
 
 const LeftNavigation = () => {
@@ -9,7 +9,7 @@ const LeftNavigation = () => {
       <a
         href="./"
         className="js-dipal-nav-toggle dipal-nav-toggle"
-        onClick={js_dipal_nav_toggle_click(this)}
+        // onClick={js_dipal_nav_toggle_click(this)}
       >
         <i></i>
       </a>
@@ -24,7 +24,7 @@ const LeftNavigation = () => {
   )
 }
 
-function js_dipal_nav_toggle_click(e) {
+// function js_dipal_nav_toggle_click(e) {
   // var $this = $(this);
   // if ($('body').hasClass('offcanvas')) {
   //   $this.removeClass('active');
@@ -38,62 +38,62 @@ function js_dipal_nav_toggle_click(e) {
   // fullHeight();
   // loader();
   // burgerMenu();
-}
+// }
 
-var mobileMenuOutsideClick = function() {
-  $(document).click(function(e) {
-    var container = $("#dipal-aside, .js-dipal-nav-toggle")
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      if ($("body").hasClass("offcanvas")) {
-        $("body").removeClass("offcanvas")
-        $(".js-dipal-nav-toggle").removeClass("active")
-      }
-    }
-  })
+// var mobileMenuOutsideClick = function() {
+//   $(document).click(function(e) {
+//     var container = $("#dipal-aside, .js-dipal-nav-toggle")
+//     if (!container.is(e.target) && container.has(e.target).length === 0) {
+//       if ($("body").hasClass("offcanvas")) {
+//         $("body").removeClass("offcanvas")
+//         $(".js-dipal-nav-toggle").removeClass("active")
+//       }
+//     }
+//   })
 
-  $(window).scroll(function() {
-    if ($("body").hasClass("offcanvas")) {
-      $("body").removeClass("offcanvas")
-      $(".js-dipal-nav-toggle").removeClass("active")
-    }
-  })
-}
+//   $(window).scroll(function() {
+//     if ($("body").hasClass("offcanvas")) {
+//       $("body").removeClass("offcanvas")
+//       $(".js-dipal-nav-toggle").removeClass("active")
+//     }
+//   })
+// }
 
-var contentWayPoint = function() {
-  var i = 0
-  $(".ftco-animate").waypoint(
-    function(direction) {
-      if (direction === "down" && !$(this.element).hasClass("ftco-animated")) {
-        i++
+// var contentWayPoint = function() {
+//   var i = 0
+//   $(".ftco-animate").waypoint(
+//     function(direction) {
+//       if (direction === "down" && !$(this.element).hasClass("ftco-animated")) {
+//         i++
 
-        $(this.element).addClass("item-animate")
-        setTimeout(function() {
-          $("body .ftco-animate.item-animate").each(function(k) {
-            var el = $(this)
-            setTimeout(
-              function() {
-                var effect = el.data("animate-effect")
-                if (effect === "fadeIn") {
-                  el.addClass("fadeIn ftco-animated")
-                } else if (effect === "fadeInLeft") {
-                  el.addClass("fadeInLeft ftco-animated")
-                } else if (effect === "fadeInRight") {
-                  el.addClass("fadeInRight ftco-animated")
-                } else {
-                  el.addClass("fadeInUp ftco-animated")
-                }
-                el.removeClass("item-animate")
-              },
-              k * 50,
-              "easeInOutExpo"
-            )
-          })
-        }, 100)
-      }
-    },
-    { offset: "95%" }
-  )
-}
+//         $(this.element).addClass("item-animate")
+//         setTimeout(function() {
+//           $("body .ftco-animate.item-animate").each(function(k) {
+//             var el = $(this)
+//             setTimeout(
+//               function() {
+//                 var effect = el.data("animate-effect")
+//                 if (effect === "fadeIn") {
+//                   el.addClass("fadeIn ftco-animated")
+//                 } else if (effect === "fadeInLeft") {
+//                   el.addClass("fadeInLeft ftco-animated")
+//                 } else if (effect === "fadeInRight") {
+//                   el.addClass("fadeInRight ftco-animated")
+//                 } else {
+//                   el.addClass("fadeInUp ftco-animated")
+//                 }
+//                 el.removeClass("item-animate")
+//               },
+//               k * 50,
+//               "easeInOutExpo"
+//             )
+//           })
+//         }, 100)
+//       }
+//     },
+//     { offset: "95%" }
+//   )
+// }
 
 // $(window).stellar({
 //   responsive: true,
