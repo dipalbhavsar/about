@@ -1,0 +1,22 @@
+[
+    {
+        "label":"Home",
+        "link":"./"
+    },
+    {
+        "label":"Technology",
+        "link":"./technology"
+    },
+    {
+        "label":"Agile",
+        "link":"./agile"
+    },
+    {
+        "label":"About",
+        "link":"about"
+    },
+    {
+        "label":"Contact",
+        "link":"contact"
+    }
+]
