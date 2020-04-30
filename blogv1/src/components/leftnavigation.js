@@ -1,138 +1,160 @@
-import React from "react"
-import NavigationItem from "./navigationItem"
-// import Footer from "./footer"
-import $ from "jquery"
+import React from "react";
+import NavigationItem from "./navigationItem";
+import Image from "gatsby-image";
+import Footer from "./footer"
+import $ from "jquery";
+import { rhythm } from "../utils/typography";
+import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const LeftNavigation = () => {
+  const data = useStaticQuery(graphql`
+    query BioAvatar {
+      avatar: file(absolutePath: { regex: "/dipal.jpg/" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          author
+          social {
+            twitter
+          }
+        }
+      }
+    }
+  `)
+
+  const { author } = data.site.siteMetadata
+
   return (
     <>
-      <a
-        href="./"
+      <Link
+        to="./"
         className="js-dipal-nav-toggle dipal-nav-toggle"
-        // onClick={js_dipal_nav_toggle_click(this)}
+        onClick={js_dipal_nav_toggle_click(this)}
       >
         <i></i>
-      </a>
+      </Link>
       <aside id="dipal-aside" role="complementary" className="js-fullheight">
-        <h1 id="dipal-logo" className="mb-4">
-          Dipal <span>Bhavsar</span>
-        </h1>
+      <center><Image
+        fixed={data.avatar.childImageSharp.fixed}
+        alt={author}
+        style={{
+          marginRight: rhythm(1 / 2),
+          marginBottom: 0,
+          minWidth: 150,
+          minHeight: 150,
+          borderRadius: `50%`,
+        }}
+        imgStyle={{
+          borderRadius: `100%`,
+        }}
+      />
+        <h1 id="dipal-logo" className="mb-4">{author}</h1>
+        </center>
         <NavigationItem></NavigationItem>
-        {/* <Footer></Footer> */}
+        <Footer></Footer> 
       </aside>
     </>
   )
 }
 
-// function js_dipal_nav_toggle_click(e) {
-  // var $this = $(this);
-  // if ($('body').hasClass('offcanvas')) {
-  //   $this.removeClass('active');
-  //   $('body').removeClass('offcanvas');
-  // } else {
-  //   $this.addClass('active');
-  //   $('body').addClass('offcanvas');
-  // }
-  // mobileMenuOutsideClick();
-  // // contentWayPoint();
-  // fullHeight();
-  // loader();
-  // burgerMenu();
-// }
+$(document).ready(function() { 
+  $(window).resize(function() { 
+    if($(window).width() < 966) {
+      if ($('body').hasClass('offcanvas')) {        
+        $('body').removeClass('offcanvas');
+      }
+      else {
+        $('body').addClass('offcanvas');
+      }
+    } else {      
+      $('body').removeClass('offcanvas');
+    } 
+  }); 
+  // counter();
+  // contentWayPoint();
+}); 
 
-// var mobileMenuOutsideClick = function() {
-//   $(document).click(function(e) {
-//     var container = $("#dipal-aside, .js-dipal-nav-toggle")
-//     if (!container.is(e.target) && container.has(e.target).length === 0) {
-//       if ($("body").hasClass("offcanvas")) {
-//         $("body").removeClass("offcanvas")
-//         $(".js-dipal-nav-toggle").removeClass("active")
-//       }
-//     }
-//   })
-
-//   $(window).scroll(function() {
-//     if ($("body").hasClass("offcanvas")) {
-//       $("body").removeClass("offcanvas")
-//       $(".js-dipal-nav-toggle").removeClass("active")
-//     }
-//   })
-// }
-
-// var contentWayPoint = function() {
-//   var i = 0
-//   $(".ftco-animate").waypoint(
-//     function(direction) {
-//       if (direction === "down" && !$(this.element).hasClass("ftco-animated")) {
-//         i++
-
-//         $(this.element).addClass("item-animate")
-//         setTimeout(function() {
-//           $("body .ftco-animate.item-animate").each(function(k) {
-//             var el = $(this)
-//             setTimeout(
-//               function() {
-//                 var effect = el.data("animate-effect")
-//                 if (effect === "fadeIn") {
-//                   el.addClass("fadeIn ftco-animated")
-//                 } else if (effect === "fadeInLeft") {
-//                   el.addClass("fadeInLeft ftco-animated")
-//                 } else if (effect === "fadeInRight") {
-//                   el.addClass("fadeInRight ftco-animated")
-//                 } else {
-//                   el.addClass("fadeInUp ftco-animated")
-//                 }
-//                 el.removeClass("item-animate")
-//               },
-//               k * 50,
-//               "easeInOutExpo"
-//             )
-//           })
-//         }, 100)
-//       }
-//     },
-//     { offset: "95%" }
-//   )
-// }
-
-// $(window).stellar({
-//   responsive: true,
-//   parallaxBackgrounds: true,
-//   parallaxElements: true,
-//   horizontalScrolling: false,
-//   hideDistantElements: false,
-//   scrollProperty: 'scroll'
-// });
-
-var fullHeight = function() {
-  $(".js-fullheight").css("height", $(window).height())
-  $(window).resize(function() {
-    $(".js-fullheight").css("height", $(window).height())
-  })
-}
-
-// loader
-var loader = function() {
-  setTimeout(function() {
-    if ($("#ftco-loader").length > 0) {
-      $("#ftco-loader").removeClass("show")
+function js_dipal_nav_toggle_click(e) {
+  var $this = $(this);
+  if($(window).width()<966){
+    if ($('body').hasClass('offcanvas')) {
+      $this.removeClass('active');
+      $('body').removeClass('offcanvas');
     }
-  }, 1)
-}
-
-var burgerMenu = function() {
-  $(".js-dipal-nav-toggle").on("click", function(event) {
-    event.preventDefault()
-    var $this = $(this)
-
-    if ($("body").hasClass("offcanvas")) {
-      $this.removeClass("active")
-      $("body").removeClass("offcanvas")
-    } else {
-      $this.addClass("active")
-      $("body").addClass("offcanvas")
+    else {
+      $this.addClass('active');
+      $('body').addClass('offcanvas');
     }
-  })
+  } 
 }
+
+var contentWayPoint = function() {
+  var i = 0
+  $(".ftco-animate").waypoint(
+    function(direction) {
+      if (direction === "down" && !$(this.element).hasClass("ftco-animated")) {
+        i++
+
+        $(this.element).addClass("item-animate")
+        setTimeout(function() {
+          $("body .ftco-animate.item-animate").each(function(k) {
+            var el = $(this)
+            setTimeout(
+              function() {
+                var effect = el.data("animate-effect")
+                if (effect === "fadeIn") {
+                  el.addClass("fadeIn ftco-animated")
+                } else if (effect === "fadeInLeft") {
+                  el.addClass("fadeInLeft ftco-animated")
+                } else if (effect === "fadeInRight") {
+                  el.addClass("fadeInRight ftco-animated")
+                } else {
+                  el.addClass("fadeInUp ftco-animated")
+                }
+                el.removeClass("item-animate")
+              },
+              k * 50,
+              "easeInOutExpo"
+            )
+          })
+        }, 100)
+      }
+    },
+    { offset: "95%" }
+  )
+}
+
+var counter = function() {
+		
+  $('#section-counter').waypoint( function( direction ) {
+
+    if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+
+      var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+      $('.number').each(function(){
+        var $this = $(this),
+          num = $this.data('number');
+          console.log(num);
+        $this.animateNumber(
+          {
+            number: num,
+            numberStep: comma_separator_number_step
+          }, 7000
+        );
+      });
+      
+    }
+
+  } , { offset: '95%' } );
+
+}
+
+
 
 export default LeftNavigation

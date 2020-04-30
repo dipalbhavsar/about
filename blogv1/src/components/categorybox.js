@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../data/categories.json';
-
+import { Link } from "gatsby"
 
 const CategoryBox = () => {
     return (
@@ -9,7 +9,7 @@ const CategoryBox = () => {
             <ul className="categories">
                 {
                    data.map((c,i)=>{
-                        return <li key={i}><a href={c.link}>{c.label}<span>({c.count})</span></a></li>
+                        return <li key={i}><Link to={c.link}>{c.label}<span>({c.count})</span></Link></li>
                    })
                 }
             </ul>

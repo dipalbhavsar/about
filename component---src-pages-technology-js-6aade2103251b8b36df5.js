@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{Vgru:function(t,e,a){"use strict";a.r(e),a.d(e,"pageQuery",(function(){return c}));var n=a("q1tI"),r=a.n(n),o=a("Bl7J"),l=a("vrFN"),i=a("8ZOC");e.default=function(t){var e=t.data,a=t.location,n=e.site.siteMetadata.title;return r.a.createElement(o.a,{location:a,title:n},r.a.createElement(l.a,{title:"All posts"}),r.a.createElement(i.a,{BlogEntryType:"Technology"}))};var c="1097489062"}}]);
+//# sourceMappingURL=component---src-pages-technology-js-6aade2103251b8b36df5.js.map

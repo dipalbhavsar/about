@@ -6,10 +6,12 @@ body {
   font-weight: 400;
   color: #666666;
 }
-body.offcanvas {
+
+.offcanvas {
   overflow-x: hidden;
 }
-body.offcanvas #dipal-aside {
+
+.offcanvas #dipal-aside {
   -moz-transform: translateX(0);
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -20,8 +22,9 @@ body.offcanvas #dipal-aside {
   z-index: 999;
   position: fixed;
 }
-body.offcanvas #dipal-main,
-body.offcanvas .dipal-nav-toggle {
+
+.offcanvas #dipal-main,
+.offcanvas .dipal-nav-toggle {
   top: 0;
   -moz-transform: translateX(270px);
   -webkit-transform: translateX(270px);
@@ -107,9 +110,10 @@ h5,
   display: block;
   width: 100%;
   font-weight: normal;
-  font-size: 74px;
+  font-size: 36px;
   line-height: 0.8;
-  font-family: "Abril Fatface", cursive;
+  /* font-family: "Abril Fatface", cursive; */
+  
 }
 @media (max-width: 1199.98px) {
   #dipal-aside #dipal-logo {
@@ -1487,4 +1491,20 @@ textarea.form-control {
 a {
   box-shadow: 0 0 0 0 currentColor !important;
   text-decoration: none;
+}
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
 }

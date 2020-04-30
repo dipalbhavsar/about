@@ -7,10 +7,11 @@ const NavigationItem = () => {
     <nav id="dipal-main-menu" role="navigation">
       <ul>{
           data.map((d,i)=>{
-            if(i==0) 
-              return <li key={d.label} className="dipal-active"><Link to={d.link}>{d.label}</Link></li>
-            else 
-                return <li key={d.label}><Link to={d.link}>{d.label}</Link></li>
+            return <li key={d.label}><Link to={d.link} activeClassName={"dipal-active"}>{d.label}</Link></li>
+            // if(i==0) 
+            //   return <li key={d.label} className="dipal-active"><Link to={d.link}>{d.label}</Link></li>
+            // else 
+            //     return <li key={d.label}><Link to={d.link}>{d.label}</Link></li>
           })
         }                
       </ul>

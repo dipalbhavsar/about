@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IndexComponent from "../components/indexcomponenet";
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ data, location, pageName }) => {
   const siteTitle = data.site.siteMetadata.title;
  
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />       
-      <IndexComponent></IndexComponent>
+      <IndexComponent BlogEntryType = {"*"}></IndexComponent>
     </Layout>
   )
 }

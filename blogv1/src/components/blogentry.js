@@ -1,12 +1,13 @@
 import React from 'react'
 import Moment from 'react-moment';
+import { Link } from "gatsby";
 
 const BlogEntry = ({ blogData }) => {
     return (
         <div className="blog-entry ftco-animate d-md-flex">
-            <a href={blogData.pageLink} className="img img-2" style={{ backgroundImage: `url(` + blogData.pageImage + `)` }} target="_blank" rel="noopener noreferrer"></a>
+            <Link to={blogData.pageLink} className="img img-2" style={{ backgroundImage: `url(` + blogData.pageImage + `)` }} ></Link>
             <div className="text text-2 pl-md-4">
-                <h3 className="mb-2"><a href={blogData.pageLink} target="_blank" rel="noopener noreferrer">{blogData.pageTitle}</a></h3>
+                <h3 className="mb-2"><Link to={blogData.pageLink}>{blogData.pageTitle}</Link></h3>  
                 <div className="meta-wrap">
 					<p key={'commentArea'+blogData.pageId} className="meta">                        
                         <span key={'dateFormat'+blogData.pageId}><Moment format="DD-MMM-YYYY" date={blogData.pageDate}></Moment></span>
@@ -15,7 +16,9 @@ const BlogEntry = ({ blogData }) => {
 				    </p>
 			    </div>
                 <p className="mb-4">{blogData.pageDescription}</p>
-                <p><a href={blogData.pageLink} className="btn-custom" target="_blank" rel="noopener noreferrer">Read More <span className="ion-ios-arrow-forward"></span></a></p>
+                <p>
+                <Link to={blogData.pageLink} activeClassName="btn-custom" >Read More<span className="ion-ios-arrow-forward"></span></Link>
+                </p>
             </div>
         </div>
     )    

@@ -1,8 +1,8 @@
 {
   "name": "about-v1",
   "private": true,
-  "description": "A personalized blog, developed by gatsby",
-  "version": "0.1.0",
+  "description": "A personalized blog, developed by Dipal Bhavsar, powered by gatsby",
+  "version": "1.0.0",
   "author": "Dipal Bhavsar <dipal.bhavsar@gmail.com>",
   "bugs": {
     "url": "https://github.com/dipalbhavsar/about/issues"
@@ -43,9 +43,9 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/dipalbhavsar/about/",
   "keywords": [
-    "gatsby"
+    "gatsby", "graphQl", "BootStrap", "GitHub Page", "Static Site"
   ],
   "license": "MIT",
   "main": "n/a",

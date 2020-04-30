@@ -5,11 +5,11 @@
     },
     {
         "label":"Technology",
-        "link":"technology"
+        "link":"./technology"
     },
     {
         "label":"Agile",
-        "link":"agile"
+        "link":"./agile"
     },
     {
         "label":"About",
@@ -18,9 +18,5 @@
     {
         "label":"Contact",
         "link":"contact"
-    },
-    {
-        "label":"My Blogs",
-        "link":"blog"
     }
 ]
