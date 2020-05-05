@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dipal Bhavsar Blog]]></title><description><![CDATA[My point of view...]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 08:50:40 GMT</lastBuildDate><item><title><![CDATA[SharePoint Framework Overview]]></title><description><![CDATA[First off, let me welcome you in the world of SharePoint, client side development. Now a days, SharePoint Framework is much interesting…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/sharepoint/SharePoint_Framework_OverView/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/sharepoint/SharePoint_Framework_OverView/</guid><pubDate>Tue, 28 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;First off, let me welcome you in the world of SharePoint, client side development. Now a days, SharePoint Framework is much interesting since it has open wide range of offering with different technology stacks. This would be a big first step to learning the SharePoint Framework and I’m happy to help you on the road ahead.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dipal Bhavsar Blog]]></title><description><![CDATA[My point of view...]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 May 2020 09:00:40 GMT</lastBuildDate><item><title><![CDATA[SharePoint Framework Overview]]></title><description><![CDATA[First off, let me welcome you in the world of SharePoint, client side development. Now a days, SharePoint Framework is much interesting…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/sharepoint/SharePoint_Framework_OverView/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/sharepoint/SharePoint_Framework_OverView/</guid><pubDate>Tue, 28 Apr 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;First off, let me welcome you in the world of SharePoint, client side development. Now a days, SharePoint Framework is much interesting since it has open wide range of offering with different technology stacks. This would be a big first step to learning the SharePoint Framework and I’m happy to help you on the road ahead.&lt;/p&gt;
 &lt;p&gt;If you have taken a look at the Microsoft’s documentation, it has provided you a step wise process to learn how to start with the development starting with setting up the development environment. Here, probably we are repeating the same steps with wide information behind a purpose of the each step that covers installation, development, execution and deployment of SharePoint’s client side web-parts. So let’s start with overview and then gradually move which supportive NPM packages that need to be installed for the development.&lt;/p&gt;
 &lt;h3&gt;What is SharePoint Framework?&lt;/h3&gt;
 &lt;p&gt;Microsoft introduced the SharePoint Framework in May 2016. This is not only make client-side customization easier, but it includes APIs and dynamic ways of deploying.
@@ -146,7 +146,7 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
+    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -159,13 +159,13 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Chinese Salty Egg&quot;
         title=&quot;Chinese Salty Egg&quot;
-        src=&quot;/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg&quot;
-        srcset=&quot;/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/a80bd/salty_egg.jpg 148w,
-/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/1c91a/salty_egg.jpg 295w,
-/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg 590w,
-/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/a8a14/salty_egg.jpg 885w,
-/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/fbd2c/salty_egg.jpg 1180w,
-/dipalbhavsar.github.io/about/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
+        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg&quot;
+        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/a80bd/salty_egg.jpg 148w,
+/static/8058f3f26913fea3b6a89a73344fe94a/1c91a/salty_egg.jpg 295w,
+/static/8058f3f26913fea3b6a89a73344fe94a/1c72d/salty_egg.jpg 590w,
+/static/8058f3f26913fea3b6a89a73344fe94a/a8a14/salty_egg.jpg 885w,
+/static/8058f3f26913fea3b6a89a73344fe94a/fbd2c/salty_egg.jpg 1180w,
+/static/8058f3f26913fea3b6a89a73344fe94a/e1596/salty_egg.jpg 2048w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
