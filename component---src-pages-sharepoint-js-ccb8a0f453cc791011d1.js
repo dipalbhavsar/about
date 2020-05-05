@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{cgYp:function(t,e,a){"use strict";a.r(e),a.d(e,"pageQuery",(function(){return c}));var n=a("q1tI"),r=a.n(n),i=a("Bl7J"),o=a("vrFN"),l=a("8ZOC");e.default=function(t){var e=t.data,a=t.location,n=e.site.siteMetadata.title;return r.a.createElement(i.a,{location:a,title:n},r.a.createElement(o.a,{title:"All posts"}),r.a.createElement(l.a,{BlogEntryType:"SharePoint"}))};var c="1097489062"}}]);
+//# sourceMappingURL=component---src-pages-sharepoint-js-ccb8a0f453cc791011d1.js.map
