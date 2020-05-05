@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"2iO6":function(t,e,a){"use strict";a.r(e),a.d(e,"pageQuery",(function(){return c}));var n=a("q1tI"),r=a.n(n),i=a("Bl7J"),l=a("vrFN"),o=a("8ZOC");e.default=function(t){var e=t.data,a=t.location,n=e.site.siteMetadata.title;return r.a.createElement(i.a,{location:a,title:n},r.a.createElement(l.a,{title:"All posts"}),r.a.createElement(o.a,{BlogEntryType:"Angular"}))};var c="1097489062"}}]);
-//# sourceMappingURL=component---src-pages-angular-js-a854759dde7a1ba9e661.js.map
