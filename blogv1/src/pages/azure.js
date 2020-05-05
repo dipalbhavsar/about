@@ -2,14 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import IndexComponent from "../components/indexcomponenet";
+import IndexComponent from "../components/indexcomponenet"
 
-const Azure= ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title; 
+const Azure = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />       
-      <IndexComponent BlogEntryType = {"Azure"}></IndexComponent>
+      <SEO title="All posts" />
+      <IndexComponent BlogEntryType={"Azure"}></IndexComponent>
     </Layout>
   )
 }

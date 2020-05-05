@@ -5,7 +5,8 @@ const Declaration = () => {
     <div className="sidebar-box ftco-animate">
       <h3 className="sidebar-heading">Paragraph</h3>
       <p>
-      Views are personal. All link references are to be intention to self learn only.
+        Views are personal. All link references are to be intention to self
+        learn only.
       </p>
     </div>
   )

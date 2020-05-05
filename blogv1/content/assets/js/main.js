@@ -1,87 +1,80 @@
-import $ from 'jquery';
+import $ from "jquery"
 
-var BASEURL = 'https://www.dipalbhavsar.com/';
+var BASEURL = "https://www.dipalbhavsar.com/"
 // AOS.init({
 //  	duration: 800,
 //  	easing: 'slide'
 //  });
 
+;(function($) {
+  // 	$(window).stellar({
+  //     responsive: true,
+  //     parallaxBackgrounds: true,
+  //     parallaxElements: true,
+  //     horizontalScrolling: false,
+  //     hideDistantElements: false,
+  //     scrollProperty: 'scroll'
+  //   });
 
+  var fullHeight = function() {
+    $(".js-fullheight").css("height", $(window).height())
+    $(window).resize(function() {
+      $(".js-fullheight").css("height", $(window).height())
+    })
+  }
+  fullHeight()
 
-(function($) {
+  // loader
+  var loader = function() {
+    setTimeout(function() {
+      if ($("#ftco-loader").length > 0) {
+        $("#ftco-loader").removeClass("show")
+      }
+    }, 1)
+  }
+  loader()
+  // Scrollax
+  //    $.Scrollax();
 
-// 	$(window).stellar({
-//     responsive: true,
-//     parallaxBackgrounds: true,
-//     parallaxElements: true,
-//     horizontalScrolling: false,
-//     hideDistantElements: false,
-//     scrollProperty: 'scroll'
-//   });
+  var burgerMenu = function() {
+    $(".js-dipal-nav-toggle").on("click", function(event) {
+      event.preventDefault()
+      var $this = $(this)
 
+      if ($("body").hasClass("offcanvas")) {
+        $this.removeClass("active")
+        $("body").removeClass("offcanvas")
+      } else {
+        $this.addClass("active")
+        $("body").addClass("offcanvas")
+      }
+    })
+  }
+  burgerMenu()
 
-	var fullHeight = function() {
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
-	};
-	fullHeight();
+  
+  // Click outside of offcanvass
+  var mobileMenuOutsideClick = function() {
+    $(document).click(function(e) {
+      var container = $("#dipal-aside, .js-dipal-nav-toggle")
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($("body").hasClass("offcanvas")) {
+          $("body").removeClass("offcanvas")
+          $(".js-dipal-nav-toggle").removeClass("active")
+        }
+      }
+    })
 
-	// loader
-	var loader = function() {
-		setTimeout(function() { 
-			if($('#ftco-loader').length > 0) {
-				$('#ftco-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
-	// Scrollax
-//    $.Scrollax();
+    $(window).scroll(function() {
+      if ($("body").hasClass("offcanvas")) {
+        $("body").removeClass("offcanvas")
+        $(".js-dipal-nav-toggle").removeClass("active")
+      }
+    })
+  }
+  mobileMenuOutsideClick()
 
-
-   var burgerMenu = function() {
-
-		$('.js-dipal-nav-toggle').on('click', function(event){
-			event.preventDefault();
-			var $this = $(this);
-
-			if ($('body').hasClass('offcanvas')) {
-				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
-			} else {
-				$this.addClass('active');
-				$('body').addClass('offcanvas');	
-			}
-		});
-	};
-	burgerMenu();
-
-	// Click outside of offcanvass
-	var mobileMenuOutsideClick = function() {
-
-		$(document).click(function (e) {
-			var container = $("#dipal-aside, .js-dipal-nav-toggle");
-			if (!container.is(e.target) && container.has(e.target).length === 0) {
-
-				if ( $('body').hasClass('offcanvas') ) {
-					$('body').removeClass('offcanvas');
-					$('.js-dipal-nav-toggle').removeClass('active');			
-				}    	
-			}
-		});
-
-		$(window).scroll(function(){
-			if ( $('body').hasClass('offcanvas') ) {
-    			$('body').removeClass('offcanvas');
-    			$('.js-dipal-nav-toggle').removeClass('active');			
-	    	}
-		});
-	};
-	mobileMenuOutsideClick();
-
-	/*var carousel = function() {
+  /*var carousel = function() {
 		$('.home-slider').owlCarousel({
 	    loop:true,
 	    autoplay: true,
@@ -226,8 +219,7 @@ var BASEURL = 'https://www.dipalbhavsar.com/';
     fixedContentPos: false
   });
   */
- 
-})($);
+})($)
 // Google Adsense
 // (adsbygoogle = window.adsbygoogle || []).push({
 // google_ad_client: "ca-pub-6494674604229963",

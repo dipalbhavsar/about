@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{AiKV:function(t,e,a){"use strict";a.r(e),a.d(e,"pageQuery",(function(){return c}));var n=a("q1tI"),i=a.n(n),r=a("Bl7J"),l=a("vrFN"),o=a("8ZOC");e.default=function(t){var e=t.data,a=t.location,n=e.site.siteMetadata.title;return i.a.createElement(r.a,{location:a,title:n},i.a.createElement(l.a,{title:"All posts"}),i.a.createElement(o.a,{BlogEntryType:"Agile"}))};var c="1097489062"}}]);
-//# sourceMappingURL=component---src-pages-agile-js-8fe4317d84cf5a4d4f3c.js.map

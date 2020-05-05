@@ -49,7 +49,6 @@ Automate what you can. Humans should be involved in the code review process as l
 
 "Automate what you can in the code review process. Humans should be involved as late as possible and only when needed."
 
-
 Tweet This
 How to Conduct a Code Review as a Human
 Before involving a human in the code review process, each of the following checklist items should be completed:
@@ -128,7 +127,6 @@ For critical changes, more than one reviewer might be preferred.
 Domain experts are people that know the business and technical knowledge about some part of a system extensively. In code reviews, in case of doubts or unknowns on the changes, a domain expert can be invited to conduct the code review or to get a second opinion.
 
 "Within a development team, who should review the code? Learn about the factors that help you determine that."
-
 
 Tweet This
 How To Communicate

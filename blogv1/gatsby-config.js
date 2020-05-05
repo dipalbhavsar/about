@@ -7,7 +7,7 @@ module.exports = {
     social: {
       twitter: `dipal_bhavsar`,
     },
-  }, 
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -78,11 +78,11 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/src/data`
-      }
-    }
+        path: `${__dirname}/src/data`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+  ],  
 }

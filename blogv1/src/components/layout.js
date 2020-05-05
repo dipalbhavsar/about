@@ -8,7 +8,7 @@ import TagControl from "./tagcontrol"
 import NewsSubscription from "./newsSubscription"
 import Declaration from "./declaration"
 
-const Layout = ({ location, title, data, children }) => { 
+const Layout = ({ location, title, data, children }) => {
   return (
     <div id="dipal-page">
       <LeftNavigation></LeftNavigation>
