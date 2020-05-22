@@ -20,7 +20,7 @@ const Layout = ({ location, title, data, children }) => {
               <div className="col-xl-4 sidebar ftco-animate bg-light pt-5">
                 <SearchForm></SearchForm>
                 <CategoryBox></CategoryBox>
-                <PopularArticles></PopularArticles>
+                {/* <PopularArticles></PopularArticles> */}
                 <TagControl></TagControl>
                 <NewsSubscription></NewsSubscription>
                 <Archives></Archives>

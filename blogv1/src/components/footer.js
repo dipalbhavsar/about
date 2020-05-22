@@ -3,6 +3,10 @@ import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import { useStaticQuery, graphql } from "gatsby"
 const Footer = () => {
+  const pStyle = {
+    color: 'blue',
+    'font-size': '10px'
+  };
   const data = useStaticQuery(graphql`
     query SocialImages {
       facebook: file(
@@ -103,8 +107,7 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li>
-            {" "}
+          <li>           
             <a href="mailto:dipal.bhavsar@gmail.com">
               <Image
                 fixed={data.email.childImageSharp.fixed}
@@ -123,12 +126,9 @@ const Footer = () => {
               />
             </a>
           </li>
-        </ul>
+        </ul>       
         <span>
-          <p>&copy; Dipal BHavsar</p>
-        </span>
-        <span>
-          <p>Powered by GatsBy and hosted in GitHub Page</p>
+          <p style={pStyle}>Developed by React-GatsBy and hosted in GitHub Page</p>
         </span>
       </div>
     </div>

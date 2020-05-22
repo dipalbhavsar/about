@@ -6,154 +6,18 @@ description: "Learn about the things to pay attention to, and what to automate w
 
 Code review is a process that enables peers and automated tools to check proposed changes to a codebase. The main goal of a code review is to catch potential issues, security problems, and bugs before they are introduced to the codebase and prevent them from causing problems in production.
 
-Code review can be fun. You try to hunt down well-disguised bugs before they hurt your production. You feel like a superhero defending your town every time you find a bug.
+Really, the code review can be fun. You try to hunt down well-disguised bugs before they hurt your production. You feel like a superhero defending your town every time you find a bug.
 
-Who needs a code review? Everybody. It doesn't matter if the pull request owner is an intern or the CEO. It doesn't matter if the pull request owner has 3 months of experience or 30 years. Development is a delicate task and things can slip through the cracks easily. Having another set of eyes is always beneficial.
+Most software developers are expected to participate in code reviews, and yet few are offered any training or guidance on conducting and participating in an effective code review. Participants attempt to find the most appropriate solution to a problem given the constraints of time, effort, and skills of all involved. But how do we have that conversation? What does an effective conversation look like? And what are the challenges of participating in a code review, and how can you overcome them?
 
-I am one of the engineers on the IAM-Authorization team at Auth0. We are responsible for the authorization decision of the authentication flow. In such a mission-critical team, one of the things that we do to ensure quality is the code review.
+##### Following useful literature could help to understand the purpose of code review and help to set up the process for conducting the effective code review with team members:
+<br>
 
-To follow along with this blog post, it will help to be familiar with the code review process, CI systems, and the concept of a pull request. After reading this blog post, you will better understand what to automate as a part of the code review process, what things to pay attention while reviewing code, and what communication methods are suggested between team members during the process.
+[![ Conducting Effective Code Reviews ](https://cdn.auth0.com/blog/illustration/code-review-discussion.png)](https://auth0.com/blog/conducting-effective-code-reviews) https://auth0.com/blog/conducting-effective-code-reviews.
 
-Teammates discussing during a code review
+[![ How to Conduct Effective Code Reviews ](https://images.prismic.io/www-static/287bb0dc-2d4f-41ac-b8e7-cc701e3e1d23_CodeReview_blog.png)](https://www.digitalocean.com/blog/how-to-conduct-effective-code-reviews/) https://www.digitalocean.com/blog/how-to-conduct-effective-code-reviews/.
 
-Benefits of Having a Code Review Process in Place
-Having a code review process in place has benefits for both the product itself and the development team.
+[![ Conducting Effective Code Reviews ](https://ltv-content.ltvco.com/1600x0/filters:format(jpeg)/filters:quality(70)/2019-11-21-code_review.jpg)](https://www.ltvco.com/engineering/conducting-effective-code-reviews/) https://www.ltvco.com/engineering/conducting-effective-code-reviews.
 
-The product will suffer from fewer bugs as they will be hunted down in the code review. Product quality will increase and this will have a direct positive impact on the customer experience. Code reviews will encourage the team to follow engineering best practices. This will lead to a more understandable and well-organized codebase resulting in increased maintainability of the product.
+[![ 9 Best Practices for Code Review ](https://www.perforce.com/sites/default/files/image/2018-12/image-blog-best-practices-code-reviews.jpg)](https://www.perforce.com/blog/qac/9-best-practices-for-code-review/) https://www.perforce.com/blog/qac/9-best-practices-for-code-review.
 
-As the team participates in the code review process, they will become more aware of changes that are introduced. This enables the development team to learn other parts of the project. Eventually, more than one person will be aware of the changes and the siloing will be reduced.
-
-Different Aspects of a Code Review
-While all code reviews are different, there remain two main aspects for every code review: syntactic and semantic.
-
-In the syntactic review, the code is checked for the visuals and complexity.
-
-In the visuals part, code is checked against project-wide code style guidelines, such as using tabs or spaces, adding commas to the end of the lines, always wrapping if statements with braces, etc. Having code that follows the same style guidelines throughout the project helps engineers skim through the code faster and reduces the mistakes caused by overlooking a statement because it is expressed in an unusual way.
-
-Checking the complexity of the modified function can also be categorized as a form of syntactic review. In this complexity calculation, only the code flow is taken into account, disregarding the actual logic. Checking the code complexity helps to understand code pieces that may have too many branches. These code pieces might be hard to understand, hard to test, and they could be more prone to errors.
-
-In the semantic review, the code is checked for what it does and what it means. The implemented logic is reviewed to see if it is doing what it is supposed to do. The code architecture, fit to the overall architecture, performance of the code, and the actual code flow are also reviewed.
-
-Automate What You Can
-Humans are the most intelligent actors in the code review process. However, they have short attention spans and their time is valuable. Spending valuable human time on deterministic tasks is not optimal.
-
-Humans tend to make mistakes in repetitive tasks, such as code style checks by skipping a few rules here and there. These kind of deterministic tasks are rather boring than challenging. Dedicating someone from the team to do this kind of tasks will cause loss of valuable engineering time, and still, there will be errors.
-
-Offloading automatable jobs to machines is essential in the code review process. Repetitive and deterministic tasks like code style checking, linting, static code analysis, code complexity calculation, code coverage calculation, execution of tests are good candidates for automation. Usually, there are pretty advanced libraries and services that help to automate these tasks. Here are some of my favorites. Eslint for linting, İstanbul (via NYC) for code coverage calculation, Codecov for code coverage reporting and a CI to integrate everything.
-
-Automate what you can in a code review
-
-Automation helps engineering teams to focus on what they need to. However, automation has its limitations. Regardless of how advanced a tool may be, it can't replace human intelligence. At least, not yet.
-
-Automate what you can. Humans should be involved in the code review process as late as possible.
-
-"Automate what you can in the code review process. Humans should be involved as late as possible and only when needed."
-
-Tweet This
-How to Conduct a Code Review as a Human
-Before involving a human in the code review process, each of the following checklist items should be completed:
-
-It’s ready: The PR owner thinks the introduced code is doing what is supposed to do and it is ready for peers to review.
-It’s working: The PR owner already tested the changes manually and it works.
-It has tests: The PR has automated tests (e.g. unit tests, functional tests) and they pass. You should aim for 100% coverage in unit tests and at least the mission-critical flows for the rest of the tests.
-Automation says it is working: The automated code review process reports that everything is good.
-Failing one of those would mean a problem has been detected. Without covering those it would be a waste of time to involve a human.
-
-Once those are covered, now it’s time to introduce the humans to the review. We need human intelligence and reasoning skills to understand the impact of the introduced change. The human checks that the changes to the code do what they are supposed to do and that the rest of the system continues working as expected.
-
-Involve humans in code reviews only when needed
-
-To achieve this goal, there are a couple of best practices that the team members can follow.
-
-Time Management
-Speed is important. So are code reviews. Finding a sweet spot is important.
-
-Be careful and take your time: Giving enough attention is important. Don't rush code reviews, ever.
-Don't check things that can be automated: If you have a complaint about them, improve the automation instead. For example, you shouldn't ask for adding semicolons. This can be automated. If the reviewer is insisting on having it, then he should automate the check by creating a linter rule.
-Test it yourself: If you are not convinced enough, or the change is critical, check out the PR and test it locally.
-Complexity Checks
-Code reuse: Check if a library (either internal or external) or an already existing function can be leveraged instead of implementing the suggested changes in the code review.
-Pattern check: You should check the change if it fits the pattern of the existing code pieces. Check if follows the same code structure, naming structure and logical structure across the project. Check if the code is in the correct file and function. In other words, check if it "fits" to the project.
-Potential Bug Checks
-Over the years I've noticed some common pitfalls. I recommend completing the following checklist to catch those.
-
-Return type consistency: Check if the changed part still returns the same value types in different return paths. Check if errors are handled in the same way and the function throws errors in a consistent schema. A change that doesn't follow the pattern might be a sign of a bug. For instance, in a function where existing branches return a number, having a return alone should raise some eyebrows for detailed investigation.
-Resource deallocation: Check if the resources allocated are released regardless of function is succeeded or not. Check for file handles opened in the function, events bound, requests started, etc. Ideally, at the end of execution of a function all resources allocated should be released. This includes error cases: In case of an error, the function should clear its allocated resources and then throw.
-Other usages of the function: Check if the changed functions are used in other places. If they are, check if the change would cause a problem in other unchanged parts of the application due to interface changes. For instance, when a function that normally returns an object starts to also return null, all usages of this function should be examined one by one.
-Breaking change awareness: Check if the change causes a change in the public API in an undocumented and/or breaking way. If that is the case, either notify users using a predefined communication method or consider other options. Please note that changes to public interfaces that make sense (such as returning a specific error code instead of general error code) are still considered breaking changes.
-Mutable structures: Check if additions to existing variables by reference (e.g. objects) break things elsewhere due to the mutable data structure. Let's say that you pass a user object to your logger function. Logger function "enhances" this object by adding a "logDate" before logging it via user.logDate = new Date(). As logger referred the user by reference, the new field logDate will be a part of the user and it will be accessible for all later functions in the execution chain. This exposes a variable in an uncontrolled way out of a function. This may cause bugs due to depending on this leaked variable in other functions and data leaks to the external customers. Ideally, an object should be cloned before modifying.
-Input validations: Check if the input data validation in place, bounded and those bounds are unit tested. It is important to put a limit to each value from the outside to "keep things under control". This way you'll know the bounds of it, quite helpful while refactoring.
-Error handling: Check if error cases are handled, including async call errors. Look for promises, await, throw, and Node.js callbacks. Be sure that all negative cases are handled. Please note that throwing errors out of function is also a way of handling it as long as that is intentional and tested.
-Data layer schema changes: In case of a schema change, check if it is backward compatible. Be sure that the DB migrations will work with the production data, by checking migrations script against the DB schema, not only the local data.
-Data exposure: Check that the function doesn't expose unintentional extra data. Check that white-listing is used instead of blacklisting the fields that you don't want to show. Using a blacklisting approach makes it more likely that fields introduced later will be unintentionally exposed (if a future developer forgets to add the new field to the blacklist). This could be a security risk, especially for the public-facing endpoints.
-Testing
-Code coverage tools can measure if the changes are covered by tests. However, code coverage tools only check if the lines are executed (covered by executing). Code coverage tools can't say if those executed lines are tested against a proper test suite. In other words:
-
-Lack of code coverage guarantees that tests are missing. Covering changes does not necessarily mean that it is tested.
-
-Unit tests are quite useful to catch bugs and provide confidence while refactoring. However, to test some components together, the whole system as one and even multiple systems together is also needed. As the exact needs and setup will depend on the project, I'll mention about this kind of tests as "functional tests" in general.
-
-All decision paths should be tested: Check if changes are already covered with existing unit tests and/or have the tests to cover every single decision path. Please note that even an if statement without else has two branches. An execution path including the contents of the if, and the one without.
-Readability: Check if you can understand what a test tests by only reading their names.
-Input validation testing: Even when validating an endpoint is as easy as including a middleware, it is important to have a unit test for that. It is easy to forget adding that middleware or mistakenly remove it. Having a unit test ensuring that an input limit is set helps prevent this from happening.
-Error case testing: Check if error cases are handled and unit tested. Do not miss awaits, it might be easy to overlook.
-Functional tests: Check if the change is critical enough to have its functional test. Changing the behavior substantially, adding new features or touching critical parts of an application might require this.
-Operational
-To measure a smooth operation, the visibility to the well-being of the system as important. To achieve this, some checks can be done as a part of the code review process.
-
-Visibility: Check if proper logging is in place. Check that the unexpected errors are logged, access logs are generated, etc. Be sure that confidential data (e.g. passwords) are not logged and privacy-related cautions are taken.
-Error management: System errors, the errors you don't expect to happen such as internal server errors, and timeouts should be logged as errors. User-generated errors, such as input validation errors, accessing to a non-existent resource, shouldn't be logged as errors.
-Default configuration fallback: When adding features that depend on a configuration value (e.g. debug level, feature flag value, etc.), be sure that the application does not crash unintentionally or behave weirdly if the configuration is missing.
-Feature flags: Check if the change needs a feature flag and if the feature flag is implemented properly. Check if the feature is not exposed when feature flag retrieval fails or not configured.
-Performance
-To prevent unexpected performance hits, the code can be checked for signs of potential performance issues.
-
-Think about the biggest payload possible: Determine the biggest most complex payload that this function can receive. Follow the code to understand if the complexity of the function causes processing time to increase exponentially. Determining the big-O complexity of the function might help.
-Library version upgrades: Be sure that newly introduced libraries or changed versions of dependencies might introduce performance hits due to different and bad implementation. At least read the changelog or skim through the changes of those libraries. For the critical path, proper load testing is recommended.
-Performance of database queries: Check if all database calls are performing well and not causing a sequential search in the whole table/collection. Leverage commands like EXPLAIN ANALYZE to understand index usage.
-Bounded return data: Check if the changed function's return value is bounded. For instance, a function that returns all database rows might cause out of memory errors while trying to return billions of rows.
-Security
-There are some basic things that you can check to ensure baseline security such as not exposing extra data, handling sessions properly, handling the input to prevent SQL injection. By no means, is this a full list of security-related tasks. You should always ask a security expert for help.
-
-If you want to educate yourself about security, The Open Web Application Security Project (OWASP) has a lot of good resources. My favorite is the Cheat Sheet Series.
-
-Who Should Review the Code
-Code reviewing is a social learning event and it is a way of team communication. The team will understand both the product and the technical aspects of the project better by sharing knowledge. The team will also learn from each other's mistakes and they will get technically better.
-
-For the optimal benefit, the same person shouldn't review PRs every time. Code reviewing opportunity should be shared across the team. Code reviewing should not create disruption for others but also shouldn't block the PR owner. An ideal solution would be for each team member to check for pending code reviews after taking a break, before (re)starting their own tasks.
-
-For critical changes, more than one reviewer might be preferred.
-
-Domain experts are people that know the business and technical knowledge about some part of a system extensively. In code reviews, in case of doubts or unknowns on the changes, a domain expert can be invited to conduct the code review or to get a second opinion.
-
-"Within a development team, who should review the code? Learn about the factors that help you determine that."
-
-Tweet This
-How To Communicate
-Having a common set of rules will increase the speed of code reviews by reducing misunderstandings across team members and discussion roundtrips.
-Be kind and respectful and don't take it personally.
-Don't ask for review unless the CI is green. If automation rejects you, don't waste human time.
-Avoid large changes and split them if possible.
-Use commit templates. Having a checklist will help the PR owner to share all essential information about the PR. This standardization will also help the reviewer by making it easier to read and understand a standard form.
-Don't use force push and change the code that is being reviewed. Some differences across the commits may slip through reviewer's eye and introduce bugs due to unreviewed code merge.
-Let reviewee know about the process. Reviewers should assign themselves as a reviewer when they start a review. This way reviewee will know that something will eventually show up.
-When the reviewee receives comments, they should acknowledge every single comment and act on them. Apart from being rude, ignoring comments may yield to bugs. Please note that acting on a comment doesn't mean changing the code in the way recommended by the reviewer. Defending your solution by facts, asking questions and starting a technical conversation are also a way of acting.
-When a reviewee fixes a code review finding, they should paste the commit's link that fixed the problem as a reply to that CR comment. With this, the reviewer can follow up changes easier.
-The reviewer should resolve the CR comment after checking reviewee's changes, ending the discussion.
-In case of a disagreement, try to list the advantages and disadvantages of proposed solutions and go for the one with the most advantage. Try to generalize the decision and try to apply it to future conflicts.
-The reviewer should suggest an alternative when writing code review comments. Don't say "I didn't like it". Say, "I'd prefer an alternative solution instead, because of these reasons." This will reduce the amount of code review round trips. Also, disagreeing without a concrete reason and a better alternative is confusing to the reviewee.
-Refer to everything with a permalink where possible. (e.g. there is a doc in this link, the code in this link, this slack message, etc.) One-click access to everything will speed this up.
-Put comments to explain the changes if necessary. For instance, you removed an if block and everything in that if block moved one level left in the indentation without any actual code change. Leaving a comment explaining this will save some time from reviewers time as they can skip those lines directly.
-Recap
-Code review is an important step in software development. It helps to share knowledge within the team, "proofreading" the changes and catching potential issues before they get introduced. Use code review as a learning and information sharing tool.
-
-Code review can be a daunting task. You should automate what you can. This will help to save valuable human time and engineer wear caused by the boredom of doing repetitive and uncreative work.
-
-You can use a checklist-like structured method to make code reviewing easier and the code review quality more consistent across the team.
-
-Communication is extremely important in a code review. Defining ground rules, communication methods and a process can make it easier for everyone to contribute to this valuable process.
-
-I recommend you take a step back and think about code review. Define your and your team's habits in writing, use this post as a starting point and define your code review process!
-
-About Auth0
-Auth0 is the first identity management platform for application builders, and the only identity solution needed for custom-built applications. With a mission to secure the world’s identities so innovators can innovate, Auth0 provides the simplicity, extensibility, and expertise to scale and protect identities in any application, for any audience. Auth0 secures more than 100 million logins each day, giving enterprises the confidence to deliver trusted and elegant digital experiences to their customers around the world.

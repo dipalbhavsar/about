@@ -20,7 +20,7 @@ const BlogEntry = ({ blogData }) => {
               <Moment format="DD-MMM-YYYY" date={blogData.pageDate}></Moment>
             </span>
             <span key={"category" + blogData.pageId}>
-              <a href="single">{blogData.pageCategory}</a>
+              <a href={blogData.pageCategory.toLowerCase()} >{blogData.pageCategory}</a>
             </span>
             <span key={"comment" + blogData.pageId}>
               {blogData.pageCommentCount}

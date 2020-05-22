@@ -5,11 +5,13 @@ import Footer from "./footer"
 // import $ from "jquery"
 import { rhythm } from "../utils/typography"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import { NavButton } from './navbutton'
 
-const LeftNavigation = () => {
+
+const LeftNavigation1 = () => {
   const data = useStaticQuery(graphql`
-    query BioAvatar {
+    query BioAvatar1 {
       avatar: file(absolutePath: { regex: "/dipal.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
@@ -32,14 +34,8 @@ const LeftNavigation = () => {
 
   return (
     <>
-      <Link
-        to="./"
-        className="js-dipal-nav-toggle dipal-nav-toggle"
-        // onClick={js_dipal_nav_toggle_click(this)}
-      >
-        <i></i>
-      </Link>
-      <aside id="dipal-aside" role="complementary" className="js-fullheight">
+        <NavButton></NavButton>
+        <aside id="dipal-aside" role="complementary">
         <center>
           <Image
             fixed={data.avatar.childImageSharp.fixed}
@@ -65,6 +61,7 @@ const LeftNavigation = () => {
     </>
   )
 }
+
 /*
 $(document).ready(function() {
   $(window).resize(function() {
@@ -82,18 +79,7 @@ $(document).ready(function() {
   // contentWayPoint();
 })
 
-function js_dipal_nav_toggle_click(e) {
-  var $this = $(this)
-  if ($(window).width() < 966) {
-    if ($("body").hasClass("offcanvas")) {
-      $this.removeClass("active")
-      $("body").removeClass("offcanvas")
-    } else {
-      $this.addClass("active")
-      $("body").addClass("offcanvas")
-    }
-  }
-}
+
 
 var contentWayPoint = function() {
   var i = 0
@@ -156,4 +142,4 @@ var counter = function() {
   )
 }
 */
-export default LeftNavigation
+export default LeftNavigation1

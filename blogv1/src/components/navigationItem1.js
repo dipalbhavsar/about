@@ -9,7 +9,7 @@ const NavigationItem = () => {
         {data.map((d, i) => {
           return (
             <li key={d.label}>
-              <Link to={d.link} activeClassName={"dipal-active"} onClick={menuClicked(d.label)}>
+              <Link to={d.link} activeClassName={"dipal-active"}>
                 {d.label}
               </Link>
             </li>
@@ -22,17 +22,6 @@ const NavigationItem = () => {
       </ul>
     </nav>
   )
-}
-
-function menuClicked(e) {
-// debugger;
-
-// var body = document.getElementsByTagName("BODY")[0];
-//   if(document.body.className == "offcanvas") {
-//     body.removeAttribute("class");
-//   } else {
-//    // body.setAttribute("class", "offcanvas");
-//   }  
 }
 
 export default NavigationItem

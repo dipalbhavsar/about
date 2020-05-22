@@ -1,7 +1,7 @@
 {
   "name": "about-v1",
   "private": true,
-  "description": "A personalized blog, developed by Dipal Bhavsar, powered by gatsby",
+  "description": "A personalized blog, developed by Dipal Bhavsar, developed using gatsby and hosted in GitHub page",
   "version": "1.0.0",
   "author": "Dipal Bhavsar <dipal.bhavsar@gmail.com>",
   "bugs": {
