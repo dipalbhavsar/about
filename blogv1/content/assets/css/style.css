@@ -608,9 +608,7 @@ h5,
   font-weight: 400;
   font-size: 30px;
 }
-.blog-entry .text h3 a {
-  color: #000000;
-}
+
 .blog-entry .text .meta-wrap {
   width: 100%;
   display: block;
@@ -1332,6 +1330,7 @@ textarea.form-control {
   font-size: 15px;
   width: 100%;
 }
+
 .sidebar-box h3.sidebar-heading {
   font-size: 20px;
   font-weight: normal;
@@ -1365,7 +1364,6 @@ textarea.form-control {
 .categories li a,
 .sidelink li a {
   display: block;
-  color: #000000;
 }
 .categories li a span,
 .sidelink li a span {

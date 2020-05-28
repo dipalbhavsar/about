@@ -2,10 +2,10 @@ import React from "react"
 import IndexPagination from "./indexpagination"
 import BlogEntry from "./blogentry"
 import BlogData from "../data/blogs.json"
+import styled from "@emotion/styled"
 
 const IndexComponent = ({ BlogEntryType }) => {
   var filtered = [];
-  console.log("BlogEntryType" + BlogEntryType);
   if(BlogEntryType === "*" || BlogEntryType === "Technology" || BlogEntryType === "Agile") {
     filtered = BlogEntryType.length === 1 ? BlogData.blogs : BlogData.blogs.filter(r => r.pageMenu === BlogEntryType)
   }
@@ -21,19 +21,14 @@ const IndexComponent = ({ BlogEntryType }) => {
     }
   }  
   return (
-    <div className="col-xl-8 py-5 px-md-5">
-      <div className="row pt-md-4">
-        <div className="col-md-12">
-          { 
-          filtered
-            .sort(a => a.pageDate)
-            .map((d, i) => {
-              return <BlogEntry blogData={d} key={"_" + i}></BlogEntry>
-            })}
-        </div>
-      </div>
-      <IndexPagination selectedIndex={10}></IndexPagination>
-    </div>
+    <div>
+      { 
+      filtered
+        .sort(a => a.pageDate)
+        .map((d, i) => {
+          return <BlogEntry blogData={d} key={"_" + i}></BlogEntry>
+        })}
+    </div>      
   )
 }
 export default IndexComponent

@@ -1,27 +1,27 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import styled from '@emotion/styled';
 import IndexComponent from "../components/indexcomponenet"
 
-const Azure = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <IndexComponent BlogEntryType={"Azure"}></IndexComponent>
-    </Layout>
-  )
-}
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
 
-export default Azure
+const AzurePage = ({ location }) => {
+return (
+  <Layout location={location}>
+    <SEO title="Azure" description = "this is description"/>
+    <IndexComponent BlogEntryType={"Azure"}></IndexComponent>
+  </Layout>
+);
+};
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+const Heading = styled.h1`
+  padding-top: 0;
+  margin-top: 0;
+  &::before {
+    display: none !important;
   }
-`
+`;
+
+
+export default AzurePage

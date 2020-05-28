@@ -1,6 +1,7 @@
-import React from "react"
-import Moment from "react-moment"
-import { Link } from "gatsby"
+import React from "react";
+import Moment from "react-moment";
+import { Link } from "gatsby";
+import styled from '@emotion/styled';
 
 const BlogEntry = ({ blogData }) => {
   return (
@@ -12,7 +13,7 @@ const BlogEntry = ({ blogData }) => {
       ></Link>
       <div className="text text-2 pl-md-4">
         <h3 className="mb-2">
-          <Link to={blogData.pageLink}>{blogData.pageTitle}</Link>
+          <Link to={blogData.pageLink}><PWrapper>{blogData.pageTitle}</PWrapper></Link>
         </h3>
         <div className="meta-wrap">
           <p key={"commentArea" + blogData.pageId} className="meta">
@@ -37,5 +38,10 @@ const BlogEntry = ({ blogData }) => {
     </div>
   )
 }
+
+const PWrapper = styled.p`
+  color: ${p => p.theme.colors.colors};
+  transition: background 0.25s var(--ease-in-out-quad);
+`;
 
 export default BlogEntry

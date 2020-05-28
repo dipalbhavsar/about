@@ -1,37 +1,119 @@
-import React from "react"
-import LeftNavigation from "./leftnavigation"
-import SearchForm from "./searchform"
-import CategoryBox from "./categorybox"
-import Archives from "./archives"
-import PopularArticles from "./populararticle"
+import { Global } from '@emotion/core';
+import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { Styled } from 'theme-ui';
+import { globalStyles } from '../styles';
+import mediaqueries from '../styles/media';
+import Header from './Header';
+import LeftSidebar from './LeftSidebar';
+import RightSidebar from './RightSidebar';
+
+import SearchForm from "./searchform";
+import CategoryBox from "./categorybox";
 import TagControl from "./tagcontrol"
-import NewsSubscription from "./newsSubscription"
-import Declaration from "./declaration"
+import NewsSubscription from "./newsSubscription";
+import Archives from "./archives";
+import Declaration from "./declaration";
 
-const Layout = ({ location, title, data, children }) => {
+const Layout = ({ children, location }) => {
+  const [navOpen, setNavOpen] = useState(false);
   return (
-    <div id="dipal-page">
-      <LeftNavigation></LeftNavigation>
-      <div id="dipal-main">
-        <section className="ftco-section ftco-no-pt ftco-no-pb">
-          <div className="container">
-            <div className="row d-flex">
-              {children}
-              <div className="col-xl-4 sidebar ftco-animate bg-light pt-5">
-                <SearchForm></SearchForm>
-                <CategoryBox></CategoryBox>
-                {/* <PopularArticles></PopularArticles> */}
-                <TagControl></TagControl>
-                <NewsSubscription></NewsSubscription>
-                <Archives></Archives>
-                <Declaration></Declaration>
+    <Styled.root>
+      <Global styles={globalStyles} />
+      <Header navOpen={navOpen} setNavOpen={setNavOpen} />
+      <SiteWrapper>
+        <LeftSidebar navOpen={navOpen} />
+         <SiteContentWrapper>
+          <SiteContent navOpen={navOpen}>
+            <div className="col-xl-12 py-5 px-md-5">
+              <div className="row pt-md-4">
+                <div className="col-md-8">
+                  {children}
+                </div>
+                <div className="col-md-4">
+                  <SideBarBox className="pt-md-4">
+                    <SideBarHeading>
+                        Search Here...
+                    </SideBarHeading>
+                    <SearchForm></SearchForm>
+                  </SideBarBox> 
+                  <SideBarBox className="pt-md-4">
+                    <SideBarHeading>
+                      Categories
+                    </SideBarHeading>
+                    <CategoryBox></CategoryBox>
+                  </SideBarBox>
+                  <SideBarBox className="pt-md-4">
+                    <SideBarHeading>
+                      Tag Cloud
+                    </SideBarHeading>
+                    <TagControl></TagControl>
+                  </SideBarBox>
+                  <NewsSubscription></NewsSubscription>
+                  <SideBarBox className="pt-md-4">
+                    <SideBarHeading>
+                      Archives
+                    </SideBarHeading>
+                    <Archives></Archives>
+                  </SideBarBox>
+                  <SideBarBox className="pt-md-4">
+                    <SideBarHeading>
+                      Declaration
+                    </SideBarHeading>
+                    <Declaration></Declaration>
+                  </SideBarBox>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  )
-}
+            </div> 
+          </SiteContent>
+        </SiteContentWrapper>
+      </SiteWrapper>      
+    </Styled.root>
+  );
+};
 
-export default Layout
+const SiteWrapper = styled.div`
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: ${p => p.theme.colors.background};
+  transition: background 0.25s var(--ease-in-out-quad);
+`;
+
+const SiteContentWrapper = styled.div`
+  flex-grow: 1;
+  min-width: 20rem;
+`;
+
+const SiteContent = styled.main`
+  padding: 2rem 1rem 2rem;
+  transition: 0.25s var(--ease-in-out-quad);
+  opacity: ${p => (p.navOpen ? 0.3 : 1)};
+  transform: ${p => (p.navOpen ? `translateX(16rem)` : null)};
+  ${mediaqueries.desktop_up`
+    transform: translateX(0);
+    opacity: 1;
+  `};
+`;
+
+const SideBarBox = styled.div`
+  margin-bottom: 40px;
+  padding: 0 25px;
+  font-size: 15px;
+  width: 100%;
+`;
+
+const SideBarHeading = styled.p`
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 30px;
+`;
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  location: PropTypes.object.isRequired
+};
+
+export default Layout;

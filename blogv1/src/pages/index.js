@@ -1,28 +1,16 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import styled from '@emotion/styled';
+import IndexComponent from "../components/indexcomponenet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import IndexComponent from "../components/indexcomponenet"
 
-const BlogIndex = ({ data, location, pageName }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const IndexPage = ({ location, children }) => {
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <IndexComponent BlogEntryType={"*"}></IndexComponent>
+    <Layout location={location}>
+      <SEO title="Home" description = "this is description"/>
+        <IndexComponent BlogEntryType={"*"}></IndexComponent>        
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default IndexPage

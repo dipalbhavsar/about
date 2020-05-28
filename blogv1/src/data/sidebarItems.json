@@ -1,22 +1,22 @@
 [
   {
-    "label": "Home",
-    "link": "./"
+    "title": "Home",
+    "url": "./"
   },
   {
-    "label": "Technology",
-    "link": "./technology"
+    "title": "Technology",
+    "url": "./technology"
   },
   {
-    "label": "Agile",
-    "link": "./agile"
+    "title": "Agile",
+    "url": "./agile"
   },
   {
-    "label": "About",
-    "link": "about"
+    "title": "About",
+    "url": "about"
   },
   {
-    "label": "Contact",
-    "link": "contact"
+    "title": "Contact",
+    "url": "contact"
   }
 ]

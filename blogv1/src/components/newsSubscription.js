@@ -9,7 +9,7 @@ const NewsSubscription = () => {
       <div className="overlay"></div>
       <h3 className="mb-4 sidebar-heading">Newsletter</h3>
       <p className="mb-4">
-        Far far away, behind the word mountains, far from the countries Vokalia
+        Get awesome design content in your inbox every week. Subscribe here.
       </p>
       <form action="#" className="subscribe-form">
         <div className="form-group">

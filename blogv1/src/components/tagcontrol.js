@@ -1,37 +1,40 @@
-import React from "react"
+import React from "react";
+import styled from '@emotion/styled';
 
 const TagControl = () => {
   return (
-    <div className="sidebar-box ftco-animate">
-      <h3 className="sidebar-heading">Tag Cloud</h3>
-      <ul className="tagcloud">
-        <a href="./" className="tag-cloud-link">
-          animals
-        </a>
-        <a href="./" className="tag-cloud-link">
-          human
-        </a>
-        <a href="./" className="tag-cloud-link">
-          people
-        </a>
-        <a href="./" className="tag-cloud-link">
-          cat
-        </a>
-        <a href="./" className="tag-cloud-link">
-          dog
-        </a>
-        <a href="./" className="tag-cloud-link">
-          nature
-        </a>
-        <a href="./" className="tag-cloud-link">
-          leaves
-        </a>
-        <a href="./" className="tag-cloud-link">
-          food
-        </a>
-      </ul>
-    </div>
-  )
+    <ulWrapper>
+      <Link href="#">cloud</Link>
+      <Link href="#">aws</Link>
+      <Link href="#">react</Link>
+      <Link href="#">front-end</Link>
+      <Link href="#">sharepoint</Link>
+      <Link href="#">angular</Link>
+      <Link href="#">travels</Link>
+      <Link href="#">food</Link>
+    </ulWrapper>
+    );
 }
+
+const ulWrapper = styled.ul`
+`;
+
+const Link = styled.a`
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: ${p => p.theme.colors.colors};
+  transition: color ${p => p.theme.transition};
+  &:hover {border: 1px solid ${p => p.theme.colors.primary};},
+  &:focus {
+    color: ${p => p.theme.colors.primary};
+  }
+  border: 1px solid ${p => p.theme.colors.primary};
+  font-size: 11px;
+`;
+
 
 export default TagControl

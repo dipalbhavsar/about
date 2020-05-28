@@ -1,27 +1,15 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import styled from '@emotion/styled';
+import IndexComponent from "../components/indexcomponenet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import IndexComponent from "../components/indexcomponenet"
-
-const Technology = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+const TechnologyPage = ({ location }) => {
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+    <Layout location={location}>
+      <SEO title="Technology" description = "this is description"/>
       <IndexComponent BlogEntryType={"Technology"}></IndexComponent>
     </Layout>
-  )
-}
+  );
+};
 
-export default Technology
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default TechnologyPage

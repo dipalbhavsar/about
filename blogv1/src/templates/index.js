@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -17,8 +15,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <div className="col-xl-8 py-5 px-md-5">
-        <div className="row pt-md-4">
           <div className="col-md-12">
             <nav>
               <ul
@@ -49,7 +45,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <header>
               <h1
                 style={{
-                  marginTop: rhythm(1),
+                  marginTop: 1,
                   marginBottom: 0,
                 }}
               >
@@ -57,9 +53,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               </h1>
               <p
                 style={{
-                  ...scale(-1 / 5),
                   display: `block`,
-                  marginBottom: rhythm(1),
+                  marginBottom: 1,
                 }}
               >
                 {post.frontmatter.date}
@@ -68,15 +63,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <section dangerouslySetInnerHTML={{ __html: post.html }} />
             <hr
               style={{
-                marginBottom: rhythm(1),
+                marginBottom: 1,
               }}
             />
             <footer>
-              <Bio />
+             
             </footer>
           </div>
-        </div>
-      </div>
     </Layout>
   )
 }
