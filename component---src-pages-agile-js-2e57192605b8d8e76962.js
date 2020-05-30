@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{AiKV:function(t,i,e){"use strict";e.r(i);e("q1tI");var n=e("8ZOC"),o=e("Bl7J"),c=e("vrFN"),a=e("qKvR");i.default=function(t){var i=t.location;return Object(a.d)(o.a,{location:i},Object(a.d)(c.a,{title:"Agile",description:"this is description"}),Object(a.d)(n.a,{BlogEntryType:"Agile"}))}}}]);
+//# sourceMappingURL=component---src-pages-agile-js-2e57192605b8d8e76962.js.map
