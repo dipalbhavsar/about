@@ -19,6 +19,9 @@ const CategoryBox = () => {
     </ul>
   )
 }
+const ULCategory = styled.ul`
+
+`;
 
 const PStyle = styled.p`
   color:${p => p.theme.colors.label};

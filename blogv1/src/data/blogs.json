@@ -42,6 +42,20 @@
       "pageTags": ["technology","sharepoint"],
       "pageAuthor": ["Dipal Bhavsar"],
       "pageMenu": "Technology"
+    },
+    {
+      "pageId": "5",
+      "pageLink": "./sharepoint/SharePoint_Development_Patterns",
+      "pageImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Microsoft_Office_SharePoint_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_SharePoint_%282018%E2%80%93present%29.svg.png",
+      "pageTitle": "SharePoint Development Patterns, Part 2",
+      "pageDescription": "Deep drive to learn how working with the SharePoint Framework differs from traditional SharePoint development and development.",
+      "pageCategory": "SharePoint",
+      "pageDate": "2014-01-01T12:24:00.000Z",
+      "pageCommentCount": "0",
+      "pageOrder": "5",
+      "pageTags": ["technology","sharepoint"],
+      "pageAuthor": ["Dipal Bhavsar"],
+      "pageMenu": "Technology"
     }
   ]
 }

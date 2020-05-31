@@ -7,7 +7,7 @@ import { globalStyles } from '../styles';
 import mediaqueries from '../styles/media';
 import Header from './Header';
 import LeftSidebar from './LeftSidebar';
-import RightSidebar from './RightSidebar';
+//import RightSidebar from './RightSidebar';
 
 import SearchForm from "./searchform";
 import CategoryBox from "./categorybox";
@@ -15,11 +15,12 @@ import TagControl from "./tagcontrol"
 import NewsSubscription from "./newsSubscription";
 import Archives from "./archives";
 import Declaration from "./declaration";
+import ScrollAnimation from "react-animate-on-scroll";
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location, isLeftSideDisplay=true }) => {
   const [navOpen, setNavOpen] = useState(false);
   return (
-    <Styled.root>
+    <Styled.root>     
       <Global styles={globalStyles} />
       <Header navOpen={navOpen} setNavOpen={setNavOpen} />
       <SiteWrapper>
@@ -28,11 +29,12 @@ const Layout = ({ children, location }) => {
           <SiteContent navOpen={navOpen}>
             <div className="col-xl-12 py-5 px-md-5">
               <div className="row pt-md-4">
-                <div className="col-md-8">
+                <div className={isLeftSideDisplay ? "col-md-8" : "col-md-12"}>
                   {children}
                 </div>
-                <div className="col-md-4">
-                  <SideBarBox className="pt-md-4">
+                {isLeftSideDisplay ?
+                <ScrollAnimation animateIn='bounceInRight' initiallyVisible={true} animateOnce={true} className="col-md-4">                  
+                  <SideBarBox className="pt-md-4" >                    
                     <SideBarHeading>
                         Search Here...
                     </SideBarHeading>
@@ -63,7 +65,9 @@ const Layout = ({ children, location }) => {
                     </SideBarHeading>
                     <Declaration></Declaration>
                   </SideBarBox>
-                </div>
+                </ScrollAnimation>
+                : ''
+                }
               </div>
             </div> 
           </SiteContent>

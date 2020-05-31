@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { graphql, useStaticQuery } from 'gatsby';
 import React, { useState } from 'react';
 import NavItem from './NavItem';
 import sideBarData from "../../data/sidebarItems.json"

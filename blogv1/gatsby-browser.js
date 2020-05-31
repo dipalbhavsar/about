@@ -2,6 +2,7 @@ import React from 'react';
 
 import "./content/assets/css/style.css"
 import "./content/assets/css/bootstrap.min.css"
+import "./content/assets/css/animate.css"
 
 import GlobalContextProvider from './src/context/GlobalContextProvider';
 

@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from '@emotion/styled';
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -43,22 +44,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               </ul>
             </nav>
             <header>
-              <h1
-                style={{
-                  marginTop: 1,
-                  marginBottom: 0,
-                }}
-              >
-                {post.frontmatter.title}
-              </h1>
-              <p
-                style={{
-                  display: `block`,
-                  marginBottom: 1,
-                }}
-              >
-                {post.frontmatter.date}
-              </p>
+              <Para>{post.frontmatter.title}</Para>
+              <ParaDate>{post.frontmatter.date}</ParaDate>
+              <ParaHR></ParaHR>
             </header>
             <section dangerouslySetInnerHTML={{ __html: post.html }} />
             <hr
@@ -74,6 +62,31 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   )
 }
 
+const ParaHR = styled.hr`
+  color: ${p => p.theme.colors.colors};
+  backgroundColor: ${p => p.theme.colors.colors};
+  transition: color ${p => p.theme.transition};
+  border:5;
+  height: 1px;
+  border-color :  ${p => p.theme.colors.text};  
+`;
+
+
+const ParaDate = styled.p`
+  color: ${p => p.theme.colors.colors};
+  transition: color ${p => p.theme.transition};
+  font-size: 8;
+  marginTop: -2;
+  marginBottom: 10,
+`;
+
+const Para = styled.p`
+  color: ${p => p.theme.colors.colors};
+  transition: color ${p => p.theme.transition};
+  font-size: 2rem;
+  marginTop: 0,
+  marginBottom: 0,
+`;
 export default BlogPostTemplate
 
 export const pageQuery = graphql`

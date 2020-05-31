@@ -1,8 +1,8 @@
 import React from "react"
-import IndexPagination from "./indexpagination"
+// import IndexPagination from "./indexpagination"
 import BlogEntry from "./blogentry"
 import BlogData from "../data/blogs.json"
-import styled from "@emotion/styled"
+// import styled from "@emotion/styled"
 
 const IndexComponent = ({ BlogEntryType }) => {
   var filtered = [];

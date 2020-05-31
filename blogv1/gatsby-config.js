@@ -4,11 +4,11 @@ module.exports = {
     name: `Dipal Bhavsar`,
     author: `Dipal`,
     siteUrl: `https://www.dipalbhavsar.com`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    description: `This site is developed using React, GatsBy, Bootstrap 4.5. Hosted in GitHub page. this site is intense to self learning and exploring different technologies.`,
     social: [
       {
         name: `github`,
-        url: `https://github.com/dipalbhavsar/about.git`
+        url: `https://github.com/dipalbhavsar`
       },
       {
         name: `twitter`,
@@ -74,6 +74,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },    
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
+    },
     `gatsby-plugin-feed`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,    
