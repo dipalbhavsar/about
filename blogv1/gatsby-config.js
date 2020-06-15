@@ -73,7 +73,14 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },    
+    }, 
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+        options: {
+            endpoint: 'https://dipalbhavsar.us10.list-manage.com/subscribe/post?u=f756252497326df0842cc8176&amp;id=b520c27181', // string; add your MC list endpoint here; see instructions below
+            timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+        },
+    },   
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
