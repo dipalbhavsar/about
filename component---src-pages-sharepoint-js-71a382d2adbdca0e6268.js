@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{cgYp:function(t,i,n){"use strict";n.r(i);n("q1tI");var o=n("8ZOC"),e=n("Bl7J"),c=n("vrFN"),a=n("qKvR");i.default=function(t){var i=t.location;return Object(a.d)(e.a,{location:i},Object(a.d)(c.a,{title:"SharePoint",description:"this is description"}),Object(a.d)(o.a,{BlogEntryType:"SharePoint"}))}}}]);
+//# sourceMappingURL=component---src-pages-sharepoint-js-71a382d2adbdca0e6268.js.map

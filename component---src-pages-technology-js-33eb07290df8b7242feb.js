@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{Vgru:function(t,o,n){"use strict";n.r(o);n("q1tI");var c=n("8ZOC"),e=n("Bl7J"),i=n("vrFN"),r=n("qKvR");o.default=function(t){var o=t.location;return Object(r.d)(e.a,{location:o},Object(r.d)(i.a,{title:"Technology",description:"this is description"}),Object(r.d)(c.a,{BlogEntryType:"Technology"}))}}}]);
+//# sourceMappingURL=component---src-pages-technology-js-33eb07290df8b7242feb.js.map

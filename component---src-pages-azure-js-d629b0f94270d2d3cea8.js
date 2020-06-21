@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{ay9d:function(t,e,i){"use strict";i.r(e);i("q1tI");var n=i("8ZOC"),o=i("Bl7J"),c=i("vrFN"),r=i("qKvR");e.default=function(t){var e=t.location;return Object(r.d)(o.a,{location:e},Object(r.d)(c.a,{title:"Azure",description:"this is description"}),Object(r.d)(n.a,{BlogEntryType:"Azure"}))}}}]);
+//# sourceMappingURL=component---src-pages-azure-js-d629b0f94270d2d3cea8.js.map
