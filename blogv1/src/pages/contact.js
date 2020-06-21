@@ -1,9 +1,9 @@
 import React from "react";
 import styled from '@emotion/styled';
-import { graphql } from 'gatsby';
+// import { graphql } from 'gatsby';
 // import { MDXRenderer } from 'gatsby-plugin-mdx';
-import PropTypes from 'prop-types';
-import { Link } from "gatsby"
+// import PropTypes from 'prop-types';
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -35,13 +35,13 @@ const ContactPage = ({ location }) => {
   );
 };
 
-const Heading = styled.h1`
-  padding-top: 0;
-  margin-top: 0;
-  &::before {
-    display: none !important;
-  }
-`;
+// const Heading = styled.h1`
+//   padding-top: 0;
+//   margin-top: 0;
+//   &::before {
+//     display: none !important;
+//   }
+// `;
 
 
 export default ContactPage

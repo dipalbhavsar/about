@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 const TagControl = () => {
   return (
-    <ulWrapper>
+    <ULWrapper>
       <Link href="#">cloud</Link>
       <Link href="#">aws</Link>
       <Link href="#">react</Link>
@@ -12,20 +12,21 @@ const TagControl = () => {
       <Link href="#">angular</Link>
       <Link href="#">travels</Link>
       <Link href="#">food</Link>
-    </ulWrapper>
+    </ULWrapper>
     );
 }
 
-const ulWrapper = styled.ul`
+const ULWrapper = styled.ul`
+
 `;
 
 const Link = styled.a`
   text-transform: uppercase;
   display: inline-block;
   padding: 4px 10px;
-  margin-bottom: 7px;
-  margin-right: 4px;
-  border-radius: 4px;
+  margin-bottom: 3px;
+  margin-left: 4px;
+  border-radius: 10px;
   color: ${p => p.theme.colors.colors};
   transition: color ${p => p.theme.transition};
   &:hover {border: 1px solid ${p => p.theme.colors.primary};},
@@ -33,7 +34,7 @@ const Link = styled.a`
     color: ${p => p.theme.colors.primary};
   }
   border: 1px solid ${p => p.theme.colors.primary};
-  font-size: 11px;
+  font-size: 10px;
 `;
 
 

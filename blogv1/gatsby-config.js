@@ -6,10 +6,10 @@ module.exports = {
     siteUrl: `https://www.dipalbhavsar.com`,
     description: `This site is developed using React, GatsBy, Bootstrap 4.5. Hosted in GitHub page. this site is intense to self learning and exploring different technologies.`,
     social: [
-      {
-        name: `github`,
-        url: `https://github.com/dipalbhavsar`
-      },
+      // {
+      //   name: `github`,
+      //   url: `https://github.com/dipalbhavsar`
+      // },
       {
         name: `twitter`,
         url: `https://twitter.com/dipal_bhavsar`

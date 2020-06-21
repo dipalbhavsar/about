@@ -19,20 +19,17 @@ const CategoryBox = () => {
     </ul>
   )
 }
-const ULCategory = styled.ul`
-
-`;
 
 const PStyle = styled.p`
   color:${p => p.theme.colors.label};
 `;
-const LabelStyle = styled.a`
-  color: ${p => p.theme.colors.label};
-  // position: relative;
-  // margin-bottom: 10px;
-  // padding-bottom: 10px;
-  // border-bottom: 1px solid #dee2e6;
-  list-style: none;
-`;
+// const LabelStyle = styled.a`
+//   color: ${p => p.theme.colors.label};
+//   // position: relative;
+//   // margin-bottom: 10px;
+//   // padding-bottom: 10px;
+//   // border-bottom: 1px solid #dee2e6;
+//   list-style: none;
+// `;
 
 export default CategoryBox

@@ -4,7 +4,7 @@
     {
       "pageId": "1",
       "pageLink": "./technology/ConductingEffectiveCodeReviews",
-      "pageImage": "https://cdn.auth0.com/blog/illustrations/code-review.png",
+      "pageImage": "agile_CodeReview.png",
       "pageTitle": "Conducting Effective Code Reviews",
       "pageDescription": "Learn about the things to pay attention to, and what to automate while reviewing code so that you can increase the speed and the quality of code reviews in your organization.",
       "pageCategory": "Technology",
@@ -18,7 +18,7 @@
     {
       "pageId": "2",
       "pageLink": "./agile/How_to_prevent_downstream_problems",
-      "pageImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Drain_Trap.svg/422px-Drain_Trap.svg.png",
+      "pageImage": "agile_Drain_Trap.png",
       "pageTitle": "How to prevent downstream problems?",
       "pageDescription": "Describing my own experience to learn about very important concept about considering facts while coding",
       "pageCategory": "Agile",
@@ -32,7 +32,7 @@
     {
       "pageId": "4",
       "pageLink": "./sharepoint/SharePoint_Framework_OverView",
-      "pageImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Microsoft_Office_SharePoint_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_SharePoint_%282018%E2%80%93present%29.svg.png",
+      "pageImage": "tech_sharepoint_128.png",
       "pageTitle": "SharePoint Framework Overview, Part 1",
       "pageDescription": "Understand some basic concept of SharePoint Framework",
       "pageCategory": "SharePoint",
@@ -46,7 +46,7 @@
     {
       "pageId": "5",
       "pageLink": "./sharepoint/SharePoint_Development_Patterns",
-      "pageImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Microsoft_Office_SharePoint_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_SharePoint_%282018%E2%80%93present%29.svg.png",
+      "pageImage": "tech_sharepoint_128.png",
       "pageTitle": "SharePoint Development Patterns, Part 2",
       "pageDescription": "Deep drive to learn how working with the SharePoint Framework differs from traditional SharePoint development and development.",
       "pageCategory": "SharePoint",

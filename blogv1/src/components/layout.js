@@ -15,7 +15,6 @@ import TagControl from "./tagcontrol"
 import NewsSubscription from "./newsSubscription";
 import Archives from "./archives";
 import Declaration from "./declaration";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const Layout = ({ children, location, isLeftSideDisplay=true }) => {
   const [navOpen, setNavOpen] = useState(false);
@@ -33,7 +32,7 @@ const Layout = ({ children, location, isLeftSideDisplay=true }) => {
                   {children}
                 </div>
                 {isLeftSideDisplay ?
-                <ScrollAnimation animateIn='bounceInRight' initiallyVisible={true} animateOnce={true} className="col-md-4">                  
+                <div className="col-md-4">
                   <SideBarBox className="pt-md-4" >                    
                     <SideBarHeading>
                         Search Here...
@@ -65,7 +64,7 @@ const Layout = ({ children, location, isLeftSideDisplay=true }) => {
                     </SideBarHeading>
                     <Declaration></Declaration>
                   </SideBarBox>
-                </ScrollAnimation>
+                </div>
                 : ''
                 }
               </div>
@@ -109,7 +108,7 @@ const SideBarBox = styled.div`
 `;
 
 const SideBarHeading = styled.p`
-  font-size: 20px;
+font-size: 20px;
   font-weight: normal;
   font-style: italic;
   margin-bottom: 30px;

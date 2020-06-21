@@ -1,22 +1,22 @@
 [
   {
     "title": "Home",
-    "url": "./"
+    "url": "/"
   },
   {
     "title": "Technology",
-    "url": "./technology"
+    "url": "/technology"
   },
   {
     "title": "Agile",
-    "url": "./agile"
+    "url": "/agile"
   },
   {
     "title": "About",
-    "url": "about"
+    "url": "/about"
   },
   {
     "title": "Contact",
-    "url": "contact"
+    "url": "/contact"
   }
 ]

@@ -1,20 +1,18 @@
 import React from "react";
 import Moment from "react-moment";
-import { Link } from "gatsby";
+import { Link,useStaticQuery, graphql  } from "gatsby";
 import styled from '@emotion/styled';
-import ScrollAnimation from "react-animate-on-scroll";
+import Image from '../components/Image';
 
 const BlogEntry = ({ blogData }) => {
   return (
-    <ScrollAnimation animateIn='fadeIn' initiallyVisible={true} animateOnce={true} className="blog-entry ftco-animate d-md-flex">
-        <Link
-          to={blogData.pageLink}
-          className="img img-2"
-          style={{ backgroundImage: `url(` + blogData.pageImage + `)` }}
-        ></Link>
+    <div className="blog-entry ftco-animate d-md-flex">
+      <Link to={"/" + blogData.pageLink} className="img img-2">
+        <Image alt="Gatsby in Space" filename= {blogData.pageImage} />
+      </Link>
         <div className="text text-2 pl-md-4">
           <h3 className="mb-2">
-            <Link to={blogData.pageLink}><PWrapper>{blogData.pageTitle}</PWrapper></Link>
+            <Link to={"/" + blogData.pageLink}><PWrapper>{blogData.pageTitle}</PWrapper></Link>
           </h3>
           <div className="meta-wrap">
             <p key={"commentArea" + blogData.pageId} className="meta">
@@ -31,12 +29,12 @@ const BlogEntry = ({ blogData }) => {
           </div>
           <p className="mb-4">{blogData.pageDescription}</p>
           <p>
-            <Link to={blogData.pageLink} activeClassName="btn-custom">
+            <Link to={ "/" + blogData.pageLink} activeClassName="btn-custom">
               Read More<span className="ion-ios-arrow-forward"></span>
             </Link>
           </p>
         </div>
-    </ScrollAnimation>
+    </div>
   )
 }
 
