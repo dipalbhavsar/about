@@ -35,10 +35,6 @@ const LeftSidebarNav = styled.nav`
   background: ${p => p.theme.colors.sidebar};
   transition: 0.25s var(--ease-in-out-quad);
   transform: ${p => (p.navOpen ? `translateX(16rem)` : null)};
-  ${mediaqueries.desktop_up`
-    transform: translateX(0);
-    padding: 6.6rem 0 1rem;
-  `};
 `;
 
 LeftSidebar.propTypes = {

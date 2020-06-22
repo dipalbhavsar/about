@@ -26,7 +26,7 @@ const Layout = ({ children, location, isLeftSideDisplay=true }) => {
         <LeftSidebar navOpen={navOpen} />
          <SiteContentWrapper>
           <SiteContent navOpen={navOpen}>
-            <div className="col-xl-12 py-5 px-md-5">
+            <div className="col-xl-12">
               <div className="row pt-md-4">
                 <div className={isLeftSideDisplay ? "col-md-8" : "col-md-12"}>
                   {children}
@@ -78,7 +78,7 @@ const Layout = ({ children, location, isLeftSideDisplay=true }) => {
 
 const SiteWrapper = styled.div`
   display: flex;
-  min-height: 100vh;
+  // min-height: 100vh;
   overflow-x: hidden;
   background: ${p => p.theme.colors.background};
   transition: background 0.25s var(--ease-in-out-quad);
@@ -90,7 +90,7 @@ const SiteContentWrapper = styled.div`
 `;
 
 const SiteContent = styled.main`
-  padding: 2rem 1rem 2rem;
+  // padding: 2rem 1rem 2rem;
   transition: 0.25s var(--ease-in-out-quad);
   opacity: ${p => (p.navOpen ? 0.3 : 1)};
   transform: ${p => (p.navOpen ? `translateX(16rem)` : null)};
@@ -108,7 +108,7 @@ const SideBarBox = styled.div`
 `;
 
 const SideBarHeading = styled.p`
-font-size: 20px;
+  font-size: 20px;
   font-weight: normal;
   font-style: italic;
   margin-bottom: 30px;
