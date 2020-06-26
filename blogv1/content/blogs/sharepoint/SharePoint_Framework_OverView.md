@@ -2,6 +2,11 @@
 title: SharePoint Framework Overview
 date: "2020-04-28T22:12:03.284Z"
 description: "Learn about the things to pay attention to, and what to automate while reviewing code so that you can increase the speed and the quality of code reviews in your organization."
+pageImage: "tech_sharepoint_128.png"
+pageCategory: "SharePoint"
+pageTags: ["technology", "sharepoint"]
+pageAuthor: "Dipal Bhavsar"
+pageMenu: "Technology"
 ---
 
 First off, let me welcome you in the world of SharePoint, client side development. Now a days, SharePoint Framework is much interesting since it has open wide range of offering with different technology stacks. This would be a big first step to learning the SharePoint Framework and I’m happy to help you on the road ahead.

@@ -1,7 +1,12 @@
 ---
 title: How to prevent downstream problems?
-date: "2020-02-01T22:12:03.284Z"
-description: "This page is all about agile"
+date: "2020-02-01T00:00:00.000Z"
+description: "Think differently to see the problem"
+pageImage: "agile_Drain_Trap.png"
+pageCategory: "Agile"
+pageTags: ["agile"]
+pageAuthor: "Dipal Bhavsar"
+pageMenu: "Agile"
 ---
 
 Recently, I moved into my new home. It was very exited moment moving from older home to new one for my family. My kids were also exited, rather focusing much more on transition, they focus much more on other exited things i.e. amenities, play area, swimming pool and much more – this is obvious, and we left them with their excitement.

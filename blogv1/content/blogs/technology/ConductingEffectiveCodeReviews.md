@@ -1,7 +1,12 @@
 ---
 title: Conducting Effective Code Reviews
-date: "2020-04-28T22:12:03.284Z"
+date: "2019-01-01T00:00:00.000Z"
 description: "Learn about the things to pay attention to, and what to automate while reviewing code so that you can increase the speed and the quality of code reviews in your organization."
+pageImage: "agile_CodeReview.png"
+pageCategory: "Technology"
+pageTags: ["technology", "code review"]
+pageAuthor: "Dipal Bhavsar"
+pageMenu: "Technology"
 ---
 
 Code review is a process that enables peers and automated tools to check proposed changes to a codebase. The main goal of a code review is to catch potential issues, security problems, and bugs before they are introduced to the codebase and prevent them from causing problems in production.

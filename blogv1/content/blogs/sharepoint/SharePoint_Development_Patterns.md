@@ -2,9 +2,12 @@
 title: SharePoint Development Patterns
 date: "2020-05-29T10:30:03.284Z"
 description: "Deep drive to learn how working with the SharePoint Framework differs from traditional SharePoint development and development."
+pageImage: "tech_sharepoint_128.png"
+pageCategory: "SharePoint"
+pageTags: ["technology", "sharepoint"]
+pageAuthor: "Dipal Bhavsar"
+pageMenu: "Technology"
 ---
-<br><br> 
-
 In previous section, I explained about SharePoint Framework.
 
 In this post, I am going to take a look at different patterns available for SharePoint development and development.
