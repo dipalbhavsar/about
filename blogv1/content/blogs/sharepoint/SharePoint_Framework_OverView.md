@@ -1,7 +1,7 @@
 ---
-title: SharePoint Framework Overview
+title: SharePoint Framework Overview, Part 1
 date: "2020-04-28T22:12:03.284Z"
-description: "Learn about the things to pay attention to, and what to automate while reviewing code so that you can increase the speed and the quality of code reviews in your organization."
+description: "Understand some basic concept of SharePoint framework"
 pageImage: "tech_sharepoint_128.png"
 pageCategory: "SharePoint"
 pageTags: ["technology", "sharepoint"]

@@ -1,7 +1,7 @@
 ---
 title: How to prevent downstream problems?
-date: "2020-02-01T00:00:00.000Z"
-description: "Think differently to see the problem"
+date: "2017-02-15T00:00:00.000Z"
+description: "Describing my own experience to learn about very important concept about considering facts while coding"
 pageImage: "agile_Drain_Trap.png"
 pageCategory: "Agile"
 pageTags: ["agile"]

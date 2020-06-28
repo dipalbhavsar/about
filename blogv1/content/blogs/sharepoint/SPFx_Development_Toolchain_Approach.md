@@ -1,7 +1,7 @@
 ---
-title: SPFx Development Toolchain Approach
+title: SPFx Development Toolchain Comparison, Part 3
 date: "2020-06-26T00:00:00.000Z"
-description: "Overview of the SharePoint Framework development toolchain"
+description: "Deep drive to understand SharePoint framework development toolchain"
 pageImage: "tech_sharepoint_128.png"
 pageCategory: "SharePoint"
 pageTags: ["technology", "sharepoint"]

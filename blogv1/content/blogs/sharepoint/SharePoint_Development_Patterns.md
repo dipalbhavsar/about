@@ -1,5 +1,5 @@
 ---
-title: SharePoint Development Patterns
+title: SharePoint Development Patterns, Part 2
 date: "2020-05-29T10:30:03.284Z"
 description: "Deep drive to learn how working with the SharePoint Framework differs from traditional SharePoint development and development."
 pageImage: "tech_sharepoint_128.png"
