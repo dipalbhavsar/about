@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(t,e,i){"use strict";i.r(e);i("q1tI");var n=i("Bl7J"),a=i("vrFN"),o=i("qKvR");e.default=function(t){var e=t.location;return Object(o.d)(n.a,{location:e,isLeftSideDisplay:!1},Object(o.d)(a.a,{title:"About",description:"This is all about me, my adventure and exprerience with the world"}))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-cdc06bb6fd5752d2bb5c.js.map
