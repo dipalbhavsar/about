@@ -4,7 +4,7 @@ date: "2020-06-26T00:00:00.000Z"
 description: "Deep drive to understand SharePoint framework development toolchain"
 pageImage: "tech_sharepoint_128.png"
 pageCategory: "SharePoint"
-pageTags: ["technology", "sharepoint"]
+pageTags: ["Technology", "SharePoint"]
 pageAuthor: "Dipal Bhavsar"
 pageMenu: "Technology"
 ---

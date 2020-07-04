@@ -1,6 +1,12 @@
 import React from "react"
 
-const SearchForm = () => {
+const SearchForm = ({data}) => {  
+  const handleInputChange = event => {
+    debugger;
+    const query = event.target.value
+    console.log(query);
+  }
+
   return (
     <div action="#" className="search-form">
       <div className="form-group">
@@ -9,6 +15,7 @@ const SearchForm = () => {
           type="text"
           className="form-control"
           placeholder="Type a keyword and hit enter"
+          onChange={handleInputChange}
         />
       </div>
     </div>

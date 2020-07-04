@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const TechnologyPage = ({ location, data }) => {
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.pageData.edges
   return (
     <Layout location={location}>
       <SEO title="Technology" description = "List of Technology posts will display here" keywords={[`coding`, `programming`, `Dipal Bhavsar`, `gatsbyJS`,`web development`,`React`,`web programming`, `Technology`]}/>
@@ -18,39 +18,37 @@ const TechnologyPage = ({ location, data }) => {
 export default TechnologyPage
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(
-      sort: {order: DESC, fields: [frontmatter___date]},
-      filter: { frontmatter:  { pageTags: { eq:"technology"}}}
-      ) {
-      totalCount
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          tableOfContents
-          timeToRead
-          fields {
-            slug
-          }
-          wordCount {
-            paragraphs
-            sentences
-            words
-          }
-          id
-          frontmatter {                  
-            title
-            description
-            pageImage
-            date(formatString: "YYYYMMDD")
-            pageAuthor
-            pageCategory
-            pageMenu
-            pageTags
-          }                
+query {
+  pageData:allMarkdownRemark(
+    sort: {order: DESC, fields: [frontmatter___date]},
+    filter: { frontmatter:  { pageTags: { eq:"Technology"}}}
+    ) {
+    totalCount
+    edges {
+      node {
+        id
+        tableOfContents
+        timeToRead
+        fields {
+          slug
         }
+        wordCount {
+          paragraphs
+          sentences
+          words
+        }
+        frontmatter {                  
+          title
+          description
+          pageImage
+          date(formatString: "YYYYMMDD")
+          pageAuthor
+          pageCategory
+          pageMenu
+          pageTags
+        }                
       }
     }
-  }
+  }  
+}
 `

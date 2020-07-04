@@ -4,7 +4,7 @@ date: "2019-01-01T00:00:00.000Z"
 description: "Learn about the things to pay attention to, and what to automate while reviewing code so that you can increase the speed and the quality of code reviews in your organization."
 pageImage: "agile_CodeReview.png"
 pageCategory: "Technology"
-pageTags: ["technology", "code review"]
+pageTags: ["Technology"]
 pageAuthor: "Dipal Bhavsar"
 pageMenu: "Technology"
 ---

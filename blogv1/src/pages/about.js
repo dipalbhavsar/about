@@ -6,7 +6,7 @@ const AboutPage = ({ location }) => {
 
   return (
     <Layout location={location} isLeftSideDisplay={false}>
-      <SEO title="About" description = "this is description"/>
+      <SEO title="About" description = "This is all about me, my adventure and exprerience with the world"/>
     </Layout>
   );
 };

@@ -4,11 +4,27 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from '@emotion/styled';
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+
+  const PostTemplate = () => {
+    let disqusConfig = {
+      url: location.href,
+      identifier: post.id,
+      title: post.title,
+    }
+    return (
+      <>
+        <h1>{post.title}</h1>
+        <CommentCount config={disqusConfig} placeholder={'...'} />
+        <Disqus config={disqusConfig} />
+      </>
+    )
+  } 
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -55,7 +71,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               }}
             />
             <footer>
-             
+              <PostTemplate></PostTemplate>
             </footer>
           </div>
     </Layout>

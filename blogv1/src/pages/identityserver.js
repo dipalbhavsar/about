@@ -3,11 +3,11 @@ import BlogEntryNew from "../components/blogentrynew"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AngularPage = ({ location, data }) => {
+const TechnologyPage = ({ location, data }) => {
   const posts = data.pageData.edges
   return (
     <Layout location={location}>
-      <SEO title="Angular" description = "List of Angular posts will display here" keywords={[`coding`, `programming`, `Dipal Bhavsar`, `gatsbyJS`,`web development`,`React`,`web programming`, `Angular`]}/>
+      <SEO title="IdentityServer" description = "List of Technology posts will display here" keywords={[`coding`, `programming`, `Dipal Bhavsar`, `gatsbyJS`,`web development`,`React`,`web programming`, `Technology`]}/>
       {posts.map(({ node }) => {
         return <BlogEntryNew blogData={node} key={"_" + node.id}></BlogEntryNew>
       })}
@@ -15,13 +15,13 @@ const AngularPage = ({ location, data }) => {
   );
 };
 
-export default AngularPage
+export default TechnologyPage
 
 export const pageQuery = graphql`
 query {
   pageData:allMarkdownRemark(
     sort: {order: DESC, fields: [frontmatter___date]},
-    filter: { frontmatter:  { pageTags: { eq:"Angular"}}}
+    filter: { frontmatter:  { pageTags: { eq:"IdentityServer"}}}
     ) {
     totalCount
     edges {
@@ -52,5 +52,3 @@ query {
   }  
 }
 `
-
-

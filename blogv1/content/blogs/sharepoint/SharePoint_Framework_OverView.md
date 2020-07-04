@@ -4,7 +4,7 @@ date: "2020-04-28T22:12:03.284Z"
 description: "Understand some basic concept of SharePoint framework"
 pageImage: "tech_sharepoint_128.png"
 pageCategory: "SharePoint"
-pageTags: ["technology", "sharepoint"]
+pageTags: ["Technology", "SharePoint"]
 pageAuthor: "Dipal Bhavsar"
 pageMenu: "Technology"
 ---

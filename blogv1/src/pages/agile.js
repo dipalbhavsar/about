@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const AgilePage = ({ location, data }) => {
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.pageData.edges
   return (
     <Layout location={location}>
       <SEO title="Agile" description = "List of Agile posts will display here" keywords={[`coding`, `programming`, `Dipal Bhavsar`, `gatsbyJS`,`web development`,`React`,`web programming`, `Agile`]}/>
@@ -19,14 +19,13 @@ export default AgilePage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(
+    pageData:allMarkdownRemark(
       sort: {order: DESC, fields: [frontmatter___date]},
-      filter: { frontmatter:  { pageTags: { eq:"agile"}}}
+      filter: { frontmatter:  { pageTags: { eq:"Agile"}}}
       ) {
       totalCount
       edges {
         node {
-          excerpt(pruneLength: 400)
           id
           tableOfContents
           timeToRead
@@ -38,7 +37,6 @@ export const pageQuery = graphql`
             sentences
             words
           }
-          id
           frontmatter {                  
             title
             description
@@ -51,7 +49,7 @@ export const pageQuery = graphql`
           }                
         }
       }
-    }
+    }    
   }
 `
 

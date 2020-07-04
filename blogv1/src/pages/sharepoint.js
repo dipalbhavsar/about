@@ -21,7 +21,7 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       sort: {order: DESC, fields: [frontmatter___date]},
-      filter: { frontmatter:  { pageTags: { eq:"sharepoint"}}}
+      filter: { frontmatter:  { pageTags: { eq:"SharePoint"}}}
       ) {
       totalCount
       edges {

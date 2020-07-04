@@ -13,7 +13,7 @@ const ContactPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title="Contact" description = "This is all about me, my adventure and exprerience with the world"/>
+      <SEO title="Contact" description = "Feel free to contact me..."/>
       <h1>Hello World...</h1>
       <p>Now go build something great.</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}><Image /></div>

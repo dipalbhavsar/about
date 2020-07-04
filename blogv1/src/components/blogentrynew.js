@@ -3,8 +3,15 @@ import Moment from "react-moment";
 import { Link } from "gatsby";
 import styled from '@emotion/styled';
 import Image from '../components/Image';
+import { CommentCount } from 'gatsby-plugin-disqus'
 
 const BlogEntryNew = ({ blogData }) => {
+  let pageurl = "https://www.dipalbhavsar.com/" + blogData.pageLink;
+  let disqusConfig = {
+    url: {pageurl},
+    identifier: blogData.id,
+    title: blogData.pageTitle,
+  }
   return (
     <div className="blog-entry d-md-flex">
       <Link to={blogData.fields.slug} className="img img-2">
@@ -21,7 +28,7 @@ const BlogEntryNew = ({ blogData }) => {
                 <a href={blogData.frontmatter.pageCategory.toLowerCase()}> <span>{blogData.frontmatter.pageCategory}</span> </a>
               </span>
               <span key={"comment_" + blogData.id}>
-                {0}
+                <CommentCount config={disqusConfig} placeholder={'0 Comment'} />
               </span>
             </p>
           </div>
