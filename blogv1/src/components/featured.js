@@ -5,7 +5,6 @@ import { groupBy } from "lodash"
 const Featured = () => {
     const { edges } = FeaturedPostsQuery()
     const data = GetProperData(edges);
-    console.log(data);
     return (
         <ul className="categories">
            {data.map((c, i) => {
@@ -37,10 +36,7 @@ const Featured = () => {
                     item ["count"] = 0;
                     jsonObj.push(item);
                 }
-                console.log(data[index])
             }
-            debugger;
-            console.log("pageTags " + c.node.frontmatter.pageTags);
         })
         return jsonObj;
     }

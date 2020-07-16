@@ -4,7 +4,6 @@ import { Link, useStaticQuery } from "gatsby"
 const CategoryBox = () => {
     const { edges } = FeaturedPostsQuery()
     const data = GetProperData(edges);
-    console.log(data);
     return (
         <ul className="categories">
            {data.map((c, i) => {

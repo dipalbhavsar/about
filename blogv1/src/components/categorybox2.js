@@ -3,8 +3,6 @@ import { Link, useStaticQuery } from "gatsby"
 
 const CategoryBox2 = () => {
     const { categoryData } = GetAllTags();
-    console.log("categoryData" + { categoryData });
-    alert({ categoryData }.length);
     return (
         <ul className="categories">
           {categoryData.map((c, i) => {

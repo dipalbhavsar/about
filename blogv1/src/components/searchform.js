@@ -4,7 +4,6 @@ const SearchForm = ({data}) => {
   const handleInputChange = event => {
     debugger;
     const query = event.target.value
-    console.log(query);
   }
 
   return (
