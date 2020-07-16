@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dipal Bhavsar]]></title><description><![CDATA[This site is developed using React, GatsBy, Bootstrap 4.5. Hosted in GitHub page. this site is intense to self learning and exploring different technologies.]]></description><link>https://www.dipalbhavsar.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Jul 2020 17:06:45 GMT</lastBuildDate><item><title><![CDATA[Introduction - IdentityServer]]></title><description><![CDATA[IdentityServer4 is an OpenID Connect and OAuth 2.0 framework for ASP.NET Core. It enables the following features in your applications…]]></description><link>https://www.dipalbhavsar.com/IdentityServer/IdentityServer_Introduction/</link><guid isPermaLink="false">https://www.dipalbhavsar.com/IdentityServer/IdentityServer_Introduction/</guid><pubDate>Wed, 01 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;b&gt;IdentityServer4 is an OpenID Connect and OAuth 2.0 framework for ASP.NET Core.&lt;/b&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dipal Bhavsar]]></title><description><![CDATA[This site is developed using React, GatsBy, Bootstrap 4.5. Hosted in GitHub page. this site is intense to self learning and exploring different technologies.]]></description><link>https://www.dipalbhavsar.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 16 Jul 2020 17:49:32 GMT</lastBuildDate><item><title><![CDATA[Node.js, NPM & Package Managers, Part 5]]></title><description><![CDATA[So far we have covered about toolchain. Also, we understood it’s important in SPFx development. Here, we will explore further on Node.js and…]]></description><link>https://www.dipalbhavsar.com/sharepoint/SPFx_Package_manager/</link><guid isPermaLink="false">https://www.dipalbhavsar.com/sharepoint/SPFx_Package_manager/</guid><pubDate>Thu, 16 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;So far we have covered about toolchain. Also, we understood it’s important in SPFx development.&lt;/p&gt;
+&lt;p&gt;Here, we will explore further on Node.js and NPM. They are usually grouped together, and while I am doing that here in this installment, I personally see them as two very different things.&lt;/p&gt;
+&lt;p&gt;Though, in the context of SharePoint Framework development, you don’t need to focus much at all on Node.js; just install it and move on. NPM is where you need to make sure that you are familiar with the commands including how to query, manage and upgrade new versions, etc.&lt;/p&gt;
+&lt;p&gt;However, Node.js needs to focus more. If you are working on MacOS, you should consider using a node version manager, or the node version manager: NVM, though it is not required.&lt;/p&gt;
+&lt;p style=&quot;font-size: 30px;&quot;&gt;What is Node.js? &lt;/p&gt;
+&lt;p&gt;Node.js, commonly just referred to as Node, is a cross-platform runtime that enables developers to create applications written in JavaScript that run on devices such as servers, desktops, laptops, embedded devices… lots of stuff.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 453px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c4db534f91cf61594a64da14650cb719/2108e/nodejs.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7CAAAOwgEVKEqAAAACV0lEQVQoz22T3UtTcRjHzz/iSxemY5C7ELyRFGwd7Eq6KpU5MLtqd6ZXI1MQFYR5saDssgJfkMytIBVJXM7XTdOU1CNTa760hexszB23TztnHnPm91z8nt/D83x4eH7fI5BWKpUimUxqp/rpuVQqk/t3z8R2ux2Xy6XFap/eq0o4OztDlxprcBV0Dk6eQ9Umvbauro6GhgYtTiQSWf2CGsiyTDAYJEtp3m/5iKuKRCJYLBZsNttFTu3VwcLExARVVVUUFxfT19dHIq6wL0u8mu/g6dAjBmffEFdihEJhWltbMZlMGAwGmpubtcmdTiemWyZqHtbg9XoRCgoKsFqttLe3k5uXi2dqhpeLXTweEWkZauS+Q+Tzxid6e3opMhThcDgoLS3V4OPj4+Tl5tHyrIWyijLKb5cj5OTkMDw8TDQaJf9GPp5pD11jbdS/vcdzlw2xs4LBpQE62jqovFNJLBajurqapqYm3G43hTcLGfG8Z/H7IruBPQRRFPH5fJyenlJbW8vM9FcGfQPc7SnnybsHNL6uZzW4yuTYJCUlJdqURqOR/v5+JEnCbDZjNBi1dWk7PDk5uViuoija0lX5AkuMpME7R9us7K6wE5ZYW1+ju7Mbv9+f9UjOF05c7oyNBN1Luo+0509m7BGW/+DdmuFneB9/wM98YI6D6AGXvXtVwmWQbl49t3W4xcavdVz+UUZ9H/D88BA4DlzU6qfqP30ogWukmlmVdCQxtfGFue3ZNGyaj8tuQpFQFvC/Ca9L6sVxJc7CzgLf9lbSe1xm83Dz2l/xsv4Crwct/tvKWLIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Node.JS&quot;
+        title=&quot;Node.JS&quot;
+        src=&quot;/static/c4db534f91cf61594a64da14650cb719/2108e/nodejs.png&quot;
+        srcset=&quot;/static/c4db534f91cf61594a64da14650cb719/12f09/nodejs.png 148w,
+/static/c4db534f91cf61594a64da14650cb719/e4a3f/nodejs.png 295w,
+/static/c4db534f91cf61594a64da14650cb719/2108e/nodejs.png 453w&quot;
+        sizes=&quot;(max-width: 453px) 100vw, 453px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;It does this by hosting the Chromium project’s V8 JavaScript virtual machine. Chromium is the open-source browser project that Google’s Chrome browser is based on. It also includes APIs for interacting with the local device for things like file IO, environment variables, and networking.&lt;/p&gt;
+&lt;p&gt;There are two main distributions of Node.js. The long-term support or LTS version is a version that has strict requirements for new features and updates. This is the version that many enterprises use because it’s not always changing and improving. It is also the version that Microsoft recommends for development with the SharePoint framework.&lt;/p&gt;
+&lt;p&gt;The other is what they call the current version. This has the latest features added to Node.js. Eventually, these features will make it into the LTS version, but in current they are less mature.&lt;/p&gt;
+&lt;p style=&quot;font-size: 30px;&quot;&gt;Why do you need Node.js? &lt;/p&gt;
+&lt;p&gt;Most of the toolchain for development of SPFx built on Node.JS, so it require. This gives us the cross-platform aspect of SharePoint framework development.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 453px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/751270144fe5e3cd5f416918aae587d9/2108e/npm.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.189189189189186%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABo0lEQVQY02O4Zm11zc7umo3NNVswAjFsQcgGxoWKwBhgket29vfT0hjeLFr09eLFL6dOfb9x48WkiTdcXb6cPPnl9Omv5859u3r1TmTkw+Li7zdvAgW/nj8PVAYiz569Gx19OzCQAaju////79av/7hr16eDB2/5+wG5///+fT6h/9fLV49KSp51dgAFvl2+/HLq1L9fvz7r6Pz95s2j4uJb/v4Mn48eBco9LCp8XFnx6fDhmz7eQO6/Hz8u62gDuY/Kyp62toJM37QR6Khfr19dMTL8duUKWLMf1OanjQ3POto/nzhx09cHaO3/P39ezZv358MHkM0dIJs/7t59OzTkz/t3N5wcf9y//6i8HGTz876+zyeO342OupeY8Ly391aAP0jz//9AP386cADIvZea8vn0qaetLdftbN+uWgm0+dXsWXciwm/5+DLcDgy4HRR4OyQYyL/uYH/Ty/PbpUtAncDgve7oABQESoHUBAcBbQapDAsFkeFhT6qqGP79/g1Ef3/8gLjtsp7uVXOzq2amVwwNPx8DBce/nz8hatDRn98Aa9RKKNWumzgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;NPM&quot;
+        title=&quot;NPM&quot;
+        src=&quot;/static/751270144fe5e3cd5f416918aae587d9/2108e/npm.png&quot;
+        srcset=&quot;/static/751270144fe5e3cd5f416918aae587d9/12f09/npm.png 148w,
+/static/751270144fe5e3cd5f416918aae587d9/e4a3f/npm.png 295w,
+/static/751270144fe5e3cd5f416918aae587d9/2108e/npm.png 453w&quot;
+        sizes=&quot;(max-width: 453px) 100vw, 453px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So, what is NPM? NPM is the package manager for Node.js. NPM is a node.js based tool that you use to acquire and manage packages within your projects. Some Node.js tools are also distributed using NPM. For instance, when you want to install a new version of the TypeScript compiler, you will run…&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;NPM install -g typescript&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This tells NPM to install the package TypeScript globally. When you install something globally, it’s available anywhere in your environment. If you leave off that -g it is installed locally in the current working directory.&lt;/p&gt;
+&lt;p&gt;A special note makes sure you are using NPM version 5 or higher. The reason for this is prior to version 5 (actually prior to version 3) create some issue in Windows OS. NPM version 3 flatted this and kept everything in a single folder.&lt;/p&gt;
+&lt;p style=&quot;font-size: 30px;&quot;&gt;Installing Node.js &amp; NPM&lt;/p&gt;
+&lt;p&gt;There are two ways you can get Node.js installed on your environment:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 1:&lt;/strong&gt; Follow instructions on &lt;a href=&quot;https://nodejs.org/en/download/&quot;&gt;https://nodejs.org/en/download/&lt;/a&gt; for LTS.
+The first option is to head to the Node.js website, download an installer for the latest LTS version for your platform and follow the instructions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limitation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This works, but you will find at times you have to work with Node.js as an admin, either within an administrative command prompt in Windows or by prefixing any Node based commands with sudo on MacOS or Linux.&lt;/li&gt;
+&lt;li&gt;The other limitation of this approach is you can only have one version of Node.js &amp;#x26; NPM installed at any time on your developer environment. Generally, that is not a big deal, it is just annoying at times.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Option 2:&lt;/strong&gt; Install using Node.js Version Manager (NVM)&lt;/p&gt;
+&lt;p&gt;The other option that I prefer is to use the Node.js version manager or NVM. Once installed, this helps you acquire different versions of node and switch between them.&lt;/p&gt;
+&lt;p&gt;Each Node.js install you get has its own global package installation folder so you can have different globally installed versions between node runtime installs.&lt;/p&gt;
+&lt;p&gt;It also avoids admin command prompts because it installs the node runtime within your profile. Since you always have admin rights over your profile, you are effectively always running as admin.&lt;/p&gt;
+&lt;p&gt;Personally, I like managing my Node.js installs using NVM because it lets me use the latest features but also get the flexibility of jumping between versions and trying new things out without impacting my current stable setup.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NVM for MacOS: &lt;a href=&quot;https://github.com/creationix/nvm&quot;&gt;https://github.com/creationix/nvm&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;NVM for Windows: &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;https://github.com/coreybutler/nvm-windows&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is a version of NVM for both MacOS and Windows depending on your platform of choice.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 529px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8e36c0736fe420f27b12abd80155c4fd/67d6a/npm1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACWklEQVQoz4WS3W/SUBjGTym0jNIPRlsKa8vhY7IBGwKOUVAYYw5C1H0Hs4zA5sIyzTbJFrdwgSZ6IUuWGL0yXnjt3dwy6BQyvdF/y1a9nT7nzZuTnJz83jzPC0bWXiw+8azv+0sV0YhjRtwMNCHaAc71MHyXE1+nhbYiHCuO38UdJ53tFHyTFfdvAWEszo2ludGEDYYtrgANbxgxTPuOAiC/SsHvC5GL5Xv9+t3eo/ne1mJvu9LfnbqsiL37nvd54IhOj08y8RQTV8hkjKBtuM5FEY08dBDz9xZyn9eq6t7W5UFdbdS7jcPO0fLZpr87J59kgK9YyywFpldCkzm7ctNIWRBgMAyIJFv0SB9yUbW8oT591m89/9La6O6WO9vVzk75vJ74uupqpwGiMwDKiCjrAzhOpYfknaj/bdb7cQZ+KoyeztcvGnvq4ZHabHWa9fPdytnjw04zrpYdLyeBO8LSLsomDUoRnhFoM0virJVgyAFgho2J4M9ytl/LfKtmr2r5q41kf1XprxWuNkM/HnpOcsAdczASb/c67V6ecAiD0Mb7XLE7t+OZKTE1whRlsiCRs5LWrQWJKsiUdpkVbSU4mJCAzy/THDvkcvqj8UAiyUERtTJWzoVbLIjBAP4tZ3iCHw4xEnQHgpJvmBJkpzdIC1AP26Dbfm1prxaWJ4RhI04hZh5QbkRbFBRBDYhupO4lch3VaMIALG7ml7gHFam0Yp+bJTi7SWci4L8yabsoK4VILhKZiQaTvnFlVPB6cZLGCRIjrBhJo7hZGwFF0T+J6sH+nQiYMOwXjBJ8Djfa5AwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;NPM Version Manager&quot;
+        title=&quot;NPM Version Manager&quot;
+        src=&quot;/static/8e36c0736fe420f27b12abd80155c4fd/67d6a/npm1.png&quot;
+        srcset=&quot;/static/8e36c0736fe420f27b12abd80155c4fd/12f09/npm1.png 148w,
+/static/8e36c0736fe420f27b12abd80155c4fd/e4a3f/npm1.png 295w,
+/static/8e36c0736fe420f27b12abd80155c4fd/67d6a/npm1.png 529w&quot;
+        sizes=&quot;(max-width: 529px) 100vw, 529px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Installing NVM and Node.js is very straightforward using the links I just provided. Personally, I’m a huge fan of NVM and use the versions listed above in both my MacOS laptop and Windows laptop.&lt;/p&gt;
+&lt;p style=&quot;font-size: 30px;&quot;&gt;Additional Package Manager Options: Yarn &amp; PNPM&lt;/p&gt;
+&lt;p&gt;NPM was the first package manager used to pull packages down from the NPM package registry at &lt;a href=&quot;https://www.npmjs.org&quot;&gt;https://www.npmjs.org&lt;/a&gt;. This registry is the primary registry all Node.js projects and most client-side packages are pulled from. It’s replaced other registries such as Bower.&lt;/p&gt;
+&lt;p&gt;NPM maintained a hold on the package management space for a while, leaving developers to address its shortcomings around speed, consistency and version locking. Since competing package managers were introduced, specifically Yarn, NPM has stepped up its game and is on par for the most part with the others out there.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://yarnpkg.com&quot;&gt;Yarn - https://yarnpkg.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yarn was created as a collaboration between Facebook and Google to address the shortcomings of NPM. The two biggest things it added was the concept of a lockfile and package cache.&lt;/p&gt;
+&lt;p&gt;The package cache helped eliminate the issue where each time you installed packages in a new project, instead of pulling a new copy from the NPM registry, Yarn would first check to see if you had already downloaded it in the past. If you had, it would skip the download process and instead just copy the package from the local cache into your project folder.&lt;/p&gt;
+&lt;p&gt;The lockfile would ensure that each time packages were installed with yarn, it the same version you got last time would be downloaded. Before this concept was introduced, if you ran installed packages on a Monday with NPM, and someone installed them on the same project on Wednesday, there was no guarantee you would get the same versions of the packages because someone may have shipped an update between the two days.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pnpm.js.org&quot;&gt;PNPM - https://pnpm.js.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is the newest one on the scene. It does everything the other two generators do in the sense of lockfiles and a package cache. However, it has one different characteristic…&lt;/p&gt;
+&lt;p&gt;Instead of copying the packages from the cache to the project, it creates a hard link from the project’s node_modules folder to the folder in the package cache. This means your project folders are much smaller!&lt;/p&gt;
+&lt;p style=&quot;font-size: 30px;&quot;&gt;Which Package Manager Should You Use? &lt;/p&gt;
+&lt;p&gt;I would encourage you to consider the options and decide which one makes the most sense for you. &lt;/p&gt;
+&lt;p&gt;In next section, we will further look over on Yeoman.  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Introduction - IdentityServer]]></title><description><![CDATA[IdentityServer4 is an OpenID Connect and OAuth 2.0 framework for ASP.NET Core. It enables the following features in your applications…]]></description><link>https://www.dipalbhavsar.com/IdentityServer/IdentityServer_Introduction/</link><guid isPermaLink="false">https://www.dipalbhavsar.com/IdentityServer/IdentityServer_Introduction/</guid><pubDate>Wed, 01 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;b&gt;IdentityServer4 is an OpenID Connect and OAuth 2.0 framework for ASP.NET Core.&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;It enables the following features in your applications:&lt;/p&gt;
 &lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;Authentication as a Service&lt;/u&gt;&lt;/p&gt;
 &lt;p&gt;Centralized login logic and workflow for all of your applications (web, native, mobile, services). IdentityServer is an officially &lt;a href=&quot;https://openid.net/certification/&quot;&gt;certified&lt;/a&gt; implementation of OpenID Connect.&lt;/p&gt;
