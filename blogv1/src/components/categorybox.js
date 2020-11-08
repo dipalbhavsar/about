@@ -9,7 +9,7 @@ const CategoryBox = () => {
            {data.map((c, i) => {
             return (
               <li key={i}>
-                <Link to= {"../" + c.name.toLowerCase()}>
+                <Link to= {"../../" + c.name.toLowerCase()}>
                 <p>{c.name}
                   <span>({c.count})</span></p>
                 </Link>
