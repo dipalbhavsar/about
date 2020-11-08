@@ -1,9 +1,6 @@
 #Directories
-__BACKUPs
-about-gatsby-v1
-about-gatsby-v1.7z
-GoogleAnalytics.txt
 blogv1/.history
+package-lock.json
 
 # Logs
 logs
@@ -74,3 +71,5 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+blogv1/package-lock.json
+blogv1/package-lock.json
