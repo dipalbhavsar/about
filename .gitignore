@@ -1,6 +1,7 @@
 #Directories
 blogv1/.history
 package-lock.json
+_backup/
 
 # Logs
 logs

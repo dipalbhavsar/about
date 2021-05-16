@@ -37,7 +37,7 @@ query {
           sentences
           words
         }
-        frontmatter {                  
+        frontmatter {
           title
           description
           pageImage
@@ -46,11 +46,9 @@ query {
           pageCategory
           pageMenu
           pageTags
-        }                
+        }
       }
     }
   }  
 }
 `
-
-
