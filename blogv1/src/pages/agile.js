@@ -2,6 +2,7 @@ import React from "react";
 import BlogEntryNew from "../components/blogentrynew"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { graphql } from 'gatsby'
 
 const AgilePage = ({ location, data }) => {
   const posts = data.pageData.edges

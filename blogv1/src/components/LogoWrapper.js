@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 const LogoWrapper = () => {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const LogoWrapper = () => {
   return (
     <StyledLogoWrapper>
     <LogoLink to="/">
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      <StaticImage fluid={data.placeholderImage.childImageSharp.fluid} />
     </LogoLink>
   </StyledLogoWrapper>
   );

@@ -1,4 +1,4 @@
-import { Global } from '@emotion/core';
+import { Global } from '@emotion/react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';

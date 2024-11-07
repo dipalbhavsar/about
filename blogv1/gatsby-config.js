@@ -117,7 +117,6 @@ module.exports = {
         showSpinner: true,
       },
     },
-    `gatsby-plugin-feed`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,    
     // this (optional) plugin enables Progressive Web App + Offline functionality

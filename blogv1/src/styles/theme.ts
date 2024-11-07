@@ -309,6 +309,7 @@ pre.code.fullwidth {
   img {
     width: 100%;
   }
+    root:{}
 }
 `
 

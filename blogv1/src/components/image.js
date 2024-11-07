@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
+// import Img from "gatsby-image"
 
 // const Image = () => {
 //   const data = useStaticQuery(graphql`
@@ -46,7 +47,7 @@ const Image = props => (
       }
 
       //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
-      return <Img alt={props.alt} fluid={image.node.childImageSharp.fluid} />;
+      return <StaticImage alt={props.alt} fluid={image.node.childImageSharp.fluid} />;
     }}
   />
 );
