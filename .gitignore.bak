@@ -80,15 +80,5 @@ blogv2/package-lock.json
 blogv2/.next
 blogv2/.node_modules
 blogv2/.cache
-
-blogv3/.history
-blogv3/package-lock.json
-blogv3/.next
-blogv3/.node_modules
-blogv3/.cache
-blogv3/.contentlayer
-blogv3/.husky
-blogv3/.vscode
-blogv3/.yarn
-blogv3/.yarn.lock
+blogv2/public
 
