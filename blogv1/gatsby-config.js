@@ -81,7 +81,13 @@ module.exports = {
         ],
       },
     },  
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: true,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,

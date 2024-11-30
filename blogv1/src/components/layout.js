@@ -2,7 +2,7 @@ import { Global } from '@emotion/react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Styled } from 'theme-ui';
+import Styled from 'theme-ui'
 import { globalStyles } from '../styles';
 import mediaqueries from '../styles/media';
 import Header from './Header';
