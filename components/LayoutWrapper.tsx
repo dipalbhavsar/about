@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Space_Grotesk } from 'next/font/google'
 import SectionContainer from './SectionContainer'
 import Footer from './navigation/Footer'
 import { ReactNode } from 'react'
@@ -8,7 +8,7 @@ interface LayoutWrapperProps {
   children: ReactNode
 }
 
-const inter = Inter({
+const inter = Space_Grotesk({
   subsets: ['latin'],
 })
 

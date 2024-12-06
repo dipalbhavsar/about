@@ -102,7 +102,7 @@ export default function RootLayout({
           <SectionContainer>
             <div className="flex h-screen flex-col justify-between font-sans">
               <SearchProvider>
-                <Header /> 
+                <Header />
                 <main className="mb-auto">{children}</main>
               </SearchProvider>
               <Footer />

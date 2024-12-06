@@ -1,27 +1,27 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js i18n Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js, i18n and Tailwind.css',
+  title: 'Dipal Bhavsar Blog',
+  author: 'Dipal Bhavsar',
+  headerTitle: 'Dipal Bhavsar',
+  description: 'This site is developed using React, Next.js, i18n and Tailwind.css. Hosted in GitHub page. This site is intense for self learning and exploring different technologies.',
   language: 'en',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog-i18n.vercel.app',
-  siteRepo: 'https://github.com/PxlSyl/tailwind-nextjs-starter-blog-i18n',
+  siteUrl: 'https://www.dipalbhavsar.com',
+  siteRepo: 'https://github.com/dipalbhavsar',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
+  email: 'info@dipalbhavsar.com',
+  github: 'https://github.com/dipalbhavsar',
+  x: 'https://twitter.com/dipal_bhavsar',
   // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
+  facebook: 'https://facebook.com/bhavsar.dipal',
+  youtube: 'https://youtube.com/dipalbhavsar',
+  linkedin: 'https://www.linkedin.com/in/dipal-bhavsar',
+  threads: 'https://www.threads.net/dipalbhavsar',
+  instagram: 'https://www.instagram.com/dipal1208',
   locale: 'en',
-  multiauthors: true,
+  multiauthors: false,
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -37,9 +37,9 @@ const siteMetadata = {
     // posthogAnalytics: {
     //   posthogProjectApiKey: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
-    // googleAnalytics: {
-    //   googleAnalyticsId: '', // e.g. G-XXXXXXX
-    // },
+    googleAnalytics: {
+      googleAnalyticsId: 'UA-167858384-1',
+    },
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
