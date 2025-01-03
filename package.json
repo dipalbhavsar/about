@@ -9,7 +9,11 @@
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier -w ./app ./components ./layouts",
+    "deploy_old": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin public",
+    "deploy:github": "npm run build && node ./scripts/deploy-github"
   },
   "dependencies": {
     "@headlessui/react": "2.2.0",
@@ -74,5 +78,5 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@4.5.3"
 }
