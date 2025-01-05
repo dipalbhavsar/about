@@ -98,6 +98,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+    - name: Get directory
+      run: ls
     - name: Configure Pages
       uses: actions/configure-pages@v4
     - name: Deploy to GitHub Pages
