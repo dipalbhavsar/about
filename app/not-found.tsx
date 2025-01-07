@@ -1,5 +1,5 @@
 import Link from '@/components/Link'
-
+import { GoogleTagManager } from '@next/third-parties/google'
 export default function NotFound() {
   return (
     <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
@@ -19,6 +19,7 @@ export default function NotFound() {
         >
           Back to homepage
         </Link>
+        <GoogleTagManager gtmId="GTM-KS758657" />
       </div>
     </div>
   )

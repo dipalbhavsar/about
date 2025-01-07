@@ -19,6 +19,7 @@
   "dependencies": {
     "@headlessui/react": "2.2.0",
     "@next/bundle-analyzer": "15.0.2",
+    "@next/third-parties": "^15.1.3",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.13",
@@ -29,7 +30,7 @@
     "gray-matter": "^4.0.2",
     "hast-util-from-html-isomorphic": "^2.0.0",
     "image-size": "1.0.0",
-    "next": "15.0.2",
+    "next": "^15.1.3",
     "next-contentlayer2": "0.5.3",
     "next-themes": "^0.3.0",
     "pliny": "0.4.0",
