@@ -2,7 +2,8 @@ import ListLayout from '@/layouts/ListLayoutWithTags'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import { allBlogs } from 'contentlayer/generated'
 import { genPageMetadata } from 'app/seo'
-
+import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 const POSTS_PER_PAGE = 5
 
 export const metadata = genPageMetadata({ title: 'Blog' })
@@ -20,11 +21,15 @@ export default function BlogPage() {
   }
 
   return (
-    <ListLayout
-      posts={posts}
-      initialDisplayPosts={initialDisplayPosts}
-      pagination={pagination}
-      title="All Posts"
-    />
+    <>
+      <ListLayout
+        posts={posts}
+        initialDisplayPosts={initialDisplayPosts}
+        pagination={pagination}
+        title="All Posts"
+      />
+      <GoogleTagManager gtmId="GTM-KS758657" />
+      <GoogleAnalytics gaId="UA-167858384-1" />
+    </>
   )
 }
