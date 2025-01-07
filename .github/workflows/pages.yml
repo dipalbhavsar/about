@@ -79,7 +79,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.next
+          path: path: ${{ github.workspace }}/about/out
 
   # Deployment job
   # deploy:
