@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+// import { withContentlayer } from "next-contentlayer"
+
 import { withContentlayer } from "next-contentlayer2";
 
 import withBundleAnalyzer from "@next/bundle-analyzer";
@@ -58,9 +60,11 @@ const securityHeaders = [
   },
 ];
 
-const output = process.env.EXPORT ? "export" : undefined;
-const basePath = process.env.BASE_PATH || undefined;
-const unoptimized = process.env.UNOPTIMIZED ? true : undefined;
+// const output = process.env.EXPORT ? "export" : undefined;
+// const basePath = process.env.BASE_PATH || undefined;
+// const unoptimized = process.env.UNOPTIMIZED ? true : undefined;
+
+const plugins = [withContentlayer, withBundleAnalyzer];
 
 const nextConfig: NextConfig = {
   /**
@@ -68,63 +72,63 @@ const nextConfig: NextConfig = {
    *
    * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
    */
-  // output: "export",
+  output: "export",
   /**
    * Set base path. This is usually the slug of your repository.
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  // basePath: "/about",
+  basePath: "/about",
   /**
    * Disable server-based image optimization. Next.js does not support
    * dynamic features with static exports.
    *
    * @see https://nextjs.org/docs/pages/api-reference/components/image#unoptimized
    */
-  // images: {
-  //   unoptimized: true,
-  // },
+  images: {
+    unoptimized: true,
+  },
 };
 
-// export default nextConfig;
+export default withContentlayer(nextConfig);
 
-/**
- * @type {import('next/dist/next-server/server/config').NextConfig}
- **/
-module.exports = () => {
-  const plugins = [withContentlayer, withBundleAnalyzer];
-  return plugins.reduce((acc: NextConfig, next) => next(acc), {
-    output,
-    basePath,
-    reactStrictMode: true,
-    pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-    eslint: {
-      dirs: ["app", "components", "layouts", "scripts"],
-    },
-    images: {
-      remotePatterns: [
-        {
-          protocol: "https",
-          hostname: "picsum.photos",
-        },
-      ],
-      unoptimized,
-    },
-    async headers() {
-      return [
-        {
-          source: "/(.*)",
-          headers: securityHeaders,
-        },
-      ];
-    },
-    webpack: (config, options) => {
-      config.module.rules.push({
-        test: /\.svg$/,
-        use: ["@svgr/webpack"],
-      });
+// /**
+//  * @type {import('next/dist/next-server/server/config').NextConfig}
+//  **/
+// module.exports = () => {
+//   const plugins = [withContentlayer, withBundleAnalyzer];
+//   return plugins.reduce((acc: NextConfig, next) => next(acc), {
+//     output,
+//     basePath,
+//     reactStrictMode: true,
+//     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+//     eslint: {
+//       dirs: ["app", "components", "layouts", "scripts"],
+//     },
+//     images: {
+//       remotePatterns: [
+//         {
+//           protocol: "https",
+//           hostname: "picsum.photos",
+//         },
+//       ],
+//       unoptimized,
+//     },
+//     async headers() {
+//       return [
+//         {
+//           source: "/(.*)",
+//           headers: securityHeaders,
+//         },
+//       ];
+//     },
+//     webpack: (config, options) => {
+//       config.module.rules.push({
+//         test: /\.svg$/,
+//         use: ["@svgr/webpack"],
+//       });
 
-      return config;
-    },
-  });
-};
+//       return config;
+//     },
+//   });
+// };
