@@ -1,8 +1,8 @@
-const { withContentlayer } = require('next-contentlayer2')
+// const { withContentlayer } = require('next-contentlayer2')
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true',
+// })
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
@@ -61,40 +61,75 @@ const unoptimized = process.env.UNOPTIMIZED ? true : undefined
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
-module.exports = () => {
-  const plugins = [withContentlayer, withBundleAnalyzer]
-  return plugins.reduce((acc, next) => next(acc), {
-    output,
-    basePath,
-    reactStrictMode: true,
-    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-    eslint: {
-      dirs: ['app', 'components', 'layouts', 'scripts'],
-    },
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'picsum.photos',
-        },
-      ],
-      unoptimized,
-    },
-    async headers() {
-      return [
-        {
-          source: '/(.*)',
-          headers: securityHeaders,
-        },
-      ]
-    },
-    webpack: (config, options) => {
-      config.module.rules.push({
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      })
+// module.exports = () => {
+//   const plugins = [withContentlayer, withBundleAnalyzer]
+//   return plugins.reduce((acc, next) => next(acc), {
+//     output,
+//     basePath,
+//     reactStrictMode: true,
+//     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+//     eslint: {
+//       dirs: ['app', 'components', 'layouts', 'scripts'],
+//     },
+//     images: {
+//       remotePatterns: [
+//         {
+//           protocol: 'https',
+//           hostname: 'picsum.photos',
+//         },
+//       ],
+//       unoptimized,
+//     },
+//     async headers() {
+//       return [
+//         {
+//           source: '/(.*)',
+//           headers: securityHeaders,
+//         },
+//       ]
+//     },
+//     webpack: (config, options) => {
+//       config.module.rules.push({
+//         test: /\.svg$/,
+//         use: ['@svgr/webpack'],
+//       })
 
-      return config
-    },
-  })
-}
+//       return config
+//     },
+//   })
+// }
+
+import { withContentlayer } from "next-contentlayer2";
+import withBundleAnalyzer from "@next/bundle-analyzer";
+
+const bundleAnalyzer = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
+
+const plugins = [withContentlayer, withBundleAnalyzer];
+
+const nextConfig = {
+  /**
+   * Enable static exports for the App Router.
+   *
+   * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
+   */
+  output: "export",
+  /**
+   * Set base path. This is usually the slug of your repository.
+   *
+   * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
+   */
+  basePath: "/about",
+  /**
+   * Disable server-based image optimization. Next.js does not support
+   * dynamic features with static exports.
+   *
+   * @see https://nextjs.org/docs/pages/api-reference/components/image#unoptimized
+   */
+  images: {
+    unoptimized: true,
+  },
+};
+
+export default withContentlayer(nextConfig);
