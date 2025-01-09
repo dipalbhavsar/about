@@ -4,7 +4,7 @@ const siteMetadata = {
   author: 'Dipal Bhavsar',
   headerTitle: 'Dipal Bhavsar',
   description:
-    'This site is developed using React, Next.js, i18n and Tailwind.css. Hosted in GitHub page. This site is intense for self learning and exploring different technologies.',
+    'Powered by Nextjs, Tailwind.css and GitHub Actions.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.dipalbhavsar.com',
