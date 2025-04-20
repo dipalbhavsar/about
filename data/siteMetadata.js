@@ -4,7 +4,9 @@ const siteMetadata = {
   author: 'Dipal Bhavsar',
   headerTitle: 'Dipal Bhavsar',
   description:
-    'Welcome to my blog — a space to share thoughts, experiences, and insights from my professional journey. Over the years, I’ve learned that adaptability, continuous learning, and resilience are key to growth. Change is constant, and embracing it fuels innovation. Whether discussing career development, productivity, or problem-solving, I believe storytelling fosters deeper connections. Let’s explore ideas, exchange perspectives, and navigate the evolving professional landscape together. Join me in this journey of learning and growth. Would love to hear your thoughts!',
+    'Welcome to my blog — a space to share thoughts, experiences, and insights from my professional journey. ',
+  description1 :  'Over the years, I’ve learned that adaptability, continuous learning, and resilience are key to growth. Change is constant, and embracing it fuels innovation. Whether discussing career development, productivity, or problem-solving, I believe storytelling fosters deeper connections. ',
+  description2 : 'Let’s explore ideas, exchange perspectives, and navigate the evolving professional landscape together. </br> Join me in this journey of learning and growth. Would love to hear your thoughts!',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.dipalbhavsar.com',
