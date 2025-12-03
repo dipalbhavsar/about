@@ -5,10 +5,13 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import ResumeLayout from '@/layouts/ResumeLayout'
 
 export default function Page() {
+  const author = allAuthors.find((p) => p.slug === 'default') as Authors
+  const mainContent = coreContent(author)
+
   return (
     <>
       <GoogleTagManager gtmId="GTM-KS758657" />
-      <ResumeLayout>
+      <ResumeLayout content={mainContent}>
         <iframe
           src="./static/pdf/dipalkumar%20bhavsar.pdf"
           width="100%"
