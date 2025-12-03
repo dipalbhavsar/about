@@ -13,7 +13,7 @@ export default function Page() {
       <GoogleTagManager gtmId="GTM-KS758657" />
       <ResumeLayout content={mainContent}>
         <iframe
-          src="./static/pdf/dipalkumar%20bhavsar.pdf"
+          src="https://dipalbhavsar.com/static/pdf/dipalkumar%20bhavsar.pdf"
           width="100%"
           height="800px"
           style={{ border: 'none', borderRadius: '16px' }}
