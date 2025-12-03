@@ -13,10 +13,10 @@ export default function Page() {
       <GoogleTagManager gtmId="GTM-KS758657" />
       <ResumeLayout content={mainContent}>
         <iframe
-          src="https://dipalbhavsar.com/static/pdf/dipalkumar%20bhavsar.pdf"
+          src="./static/pdf/Dipalkumar Bhavsar.pdf"
           width="100%"
           height="800px"
-          style={{ border: 'none', borderRadius: '16px' }}
+          style={{ border: 'none', borderRadius: '5px' }}
           title="Dipalkumar Bhavsar Resume PDF Viewer"
         />
       </ResumeLayout>
