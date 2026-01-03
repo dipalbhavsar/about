@@ -2,6 +2,7 @@ import { Authors, allAuthors } from 'contentlayer/generated'
 import { coreContent } from 'pliny/utils/contentlayer'
 import { genPageMetadata } from 'app/seo'
 import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import ResumeLayout from '@/layouts/ResumeLayout'
 
 export default function Page() {
@@ -11,6 +12,7 @@ export default function Page() {
   return (
     <>
       <GoogleTagManager gtmId="GTM-KS758657" />
+      <GoogleAnalytics gaId="UA-167858384-1" />
       <ResumeLayout content={mainContent}>
         <iframe
           src="./static/pdf/Dipalkumar Bhavsar.pdf"

@@ -1,6 +1,8 @@
 import ListLayout from '@/layouts/ListLayoutWithTags'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import { allBlogs } from 'contentlayer/generated'
+import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const POSTS_PER_PAGE = 5
 
@@ -25,11 +27,15 @@ export default async function Page(props: { params: Promise<{ page: string }> })
   }
 
   return (
-    <ListLayout
-      posts={posts}
-      initialDisplayPosts={initialDisplayPosts}
-      pagination={pagination}
-      title="All Posts"
-    />
+    <>
+      <GoogleTagManager gtmId="GTM-KS758657" />
+      <GoogleAnalytics gaId="UA-167858384-1" />
+      <ListLayout
+        posts={posts}
+        initialDisplayPosts={initialDisplayPosts}
+        pagination={pagination}
+        title="All Posts"
+      />
+    </>
   )
 }

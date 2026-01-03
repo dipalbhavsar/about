@@ -7,6 +7,8 @@ import tagData from 'app/tag-data.json'
 import { genPageMetadata } from 'app/seo'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export async function generateMetadata(props: {
   params: Promise<{ tag: string }>
@@ -45,5 +47,11 @@ export default async function TagPage(props: { params: Promise<{ tag: string }> 
   if (filteredPosts.length === 0) {
     return notFound()
   }
-  return <ListLayout posts={filteredPosts} title={title} />
+  return (
+    <>
+      <GoogleTagManager gtmId="GTM-KS758657" />
+      <GoogleAnalytics gaId="UA-167858384-1" />
+      <ListLayout posts={filteredPosts} title={title} />
+    </>
+  )
 }

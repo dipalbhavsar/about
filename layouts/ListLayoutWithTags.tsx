@@ -9,6 +9,8 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import tagData from 'app/tag-data.json'
+import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 interface PaginationProps {
   totalPages: number
@@ -159,6 +161,8 @@ export default function ListLayoutWithTags({
           </div>
         </div>
       </div>
+      <GoogleTagManager gtmId="GTM-KS758657" />
+      <GoogleAnalytics gaId="UA-167858384-1" />
     </>
   )
 }
