@@ -1,14 +1,10 @@
-/** @type {import('pliny/config').PlinyConfig } */
+/** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Dipal Bhavsar',
+  title: 'Dipal Bhavsar Blog',
   author: 'Dipal Bhavsar',
-  headerTitle: 'Dipal Bhavsar',
-  description: [
-    'Welcome to my blog — a space to share thoughts, experiences, and insights from my professional journey. ',
-    'Over the years, I’ve learned that adaptability, continuous learning, and resilience are key to growth. Change is constant, and embracing it fuels innovation. Whether discussing career development, productivity, or problem-solving, I believe storytelling fosters deeper connections. ',
-    'Let’s explore ideas, exchange perspectives, and navigate the evolving professional landscape together.',
-    'Join me in this journey of learning and growth. Would love to hear your thoughts!',
-  ],
+  headerTitle: 'Dipal Bhavsar Blog',
+  description:
+    'This site is developed using React, Next.js, i18n and Tailwind.css. Hosted in GitHub page. This site is intense for self learning and exploring different technologies.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.dipalbhavsar.com',
@@ -29,7 +25,7 @@ const siteMetadata = {
   bluesky: 'https://bsky.app/',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
-  stickyNav: false,
+  stickyNav: true,
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -49,7 +45,7 @@ const siteMetadata = {
     //   posthogProjectApiKey: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
     googleAnalytics: {
-      googleAnalyticsId: 'UA-167858384-1',
+      googleAnalyticsId: 'G-W3H1PVSLJZ', // GA4 Measurement ID (replaces old sunset UA ID)
     },
   },
   newsletter: {
@@ -57,7 +53,7 @@ const siteMetadata = {
     // Please add your .env file and modify it according to your selection
     provider: 'buttondown',
   },
-  iscomments: true,
+  iscomments: false,
   comments: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -84,7 +80,7 @@ const siteMetadata = {
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css
       themeURL: '',
-      // This corresponds to the `data-lang='en'` in giscus's configurations
+      // This corresponds to the `data-lang="en"` in giscus's configurations
       lang: 'en',
     },
   },
