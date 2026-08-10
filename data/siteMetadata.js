@@ -1,10 +1,14 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Dipal Bhavsar Blog',
+  title: 'Dipal Bhavsar',
   author: 'Dipal Bhavsar',
-  headerTitle: 'Dipal Bhavsar Blog',
-  description:
-    'This site is developed using React, Next.js, i18n and Tailwind.css. Hosted in GitHub page. This site is intense for self learning and exploring different technologies.',
+  headerTitle: 'Dipal Bhavsar',
+  description: [
+  'Welcome to my blog — a space to share thoughts, experiences, and insights from my professional journey. ',
+  'Over the years, I’ve learned that adaptability, continuous learning, and resilience are key to growth. Change is constant, and embracing it fuels innovation. Whether discussing career development, productivity, or problem-solving, I believe storytelling fosters deeper connections. ',
+  'Let’s explore ideas, exchange perspectives, and navigate the evolving professional landscape together.',
+  'Join me in this journey of learning and growth. Would love to hear your thoughts!',
+],
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.dipalbhavsar.com',
