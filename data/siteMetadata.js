@@ -18,7 +18,7 @@ const siteMetadata = {
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'info@dipalbhavsar.com',
   github: 'https://github.com/dipalbhavsar',
-  x: 'https://twitter.com/dipal_bhavsar',
+  x: 'https://twitter.com/dipal__bhavsar',
   // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com/bhavsar.dipal',
   youtube: 'https://youtube.com/dipalbhavsar',
