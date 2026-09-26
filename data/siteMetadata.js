@@ -16,7 +16,7 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'info@dipalbhavsar.com',
+  email: 'dipal.bhavsar@gmail.com',
   github: 'https://github.com/dipalbhavsar',
   x: 'https://twitter.com/dipal__bhavsar',
   // twitter: 'https://twitter.com/Twitter',
